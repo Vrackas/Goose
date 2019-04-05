@@ -1,0 +1,26 @@
+.top_button {
+  .top_button_click{
+    z-index: 10000;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: none;
+    border: 3px solid #8b8b8b;
+    height: 50px;
+    width: 50px;
+    border-radius: 25px;
+    opacity: 0;
+    transition: 0.8s all;
+    svg {
+
+      color: #8b8b8b;
+      font-size: 30px;
+    }
+  }& .active_top_button{
+     opacity: 1 !important;
+   }
+  .top_button_click:hover{
+    background: #f7b44c;
+  }
+
+}
