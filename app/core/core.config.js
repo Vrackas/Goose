@@ -4,7 +4,7 @@
         .config(mainConfig);
 
 
-    mainConfig.$inject = ['$stateProvider', '$urlRouterProvider', '$locationProvider','$translateProvider','$mdGestureProvider'];
+    mainConfig.$inject = ['$stateProvider', '$urlRouterProvider', '$locationProvider', '$translateProvider', '$mdGestureProvider'];
 
     function mainConfig($stateProvider, $urlRouterProvider, $locationProvider, $translateProvider, $mdGestureProvider) {
 
@@ -20,7 +20,19 @@
                 controller: 'HomepageController',
                 controllerAs: 'vm'
             })
-
+            .state('flights', {
+                url: '/flights',
+                templateUrl: 'templates/flight/flight.html',
+                controller: 'FlightController',
+                controllerAs: 'vm',
+                resolve: {
+                    flights: function (flightService) {
+                        return flightService.getFlights().then(function (result) {
+                            return result;
+                        });
+                    }
+                }
+            })
 
 
         // $locationProvider.html5Mode(true);

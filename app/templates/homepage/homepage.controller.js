@@ -5,13 +5,15 @@
         .controller('HomepageController', HomepageController);
 
 
-    HomepageController.$inject = ['http', 'flight'];
+    HomepageController.$inject = ['flightService'];
 
-    function HomepageController(http, flight) {
+    function HomepageController(flightService) {
         var vm = this;
         vm.flight = {
             "fromDate": "2017-11-23",
             "returnDate": "2017-11-30",
+            "adult":"1",
+            "child":"1",
         };
 
         vm.searchModel = {
@@ -26,7 +28,7 @@
             vm.flight[type] = '';
             if (query.length < 3)
                 return false;
-            flight.getAirport(query).then(function (result) {
+            flightService.getAirport(query).then(function (result) {
                 if (result.length > 0) {
                     vm.flight[type] = result[0].code;
                     vm.searchModel[type] = result[0].cityName + " " + result[0].name + " (" + result[0].code + "), " + result[0].countryCode;
@@ -38,8 +40,8 @@
 
         function searchTour() {
             if (vm.flight.from.length === 3 && vm.flight.to.length === 3)
-                flight.save(vm.flight);
-                console.log(vm.flight);
+                flightService.save(vm.flight);
+            console.log(vm.flight);
         }
     }
 })();
