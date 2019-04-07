@@ -19,14 +19,15 @@ button {
 
 select:focus,
 a:focus,
-button:focus {
+button:focus,
+input:focus{
   outline: none;
 }
 
 .main_button {
   border: 0 solid white;
-  width: 180px;
-  height: 43px;
+  //width: 180px;
+  //height: 43px;
   border-radius: 50px;
   box-sizing: border-box;
   padding: 12px 24px 11px;
@@ -35,8 +36,8 @@ button:focus {
   transition: background-color ease 0.4s, .8s;
   font: {
     family: $ProximaNova;
-    weight: 700;
-    size: 13px;
+    weight: 400;
+    size: 18px;
   }
   line-height: 1;
   color: white;

@@ -1,4 +1,4 @@
-.flight{
+.flight {
   .main_section {
     .container {
       .nav {
@@ -32,7 +32,7 @@
             md-checkbox {
               margin-bottom: 10px;
             }
-            md-checkbox.md-checked{
+            md-checkbox.md-checked {
               .md-icon {
                 background-color: rgba(97, 11, 82, 0.87);
               }
@@ -41,6 +41,7 @@
           }
         }
         .content_content {
+          width: 100%;
           .tags {
             display: flex;
             div {
@@ -86,10 +87,78 @@
           }
           .result {
             display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            justify-content: space-around;
+            flex-direction: column;
+            justify-content: flex-start;
+            .result_flight {
+              width: 100%;
+              height: 200px;
+              background: rgba(61, 158, 255, 0.1803921568627451);
+              box-sizing: border-box;
+            }
+            .accordion {
+              cursor: pointer;
+              outline: none;
+              transition: 0.6s all;
+              position: relative;
+              display: flex;
+              justify-content: space-around;
+              padding: 40px 30px;
+              &.active {
+                background: white !important;
+                border: 1px solid #00aff2;
+              }
 
+              .info {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                .logo{
+
+                }
+                .wave{
+
+                }
+                .time{
+
+                }
+              }
+              .line {
+                height: 100%;
+                width: 2px;
+                background: #00aff2;
+              }
+              .total {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                h4 {
+                  font: {
+                    size: 35px;
+                    weight: bold;
+                  }
+                  margin: 0;
+                }
+                .main_button {
+
+                }
+
+              }
+            }
+            .panel {
+              box-sizing: border-box;
+              width: 100%;
+              padding: 0 60px;
+              background-color: rgb(224, 224, 224);
+              max-height: 0;
+              overflow: hidden;
+              transition: max-height 0.5s ease-out;
+
+              p {
+
+                color: #ffffff;
+
+              }
+            }
 
           }
         }
@@ -122,11 +191,11 @@
             min-width: 170px;
             margin-right: 30px;
           }
-          .content_content{
-            .filter{
+          .content_content {
+            .filter {
               flex-wrap: wrap;
             }
-            .result{
+            .result {
 
             }
           }
@@ -150,11 +219,11 @@
               width: 155px;
             }
           }
-          .content_content{
-            .filter{
+          .content_content {
+            .filter {
               flex-wrap: wrap;
             }
-            .result{
+            .result {
 
             }
           }
@@ -163,6 +232,5 @@
     }
 
   }
-
 
 }
