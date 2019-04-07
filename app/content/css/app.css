@@ -632,6 +632,63 @@ button:focus {
     .hotel_choose .main_section .container .content .content_content .result .result_hotel .hotel {
       width: 300px; } }
 
+.hotel_info .main_section .container .nav {
+  width: fit-content;
+  padding: 30px; }
+  .hotel_info .main_section .container .nav p {
+    font-weight: bold;
+    color: #610b52;
+    font-size: 20px; }
+    .hotel_info .main_section .container .nav p i {
+      margin-right: 10px; }
+
+.hotel_info .main_section .container .content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #610b52; }
+  .hotel_info .main_section .container .content h4 {
+    font-size: 22px;
+    margin-bottom: 10px; }
+  .hotel_info .main_section .container .content .hotel_info_rate {
+    margin-bottom: 50px; }
+    .hotel_info .main_section .container .content .hotel_info_rate i {
+      font-size: 18px; }
+  .hotel_info .main_section .container .content .map {
+    width: 100%;
+    height: 600px;
+    background-image: url("../../content/img/hotel_info.png");
+    background-size: cover;
+    background-position: center; }
+  .hotel_info .main_section .container .content .benefits {
+    margin-top: 50px;
+    margin-bottom: 30px;
+    width: 100%;
+    max-width: 960px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around; }
+    .hotel_info .main_section .container .content .benefits .item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center; }
+      .hotel_info .main_section .container .content .benefits .item i {
+        font-size: 45px;
+        color: #303030; }
+      .hotel_info .main_section .container .content .benefits .item p {
+        color: #610b52;
+        max-width: 70px; }
+
+@media (min-width: 540px) and (max-width: 768px) {
+  .hotel_info .main_section .container .content .map {
+    height: 400px; } }
+
+@media (max-width: 540px) {
+  .hotel_info .main_section .container .content .map {
+    height: 250px; } }
+
 #header_site {
   transition: .8s;
   width: 100%;

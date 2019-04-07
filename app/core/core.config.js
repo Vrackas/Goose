@@ -51,6 +51,12 @@
                 controller: 'HotelChooseController',
                 controllerAs: 'vm'
             })
+            .state('hotel_info', {
+                url: '/hotel_info',
+                templateUrl: 'templates/hotel_info/hotel_info.html',
+                controller: 'HotelInfoController',
+                controllerAs: 'vm'
+            })
 
 
         // $locationProvider.html5Mode(true);

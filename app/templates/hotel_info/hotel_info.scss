@@ -1,0 +1,110 @@
+.hotel_info {
+  .main_section {
+    .container {
+      .nav {
+        width: fit-content;
+        padding: 30px;
+        p {
+          font-weight: bold;
+          color: $basic_purple;
+          font-size: 20px;
+          i {
+            margin-right: 10px;
+          }
+        }
+      }
+      .content {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: $basic_purple;
+        h4 {
+          font-size: 22px;
+          margin-bottom: 10px;
+        }
+        .hotel_info_rate {
+          margin-bottom: 50px;
+          i {
+            font-size: 18px;
+          }
+        }
+        .map {
+          width: 100%;
+          height: 600px;
+          background: {
+            image: url("../../content/img/hotel_info.png");
+            size: cover;
+            position: center;
+          }
+        ;
+        }
+        .benefits {
+          margin-top: 50px;
+          margin-bottom: 30px;
+          width:100%;
+          max-width: 960px;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-around;
+          .item{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            i{
+              font-size: 45px;
+              color: #303030;
+            }
+            p{
+              color: $basic_purple;
+              max-width: 70px;
+
+            }
+          }
+        }
+      }
+    }
+  }
+  //media
+  @media (min-width: 1500px) {
+
+  }
+
+  @media (min-width: 1200px) and (max-width: 1500px) {
+
+  }
+
+  @media (min-width: 992px) and (max-width: 1200px) {
+
+  }
+
+  @media (min-width: 768px) and (max-width: 992px) {
+
+  }
+
+  @media (min-width: 540px) and (max-width: 768px) {
+.main_section{
+  .container{
+    .content{
+      .map{
+        height: 400px;
+      }
+    }
+  }
+}
+  }
+
+  @media (max-width: 540px) {
+    .main_section{
+      .container{
+        .content{
+          .map{
+            height: 250px;
+          }
+        }
+      }
+    }
+  }
+
+}
