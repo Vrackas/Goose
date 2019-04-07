@@ -34,11 +34,17 @@
                 }
             })
             .state('tours', {
-            url: '/tours',
-            templateUrl: 'templates/tours/tours.html',
-            controller: 'ToursController',
-            controllerAs: 'vm'
-        })
+                url: '/tours',
+                templateUrl: 'templates/tours/tours.html',
+                controller: 'ToursController',
+                controllerAs: 'vm'
+            })
+            .state('transfer_choose', {
+                url: '/transfer_choose',
+                templateUrl: 'templates/transfer_choose/transfer_choose.html',
+                controller: 'TransferChooseController',
+                controllerAs: 'vm'
+            })
 
 
         // $locationProvider.html5Mode(true);

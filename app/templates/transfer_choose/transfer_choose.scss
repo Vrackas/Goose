@@ -1,0 +1,229 @@
+.transfer_choose {
+  .main_section {
+    .container {
+      .nav {
+        width: fit-content;
+        padding: 30px;
+        p {
+          font-weight: bold;
+          color: $basic_purple;
+          font-size: 20px;
+          i {
+            margin-right: 10px;
+          }
+        }
+      }
+      .content {
+        display: flex;
+        justify-content: flex-start;
+        .content_filter {
+          margin-top: 200px;
+          min-width: 200px;
+          margin-right: 100px;
+          .content_filter_sort {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 40px;
+            h4 {
+              text-transform: uppercase;
+              color: $basic_purple;
+              font-size: 18px;
+            }
+            md-checkbox {
+              margin-bottom: 10px;
+            }
+            md-checkbox.md-checked{
+              .md-icon {
+                background-color: rgba(97, 11, 82, 0.87);
+              }
+
+            }
+          }
+        }
+        .content_content {
+          .tags {
+            display: flex;
+            div {
+              margin: 0 5px;
+              width: fit-content;
+              border: 1px solid $basic_purple;
+              padding: 10px;
+              color: $basic_purple;
+              font: {
+                size: 18px;
+                weight: bold;
+              }
+            ;
+            }
+          }
+          .proposals {
+            h3 {
+              color: $basic_purple;
+              font: {
+                size: 22px;
+                weight: bold;
+              }
+              text-transform: uppercase;
+            }
+          ;
+          }
+          .filter {
+            display: flex;
+            div {
+              display: flex;
+              align-items: center;
+              margin-right: 20px;
+              i {
+                font-size: 20px;
+                margin-right: 10px;
+                //font-weight: 400;
+              }
+              p {
+                font-size: 18px;
+                font-weight: bold;
+              }
+            }
+          }
+          .result {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            .result_car {
+
+              margin:0  10px;
+              .price {
+                position: absolute;
+                width: 100%;
+                left: 0;
+                right: 0;
+                bottom: -40px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                p {
+                  margin: 0;
+                }
+                .price_rate {
+                  color: #00aff2;
+                  i {
+                    font-size: 20px;
+                    margin-right: 5px;
+                  }
+                }
+                .price_price {
+                  p {
+                    font-weight: normal;
+                    font-size: 18px;
+                    strong {
+                      font-size: 24px;
+                      margin-left: 10px;
+                    }
+                  }
+                }
+              }
+              .car {
+                position: relative;
+                margin: 10px 0 50px;
+                height: 300px;
+                background: {
+                  image: url("../../content/img/tours/car.jpg");
+                  size: cover;
+                  position: center;
+                }
+                width:400px;
+                .about {
+                  background: rgba(97, 11, 82, .9);
+                  color: white;
+                  padding: 10px 20px;
+                  p {
+                    color: white;
+                    margin: 0;
+                    margin-bottom: 10px;
+                  }
+                  div {
+                    i {
+                      margin-right: 5px;
+                    }
+                  }
+                }
+
+              }
+            }
+
+          }
+        }
+      }
+    }
+  }
+
+  //media
+  @media (min-width: 1500px) {
+
+  }
+
+  @media (min-width: 1200px) and (max-width: 1500px) {
+
+  }
+
+  @media (min-width: 992px) and (max-width: 1200px) {
+
+  }
+
+  @media (min-width: 768px) and (max-width: 992px) {
+
+  }
+
+  @media (min-width: 540px) and (max-width: 768px) {
+    .main_section {
+      .container {
+        .content {
+          .content_filter {
+            min-width: 170px;
+            margin-right: 30px;
+          }
+          .content_content{
+            .result{
+              .result_car{
+                .car{
+                  width: 300px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: 540px) {
+    .main_section {
+      .container {
+        .content {
+          flex-direction: column;
+          .content_filter {
+            min-width: 200px;
+            margin: 0;
+            flex-direction: row;
+            display: flex;
+            flex-wrap: wrap;
+            .content_filter_sort {
+              width: 155px;
+            }
+          }
+          .content_content{
+            .result{
+              .result_car{
+                .car{
+                  width: 300px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+  }
+
+}

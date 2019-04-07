@@ -363,6 +363,131 @@ button:focus {
   .tours .main_section .container .proposal button.main_button {
     align-self: center !important; } }
 
+.transfer_choose .main_section .container .nav {
+  width: fit-content;
+  padding: 30px; }
+  .transfer_choose .main_section .container .nav p {
+    font-weight: bold;
+    color: #610b52;
+    font-size: 20px; }
+    .transfer_choose .main_section .container .nav p i {
+      margin-right: 10px; }
+
+.transfer_choose .main_section .container .content {
+  display: flex;
+  justify-content: flex-start; }
+  .transfer_choose .main_section .container .content .content_filter {
+    margin-top: 200px;
+    min-width: 200px;
+    margin-right: 100px; }
+    .transfer_choose .main_section .container .content .content_filter .content_filter_sort {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 40px; }
+      .transfer_choose .main_section .container .content .content_filter .content_filter_sort h4 {
+        text-transform: uppercase;
+        color: #610b52;
+        font-size: 18px; }
+      .transfer_choose .main_section .container .content .content_filter .content_filter_sort md-checkbox {
+        margin-bottom: 10px; }
+      .transfer_choose .main_section .container .content .content_filter .content_filter_sort md-checkbox.md-checked .md-icon {
+        background-color: rgba(97, 11, 82, 0.87); }
+  .transfer_choose .main_section .container .content .content_content .tags {
+    display: flex; }
+    .transfer_choose .main_section .container .content .content_content .tags div {
+      margin: 0 5px;
+      width: fit-content;
+      border: 1px solid #610b52;
+      padding: 10px;
+      color: #610b52;
+      font-size: 18px;
+      font-weight: bold; }
+  .transfer_choose .main_section .container .content .content_content .proposals h3 {
+    color: #610b52;
+    font-size: 22px;
+    font-weight: bold;
+    text-transform: uppercase; }
+  .transfer_choose .main_section .container .content .content_content .filter {
+    display: flex; }
+    .transfer_choose .main_section .container .content .content_content .filter div {
+      display: flex;
+      align-items: center;
+      margin-right: 20px; }
+      .transfer_choose .main_section .container .content .content_content .filter div i {
+        font-size: 20px;
+        margin-right: 10px; }
+      .transfer_choose .main_section .container .content .content_content .filter div p {
+        font-size: 18px;
+        font-weight: bold; }
+  .transfer_choose .main_section .container .content .content_content .result {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around; }
+    .transfer_choose .main_section .container .content .content_content .result .result_car {
+      margin: 0  10px; }
+      .transfer_choose .main_section .container .content .content_content .result .result_car .price {
+        position: absolute;
+        width: 100%;
+        left: 0;
+        right: 0;
+        bottom: -40px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center; }
+        .transfer_choose .main_section .container .content .content_content .result .result_car .price p {
+          margin: 0; }
+        .transfer_choose .main_section .container .content .content_content .result .result_car .price .price_rate {
+          color: #00aff2; }
+          .transfer_choose .main_section .container .content .content_content .result .result_car .price .price_rate i {
+            font-size: 20px;
+            margin-right: 5px; }
+        .transfer_choose .main_section .container .content .content_content .result .result_car .price .price_price p {
+          font-weight: normal;
+          font-size: 18px; }
+          .transfer_choose .main_section .container .content .content_content .result .result_car .price .price_price p strong {
+            font-size: 24px;
+            margin-left: 10px; }
+      .transfer_choose .main_section .container .content .content_content .result .result_car .car {
+        position: relative;
+        margin: 10px 0 50px;
+        height: 300px;
+        background-image: url("../../content/img/tours/car.jpg");
+        background-size: cover;
+        background-position: center;
+        width: 400px; }
+        .transfer_choose .main_section .container .content .content_content .result .result_car .car .about {
+          background: rgba(97, 11, 82, 0.9);
+          color: white;
+          padding: 10px 20px; }
+          .transfer_choose .main_section .container .content .content_content .result .result_car .car .about p {
+            color: white;
+            margin: 0;
+            margin-bottom: 10px; }
+          .transfer_choose .main_section .container .content .content_content .result .result_car .car .about div i {
+            margin-right: 5px; }
+
+@media (min-width: 540px) and (max-width: 768px) {
+  .transfer_choose .main_section .container .content .content_filter {
+    min-width: 170px;
+    margin-right: 30px; }
+  .transfer_choose .main_section .container .content .content_content .result .result_car .car {
+    width: 300px; } }
+
+@media (max-width: 540px) {
+  .transfer_choose .main_section .container .content {
+    flex-direction: column; }
+    .transfer_choose .main_section .container .content .content_filter {
+      min-width: 200px;
+      margin: 0;
+      flex-direction: row;
+      display: flex;
+      flex-wrap: wrap; }
+      .transfer_choose .main_section .container .content .content_filter .content_filter_sort {
+        width: 155px; }
+    .transfer_choose .main_section .container .content .content_content .result .result_car .car {
+      width: 300px; } }
+
 #header_site {
   transition: .8s;
   width: 100%;
