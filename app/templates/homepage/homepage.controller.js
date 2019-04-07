@@ -22,6 +22,7 @@
         };
         vm.searchTour = searchTour;
         vm.changeInput = changeInput;
+        vm.date = new Date;
 
 
         function changeInput(query, type) {

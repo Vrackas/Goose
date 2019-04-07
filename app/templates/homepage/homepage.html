@@ -5,23 +5,47 @@
     <div class="main_section">
         <div class="content">
             <div class="search">
-                <div class="input_container">
-                    <input type="text" ng-model="vm.searchModel.from" placeholder="From:"
-                           ng-change="vm.changeInput(vm.searchModel.from,'from')">
+                <div class="top">
+                    <p>Make tour<i class="fas fa-caret-down"></i></p>
+                    <div>
+                        <button>-</button>
+                        <i class="fas fa-users"></i>
+                        <p>3</p>
+                        <button>+</button>
+                    </div>
                 </div>
-                <div class="input_container">
-                    <input type="text" ng-model="vm.searchModel.to" placeholder="To:"
-                           ng-change="vm.changeInput(vm.searchModel.to,'to')">
-                </div>
-                <div class="input_container">
-                    <input type="text" ng-model="c3" placeholder="To:">
+                <div class="some">
+                    <div class="input_container">
+                        <input type="text" ng-model="vm.searchModel.from" placeholder="From:"
+                               ng-change="vm.changeInput(vm.searchModel.from,'from')">
+                    </div>
+                    <div class="input_container">
+                        <input type="text" ng-model="vm.searchModel.to" placeholder="To:"
+                               ng-change="vm.changeInput(vm.searchModel.to,'to')">
+                    </div>
+                    <div class="input_container">
+                        <md-datepicker ng-model="vm.date"></md-datepicker>
+                    </div>
                 </div>
 
+                <div class="accept">
+                    <div class="paket">
+                        <p>450$</p>
+                        <md-slider-container>
+
+                            <md-slider min="0" max="255" now="150" ng-model="some" aria-label="red">
+                            </md-slider>
+
+                        </md-slider-container>
+                        <p>2450$</p>
+                    </div>
 
 
+                    <button class="main_button" ng-click="vm.searchTour()">Search Tours <i
+                            class="fas fa-chevron-right"></i></button>
+                </div>
 
             </div>
-            <button class="main_button" ng-click="vm.searchTour()" ui-sref="tours">Search Tours</button>
 
         </div>
     </div>
