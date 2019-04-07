@@ -4,7 +4,7 @@
     angular.module('app.core', [
         'ui.router', 'ngMaterial',
         'ngAnimate', 'toastr',
-        'pascalprecht.translate'
+        'pascalprecht.translate', 'ngStorage'
     ]);
 
 

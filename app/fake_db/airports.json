@@ -1,0 +1,30 @@
+{
+  "result": [
+    {
+      "code": "AYT",
+      "name": "Antalya Airport",
+      "cityCode": "AYT",
+      "cityName": "Antalya",
+      "countryName": "TURKEY",
+      "countryCode": "TR",
+      "timezone": 2,
+      "lat": 36.898731,
+      "lon": 30.800461,
+      "numAirports": 1,
+      "city": true
+    },
+    {
+      "code": "KBP",
+      "name": "Kyiv Borispyl Airport",
+      "cityCode": "KIV",
+      "cityName": "Kyiv",
+      "countryName": "UKRAINE",
+      "countryCode": "UA",
+      "timezone": 2,
+      "lat": 36.898731,
+      "lon": 30.800461,
+      "numAirports": 1,
+      "city": true
+    }
+  ]
+}
