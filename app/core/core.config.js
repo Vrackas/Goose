@@ -45,6 +45,12 @@
                 controller: 'TransferChooseController',
                 controllerAs: 'vm'
             })
+            .state('hotel_choose', {
+                url: '/hotel_choose',
+                templateUrl: 'templates/hotel_choose/hotel_choose.html',
+                controller: 'HotelChooseController',
+                controllerAs: 'vm'
+            })
 
 
         // $locationProvider.html5Mode(true);
