@@ -859,18 +859,63 @@ input:focus {
         position: relative;
         display: flex;
         justify-content: space-around;
-        padding: 40px 30px; }
+        padding: 30px; }
         .flight .main_section .container .content .content_content .result .accordion.active {
           background: white !important;
           border: 1px solid #00aff2; }
-        .flight .main_section .container .content .content_content .result .accordion .info {
-          display: flex;
-          flex-direction: column;
-          justify-content: space-between; }
         .flight .main_section .container .content .content_content .result .accordion .line {
           height: 100%;
           width: 2px;
           background: #00aff2; }
+        .flight .main_section .container .content .content_content .result .accordion .info {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          width: 75%; }
+          .flight .main_section .container .content .content_content .result .accordion .info .from_to,
+          .flight .main_section .container .content .content_content .result .accordion .info .to_from {
+            display: flex;
+            width: 100%;
+            align-items: center;
+            justify-content: space-around; }
+            .flight .main_section .container .content .content_content .result .accordion .info .from_to .logo img,
+            .flight .main_section .container .content .content_content .result .accordion .info .to_from .logo img {
+              height: 70px; }
+            .flight .main_section .container .content .content_content .result .accordion .info .from_to .wave,
+            .flight .main_section .container .content .content_content .result .accordion .info .to_from .wave {
+              display: flex;
+              align-items: center; }
+              .flight .main_section .container .content .content_content .result .accordion .info .from_to .wave div,
+              .flight .main_section .container .content .content_content .result .accordion .info .to_from .wave div {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                text-align: center; }
+                .flight .main_section .container .content .content_content .result .accordion .info .from_to .wave div p, .flight .main_section .container .content .content_content .result .accordion .info .from_to .wave div strong,
+                .flight .main_section .container .content .content_content .result .accordion .info .to_from .wave div p,
+                .flight .main_section .container .content .content_content .result .accordion .info .to_from .wave div strong {
+                  margin: 0;
+                  font-size: 19px; }
+                .flight .main_section .container .content .content_content .result .accordion .info .from_to .wave div strong,
+                .flight .main_section .container .content .content_content .result .accordion .info .to_from .wave div strong {
+                  font-size: 22px;
+                  font-weight: bold; }
+              .flight .main_section .container .content .content_content .result .accordion .info .from_to .wave div:nth-child(2),
+              .flight .main_section .container .content .content_content .result .accordion .info .to_from .wave div:nth-child(2) {
+                margin: 0 5px; }
+                .flight .main_section .container .content .content_content .result .accordion .info .from_to .wave div:nth-child(2) .line,
+                .flight .main_section .container .content .content_content .result .accordion .info .to_from .wave div:nth-child(2) .line {
+                  width: 100%;
+                  height: 2px;
+                  background: #303030;
+                  margin-top: 20px; }
+                .flight .main_section .container .content .content_content .result .accordion .info .from_to .wave div:nth-child(2) p,
+                .flight .main_section .container .content .content_content .result .accordion .info .to_from .wave div:nth-child(2) p {
+                  padding: 0 35px; }
+            .flight .main_section .container .content .content_content .result .accordion .info .from_to .time p,
+            .flight .main_section .container .content .content_content .result .accordion .info .to_from .time p {
+              font-size: 18px;
+              font-weight: 900; }
         .flight .main_section .container .content .content_content .result .accordion .total {
           display: flex;
           flex-direction: column;
@@ -882,20 +927,102 @@ input:focus {
       .flight .main_section .container .content .content_content .result .panel {
         box-sizing: border-box;
         width: 100%;
-        padding: 0 60px;
+        height: auto;
         background-color: #e0e0e0;
         max-height: 0;
         overflow: hidden;
-        transition: max-height 0.5s ease-out; }
-        .flight .main_section .container .content .content_content .result .panel p {
-          color: #ffffff; }
+        transition: max-height 0.5s ease-out;
+        padding: 0 30px; }
+        .flight .main_section .container .content .content_content .result .panel .panel_item {
+          color: #303030;
+          width: 100%; }
+          .flight .main_section .container .content .content_content .result .panel .panel_item .top {
+            margin-top: 40px;
+            width: 100%;
+            display: flex;
+            position: relative;
+            font-size: 18px; }
+            .flight .main_section .container .content .content_content .result .panel .panel_item .top md-checkbox {
+              line-height: 20px;
+              font-size: 20px;
+              font-weight: bolder; }
+            .flight .main_section .container .content .content_content .result .panel .panel_item .top p {
+              margin: 0;
+              margin-left: 15px;
+              color: rgba(41, 41, 41, 0.57); }
+            .flight .main_section .container .content .content_content .result .panel .panel_item .top p:last-child {
+              position: absolute;
+              right: 0; }
+          .flight .main_section .container .content .content_content .result .panel .panel_item .info {
+            display: flex;
+            width: 100%;
+            background: white;
+            padding: 20px;
+            box-sizing: border-box;
+            margin-bottom: 40px;
+            align-items: center;
+            position: relative; }
+            .flight .main_section .container .content .content_content .result .panel .panel_item .info .info_day {
+              font-size: 18px;
+              font-weight: bold;
+              margin-right: 40px; }
+            .flight .main_section .container .content .content_content .result .panel .panel_item .info .info_time {
+              display: flex;
+              align-items: center; }
+              .flight .main_section .container .content .content_content .result .panel .panel_item .info .info_time img {
+                height: 45px; }
+              .flight .main_section .container .content .content_content .result .panel .panel_item .info .info_time p {
+                margin: 0;
+                margin-left: 10px;
+                font-size: 18px;
+                font-weight: bold; }
+            .flight .main_section .container .content .content_content .result .panel .panel_item .info .info_class {
+              position: absolute;
+              right: 20px;
+              color: rgba(41, 41, 41, 0.57);
+              font-size: 18px; }
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .flight .main_section .container .content .content_content .result .result_flight {
+    flex-direction: column;
+    height: auto;
+    align-items: center; }
+    .flight .main_section .container .content .content_content .result .result_flight .info {
+      width: 100%; }
+    .flight .main_section .container .content .content_content .result .result_flight .total {
+      align-items: center; }
+  .flight .main_section .container .content .content_content .result .panel .panel_item .info .info_day {
+    margin-right: 0; } }
 
 @media (min-width: 540px) and (max-width: 768px) {
   .flight .main_section .container .content .content_filter {
     min-width: 170px;
     margin-right: 30px; }
   .flight .main_section .container .content .content_content .filter {
-    flex-wrap: wrap; } }
+    flex-wrap: wrap; }
+  .flight .main_section .container .content .content_content .result .result_flight {
+    flex-direction: column;
+    height: auto;
+    align-items: center; }
+    .flight .main_section .container .content .content_content .result .result_flight .info {
+      width: 100%; }
+      .flight .main_section .container .content .content_content .result .result_flight .info .from_to,
+      .flight .main_section .container .content .content_content .result .result_flight .info .to_from {
+        flex-direction: column; }
+    .flight .main_section .container .content .content_content .result .result_flight .total {
+      align-items: center; }
+  .flight .main_section .container .content .content_content .result .panel .panel_item .top p:nth-child(3) {
+    position: relative !important; }
+  .flight .main_section .container .content .content_content .result .panel .panel_item .top p {
+    margin-left: 5px; }
+  .flight .main_section .container .content .content_content .result .panel .panel_item .info {
+    flex-direction: column;
+    align-items: center; }
+    .flight .main_section .container .content .content_content .result .panel .panel_item .info .info_day {
+      margin-right: 0; }
+    .flight .main_section .container .content .content_content .result .panel .panel_item .info .info_class {
+      position: relative;
+      right: inherit; } }
 
 @media (max-width: 540px) {
   .flight .main_section .container .content {
@@ -909,7 +1036,32 @@ input:focus {
       .flight .main_section .container .content .content_filter .content_filter_sort {
         width: 155px; }
     .flight .main_section .container .content .content_content .filter {
-      flex-wrap: wrap; } }
+      flex-wrap: wrap; }
+    .flight .main_section .container .content .content_content .result .result_flight {
+      flex-direction: column;
+      height: auto;
+      align-items: center; }
+      .flight .main_section .container .content .content_content .result .result_flight .info {
+        width: 100%; }
+        .flight .main_section .container .content .content_content .result .result_flight .info .from_to,
+        .flight .main_section .container .content .content_content .result .result_flight .info .to_from {
+          flex-direction: column; }
+      .flight .main_section .container .content .content_content .result .result_flight .total {
+        align-items: center; }
+    .flight .main_section .container .content .content_content .result .panel .panel_item .top {
+      font-size: 16px; }
+      .flight .main_section .container .content .content_content .result .panel .panel_item .top p:nth-child(3) {
+        position: relative !important; }
+      .flight .main_section .container .content .content_content .result .panel .panel_item .top p {
+        margin-left: 5px; }
+    .flight .main_section .container .content .content_content .result .panel .panel_item .info {
+      flex-direction: column;
+      align-items: center; }
+      .flight .main_section .container .content .content_content .result .panel .panel_item .info .info_day {
+        margin-right: 0; }
+      .flight .main_section .container .content .content_content .result .panel .panel_item .info .info_class {
+        position: relative;
+        right: inherit; } }
 
 #header_site {
   transition: .8s;
