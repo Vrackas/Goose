@@ -3,8 +3,8 @@ body {
   font-size: 14px;
   font-family: 'ProximaNova', sans-serif;
   line-height: 1.42857;
-  color: #384656;
-  background: #f7f7f7;
+  color: #303030;
+  background: #FFFFFF;
   height: auto;
 }
 
@@ -24,7 +24,7 @@ button:focus {
 }
 
 .main_button {
-  border: 0px solid white;
+  border: 0 solid white;
   width: 180px;
   height: 43px;
   border-radius: 50px;
@@ -71,79 +71,6 @@ button:focus {
 
 .main_section {
   min-height: calc(100vh - 407px);
-  padding: 20px;
-  .container {
-    display: flex;
-    flex-direction: row;
-    .content {
-      margin-left: 20px;
-      width: 100%;
-      max-width: 1100px;
-      &.list_image {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        div {
-          margin: 0 10px 10px;
-          text-align: center;
-          max-width: 340px;
-          img {
-            height: 240px;
-            width: 340px;
-            border-radius: 2px;
-            -webkit-box-shadow: 1px 1px 3px 0 rgba(0, 0, 0, 0.24);
-            -moz-box-shadow: 1px 1px 3px 0 rgba(0, 0, 0, 0.24);
-            box-shadow: 1px 1px 3px 0 rgba(0, 0, 0, 0.24);
-            transition: .8s all;
-          }
-        }
-        div:hover {
-          img {
-            -webkit-box-shadow: 1px 1px 11px 6px rgba(0, 0, 0, 0.24);
-            -moz-box-shadow: 1px 1px 11px 6px rgba(0, 0, 0, 0.24);
-            box-shadow: 1px 1px 11px 6px rgba(0, 0, 0, 0.24);
-          }
-        }
-      }
-      &.text {
-        text-align: center;
-        img{
-          max-width: 300px;
-          border-radius: 2px;
-          -webkit-box-shadow: 1px 1px 3px 0 rgba(0, 0, 0, 0.24);
-          -moz-box-shadow: 1px 1px 3px 0 rgba(0, 0, 0, 0.24);
-          box-shadow: 1px 1px 3px 0 rgba(0, 0, 0, 0.24);
-        }
-        table {
-          background: rgba(0, 0, 0, 0.12);
-          box-sizing: border-box;
-          border: none;
-          border-radius: 5px;
-          -webkit-box-shadow: 1px 1px 3px 0 rgba(0, 0, 0, 0.24);
-          -moz-box-shadow: 1px 1px 3px 0 rgba(0, 0, 0, 0.24);
-          box-shadow: 1px 1px 3px 0 rgba(0, 0, 0, 0.24);
-          margin: 0 auto 30px;
-          thead{
-            td{
-              border-bottom: 1px solid #3e4d5d;
-              border-left: 10px solid transparent;
-              border-right: 10px solid transparent;
-            }
-
-          }
-          td {
-            padding: 5px;
-            //background: #f7f7f7;
-            //border: 1px solid black;
-          }
-
-        }
-      }
-    }
-
-  }
-
 }
 
 .container {
@@ -164,102 +91,32 @@ button:focus {
   .container {
     width: 1170px;
   }
-  .main_section {
-    .container {
-      .content {
-        &.list_image {
-          div {
-            max-width: 255px;
-            img {
-              width: 255px;
-              height: 185px;
-            }
-          }
-        }
-      }
-    }
-  }
+
 }
 
 @media (min-width: 992px) and (max-width: 1200px) {
   .container {
     width: 970px;
   }
-  .main_section {
-    .container {
-      .content {
-        &.list_image {
-          div {
-            max-width: 295px;
-            img {
-              width: 295px;
-              height: 185px;
-            }
-          }
-        }
-      }
-    }
-  }
+
 }
 
 @media (min-width: 768px) and (max-width: 992px) {
   .container {
     width: 750px;
   }
-  .main_section {
-    .container {
-      .content {
-        margin: 0;
 
-      }
-    }
-  }
 }
 
 @media (min-width: 540px) and (max-width: 768px) {
   .container {
     width: 500px;
   }
-  .main_section {
-    .container {
-      .content {
-        margin: 0;
-        &.list_image {
-          div {
-            margin: 0 0 10px;
-            max-width: 235px;
-            img {
-              width: 235px;
-              height: 185px;
-            }
-          }
-          div:nth-child(even) {
-            margin-left: 10px;
-          }
-        }
-      }
-    }
-  }
+
 }
 
 @media (max-width: 540px) {
   .container {
     width: 310px;
-  }
-  .main_section {
-    padding: 0 !important;
-    .container {
-      .content {
-        margin: 0;
-        &.list_image {
-          div {
-            img {
-              width: 295px;
-              height: 185px;
-            }
-          }
-        }
-      }
-    }
   }
 }

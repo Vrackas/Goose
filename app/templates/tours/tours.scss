@@ -1,0 +1,385 @@
+.tours {
+  .main_section {
+    .container {
+      .edit {
+        padding: 0 30px;
+        display: flex;
+        div {
+          display: flex;
+          align-items: center;
+          margin-right: 40px;
+          p, i {
+            font-size: 18px;
+          }
+          p {
+            margin-right: 10px;
+            color: $basic_purple;
+            font-weight: bold;
+          }
+          i {
+            margin: 0 4px;
+          }
+        }
+      }
+      .proposal {
+        margin: 50px 0;
+        padding: 0 30px;
+        display: flex;
+        flex-direction: column;
+        p {
+          color: $basic_purple;
+          font: {
+            weight: bold;
+            size: 20px;
+          }
+        ;
+        }
+        .propose {
+          margin-bottom: 60px;
+          display: flex;
+          justify-content: space-between;
+          ._edit {
+            display: flex;
+            justify-content: flex-end;
+            i {
+              font-size: 18px;
+              margin-left: 8px;
+            }
+          }
+
+          .price {
+            position: absolute;
+            width: 100%;
+            left: 0;
+            right: 0;
+            bottom: -25px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            p {
+              margin: 0;
+            }
+            .price_rate {
+              color: #00aff2;
+              i {
+                font-size: 20px;
+                margin-right: 5px;
+              }
+            }
+            .price_price {
+              p {
+                font-weight: normal;
+                font-size: 18px;
+                strong {
+                  font-size: 24px;
+                  margin-left: 10px;
+                }
+              }
+            }
+          }
+
+          .hotel, .tickets, .transfer {
+            position: relative;
+            .content {
+              margin: 10px 0;
+              height: 300px;
+            }
+          }
+          .hotel {
+            .content {
+              background: {
+                image: url("../../content/img/tours/hotel.jpg");
+                size: cover;
+              }
+              width: 500px;
+              .about {
+                background: rgba(97, 11, 82, .9);
+                color: white;
+                padding: 10px 20px;
+                p {
+                  color: white;
+                  margin: 0;
+                  margin-bottom: 10px;
+                }
+                div {
+                  i {
+                    margin-right: 5px;
+                  }
+                }
+              }
+
+            }
+          }
+          .tickets {
+
+            .content {
+              background: {
+                image: url("../../content/img/tours/tickets.png");
+                size: contain;
+              }
+            ;
+              width: 380px;
+            }
+          ;
+          }
+          .transfer {
+            .content {
+              background: {
+                image: url("../../content/img/tours/car.jpg");
+                size: cover;
+                position-x: center;
+              }
+              width: 300px;
+              .about {
+                background: rgba(97, 11, 82, .9);
+                color: white;
+                padding: 10px 20px;
+                p {
+                  color: white;
+                  margin: 0;
+                  margin-bottom: 10px;
+                }
+                div {
+                  i {
+                    margin-right: 5px;
+                  }
+                }
+              }
+            }
+          }
+        }
+        .result {
+
+          align-self: flex-end;
+          .content {
+            display: flex;
+            align-items: flex-end;
+            strong{
+              font-size: 28px;
+              line-height: 20px;
+            }
+            .result_content {
+              margin-right: 30px;
+              display: flex;
+              flex-direction: column;
+              height: 100px;
+              justify-content: space-between;
+              h4, p, strong {
+                line-height: 20px;
+                margin: 0;
+              }
+              h4 {
+                font: {
+                  size: 18px;
+                  weight: bolder;
+                }
+              }
+              p{
+                color: #303030;
+                font:{
+                  weight: lighter;
+                  size: 15px;
+                }
+              }
+              strong{
+                font-size: 24px;
+              }
+              div {
+                background: {
+                  color: #00aff2;
+                }
+                width: 100%;
+                height: 2px;
+              }
+            }
+          }
+        }
+        button.main_button{
+          margin-top: 40px;
+          align-self: flex-end;
+          width: 120px;
+          font-size: 18px;
+          font-weight: normal;
+        }
+      }
+    }
+  }
+
+  //media
+  @media (min-width: 1500px) {
+
+  }
+
+  @media (min-width: 1200px) and (max-width: 1500px) {
+    .main_section {
+      .container {
+        .proposal {
+          .propose {
+            .hotel {
+              .content {
+                width: 430px !important;
+              }
+
+            }
+            .tickets {
+              .content {
+                width: 350px !important;
+                background-size: cover;
+                background-position: center;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @media (min-width: 992px) and (max-width: 1200px) {
+    .main_section {
+      .container {
+        .proposal {
+          .propose {
+            flex-wrap: wrap;
+            .hotel {
+              margin-bottom: 50px;
+              width: 100%;
+              .content {
+                width: 100%;
+                background-position: center;
+              }
+
+            }
+            .transfer {
+              .content {
+                width: 400px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @media (min-width: 768px) and (max-width: 992px) {
+    .main_section {
+      .container {
+        .proposal {
+          .propose {
+            flex-wrap: wrap;
+            .hotel {
+              margin-bottom: 50px;
+              width: 100%;
+              .content {
+                width: 100%;
+                background-position: center;
+              }
+
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @media (min-width: 540px) and (max-width: 768px) {
+    .main_section {
+      .container {
+        .proposal {
+          .propose {
+            flex-wrap: wrap;
+            .hotel, .transfer, .tickets {
+              margin-bottom: 50px;
+              width: 100%;
+              .content {
+                width: 100%;
+                background-position: center;
+                background-size: cover;
+              }
+
+            }
+          }
+        }
+        .result{
+          .content{
+            flex-wrap: wrap;
+            justify-content: space-around;
+            .result_content{
+              margin: 0 20px!important;
+            }
+          }
+          .content>strong{
+            margin-top: 40px;
+          }
+        }
+        button.main_button{
+          align-self: center !important;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 540px) {
+    .main_section {
+      .container {
+        .edit {
+          padding: 0;
+          flex-wrap: wrap;
+          div:nth-child(even) {
+            margin-right: 0;
+          }
+        }
+        .proposal {
+          .propose {
+            flex-wrap: wrap;
+            .hotel, .transfer, .tickets {
+              margin-bottom: 50px;
+              width: 100%;
+              .content {
+                width: 100%;
+                background-position: center;
+                background-size: cover;
+              }
+
+            }
+            .hotel {
+              .content {
+                .price {
+                  .price_rate {
+                    i {
+                      font-size: 15px;
+                    }
+                  }
+                }
+              }
+            }
+            .tickets {
+              .content {
+                height: 200px;
+              }
+            }
+          }
+          .result{
+            align-self: center;
+            width: 100%;
+            .content{
+              width: 100%;
+             flex-direction: column;
+              align-items: center;
+              .result_content{
+                width: 100% !important;
+                margin:0 0 60px !important;
+              }
+            }
+            .content>strong{
+              margin-top: 40px;
+            }
+          }
+          button.main_button{
+            align-self: center !important;
+          }
+        }
+      }
+    }
+  }
+
+}

@@ -4,7 +4,7 @@
         .config(mainConfig);
 
 
-    mainConfig.$inject = ['$stateProvider', '$urlRouterProvider', '$locationProvider','$translateProvider','$mdGestureProvider'];
+    mainConfig.$inject = ['$stateProvider', '$urlRouterProvider', '$locationProvider', '$translateProvider', '$mdGestureProvider'];
 
     function mainConfig($stateProvider, $urlRouterProvider, $locationProvider, $translateProvider, $mdGestureProvider) {
 
@@ -20,7 +20,12 @@
                 controller: 'HomepageController',
                 controllerAs: 'vm'
             })
-
+            .state('tours', {
+            url: '/tours',
+            templateUrl: 'templates/tours/tours.html',
+            controller: 'ToursController',
+            controllerAs: 'vm'
+        })
 
 
         // $locationProvider.html5Mode(true);

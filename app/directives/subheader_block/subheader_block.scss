@@ -1,0 +1,61 @@
+.subheader_block {
+  background: {
+    image: url('../../content/img/header_bg.png');
+    position-y: top;
+    position-x: center;
+    size: cover;
+  }
+
+  margin-top: -80px;
+  padding-top: 80px;
+  box-sizing: border-box;
+  .container {
+    display: flex;
+    padding: 0 30px;
+    box-sizing: border-box;
+    p, span {
+      margin: 10px 0;
+      color: $basic_purple;
+      font-size: 20px;
+    }
+    span {
+      font-weight: bold;
+      margin-left: 40px;
+    }
+  }
+  //media
+  @media (min-width: 1500px) {
+
+  }
+
+  @media (min-width: 1200px) and (max-width: 1500px) {
+
+  }
+
+  @media (min-width: 992px) and (max-width: 1200px) {
+
+  }
+
+  @media (min-width: 768px) and (max-width: 992px) {
+
+  }
+
+  @media (min-width: 540px) and (max-width: 768px) {
+    .container {
+    flex-wrap: wrap;
+      span:nth-child(odd){
+        margin-left: 0px;
+      }
+    }
+  }
+
+  @media (max-width: 540px) {
+    background-size: inherit  ;
+    .container {
+      flex-direction: column;
+      span{
+        margin-left: 0px;
+      }
+    }
+  }
+}
