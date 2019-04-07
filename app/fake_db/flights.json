@@ -1,0 +1,89 @@
+{
+  "result": {
+    "searchId": "S:2ed85a67-b40e-4feb-ab5b-8a18692b501f",
+    "flights": [
+      {
+        "id": "m:5:kg9:iz55i96w:IT:066030ahXzLn2hdA:2wm7u",
+        "providerKey": "THY",
+        "pricingType": "FREE_FORM",
+        "packageId": 0,
+        "legs": [
+          {
+            "flightNo": "TK2934",
+            "aircraft": "78G",
+            "carrierCode": "TK",
+            "carrierName": "Turkish Airlines",
+            "operatorCode": "TK",
+            "operatorName": "Turkish Airlines",
+            "validatingCarrierCode": "TK",
+            "departureAirport": "SAW",
+            "departureTime": "2017-11-23T00:10:00.000+0300",
+            "departureAirportName": "Sabiha Gokcen Arpt",
+            "departureCityName": "Istanbul",
+            "localDepartureDate": "2017-11-23 00:10:00",
+            "arrivalAirport": "AYT",
+            "arrivalTime": "2017-11-23T01:25:00.000+0300",
+            "arrivalAirportName": "Antalya Airport",
+            "arrivalCityName": "Antalya",
+            "localArrivalDate": "2017-11-23 01:25:00",
+            "legDurationMinute": 75,
+            "waitTimeBeforeNextLeg": 0
+          }
+        ],
+        "fares": [
+          {
+            "totalSingleAdultFare": 67.51,
+            "currency": "EUR",
+            "type": "PROMO",
+            "baggageAllowances": [
+              {
+                "amount": 20,
+                "type": "KILO",
+                "alternativeType": "K",
+                "flightNumber": "TK2934",
+                "departureAirport": "SAW",
+                "arrivalAirport": "AYT",
+                "carrier": "TK",
+                "classCode": "S"
+              }
+            ],
+            "personFares": [
+              {
+                "total": 62.5,
+                "baseFare": 45.28,
+                "tax": 11.11,
+                "serviceFee": 0.55,
+                "supplement": 0,
+                "agencyCommission": 5.55,
+                "passangerType": "CHILD"
+              },
+              {
+              }
+            ],
+            "segmentNames": [
+              "W"
+            ],
+            "freeSeatCount": 9,
+            "detail": {
+              "price": 11.48,
+              "serviceFee": 1.91,
+              "tax": 10.2,
+              "suplement": 0
+            }
+          }
+        ],
+        "segmentCount": 0,
+        "baggage": -1,
+        "flightTimeHour": 1,
+        "flightTimeMinute": 15,
+        "layoverTime": 0,
+        "hasCip": false,
+        "dayCross": false,
+        "returnFlight": false,
+        "testInfo": {
+          "suitableForTest": true
+        }
+      }
+    ]
+  }
+}

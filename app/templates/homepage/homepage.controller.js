@@ -5,51 +5,43 @@
         .controller('HomepageController', HomepageController);
 
 
-    HomepageController.$inject = ['http'];
+    HomepageController.$inject = ['flightService'];
 
-    function HomepageController(http) {
+    function HomepageController(flightService) {
         var vm = this;
+        vm.flight = {
+            "fromDate": "2017-11-23",
+            "returnDate": "2017-11-30",
+            "adult":"1",
+            "child":"1",
+        };
 
-        vm.send = send;
-
-        vm.list = [
-            {
-                img: '/content/img/homepage/main_1.jpeg',
-                title: 'Солнечная электростанция',
-                link: 'solar_power_plants'
-            },
-            {
-                img: 'content/img/homepage/main_2.jpeg',
-                title: 'Ветрогенератор',
-                link: 'wind_generator'
-            },
-            {
-                img: 'content/img/homepage/main_3.jpg',
-                title: 'Тепловые насосы',
-                link: 'heat_pumps'
-            },
-            {
-                img: 'content/img/homepage/main_4.jpg',
-                title: 'Оборудывание',
-                link: 'equipment'
-            },
-            {
-                img: 'content/img/homepage/main_5.jpg',
-                title: 'Услуги',
-                link: 'services'
-            },
-            {
-                img: 'content/img/homepage/main_6.jpg',
-                title: 'Зелёный тариф',
-                link: 'green_fare'
-            }
-        ];
+        vm.searchModel = {
+            from: '',
+            to: ''
+        };
+        vm.searchTour = searchTour;
+        vm.changeInput = changeInput;
 
 
-        function send(data) {
-            return http.post("mail.php", data);
+        function changeInput(query, type) {
+            vm.flight[type] = '';
+            if (query.length < 3)
+                return false;
+            flightService.getAirport(query).then(function (result) {
+                if (result.length > 0) {
+                    vm.flight[type] = result[0].code;
+                    vm.searchModel[type] = result[0].cityName + " " + result[0].name + " (" + result[0].code + "), " + result[0].countryCode;
+                }
+                console.log(result);
+
+            });
         }
 
-
+        function searchTour() {
+            if (vm.flight.from.length === 3 && vm.flight.to.length === 3)
+                flightService.save(vm.flight);
+            console.log(vm.flight);
+        }
     }
 })();
