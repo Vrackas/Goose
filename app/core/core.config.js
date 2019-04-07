@@ -20,6 +20,19 @@
                 controller: 'HomepageController',
                 controllerAs: 'vm'
             })
+            .state('flights', {
+                url: '/flights',
+                templateUrl: 'templates/flight/flight.html',
+                controller: 'FlightController',
+                controllerAs: 'vm',
+                resolve: {
+                    flights: function (flightService) {
+                        return flightService.getFlights().then(function (result) {
+                            return result;
+                        });
+                    }
+                }
+            })
             .state('tours', {
             url: '/tours',
             templateUrl: 'templates/tours/tours.html',
