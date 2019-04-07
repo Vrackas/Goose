@@ -1063,6 +1063,150 @@ input:focus {
         position: relative;
         right: inherit; } }
 
+.checkout .main_section .container .nav {
+  width: fit-content;
+  padding: 30px; }
+  .checkout .main_section .container .nav p {
+    font-weight: bold;
+    color: #610b52;
+    font-size: 20px; }
+    .checkout .main_section .container .nav p i {
+      margin-right: 10px; }
+
+.checkout .main_section .container .content .accommodation,
+.checkout .main_section .container .content .flight,
+.checkout .main_section .container .content .insurance,
+.checkout .main_section .container .content .guests,
+.checkout .main_section .container .content .contact,
+.checkout .main_section .container .content .provider,
+.checkout .main_section .container .content .price {
+  box-sizing: border-box;
+  width: 100%;
+  margin: 20px;
+  display: flex;
+  border-bottom: 1px solid #610b52;
+  margin-bottom: 40px;
+  justify-content: space-between; }
+  .checkout .main_section .container .content .accommodation h4,
+  .checkout .main_section .container .content .flight h4,
+  .checkout .main_section .container .content .insurance h4,
+  .checkout .main_section .container .content .guests h4,
+  .checkout .main_section .container .content .contact h4,
+  .checkout .main_section .container .content .provider h4,
+  .checkout .main_section .container .content .price h4 {
+    font-size: 22px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #610b52;
+    margin: 10px 0;
+    width: 260px; }
+  .checkout .main_section .container .content .accommodation input,
+  .checkout .main_section .container .content .flight input,
+  .checkout .main_section .container .content .insurance input,
+  .checkout .main_section .container .content .guests input,
+  .checkout .main_section .container .content .contact input,
+  .checkout .main_section .container .content .provider input,
+  .checkout .main_section .container .content .price input {
+    border: none;
+    background: transparent;
+    font-size: 18px;
+    color: #610b52;
+    min-width: 100px;
+    min-height: 50px; }
+  .checkout .main_section .container .content .accommodation input::placeholder,
+  .checkout .main_section .container .content .flight input::placeholder,
+  .checkout .main_section .container .content .insurance input::placeholder,
+  .checkout .main_section .container .content .guests input::placeholder,
+  .checkout .main_section .container .content .contact input::placeholder,
+  .checkout .main_section .container .content .provider input::placeholder,
+  .checkout .main_section .container .content .price input::placeholder {
+    font-size: 18px; }
+  .checkout .main_section .container .content .accommodation p,
+  .checkout .main_section .container .content .flight p,
+  .checkout .main_section .container .content .insurance p,
+  .checkout .main_section .container .content .guests p,
+  .checkout .main_section .container .content .contact p,
+  .checkout .main_section .container .content .provider p,
+  .checkout .main_section .container .content .price p {
+    font-size: 18px;
+    color: #610b52; }
+
+.checkout .main_section .container .content .total {
+  display: flex;
+  justify-content: flex-end; }
+  .checkout .main_section .container .content .total p {
+    font-size: 22px;
+    font-weight: bold; }
+    .checkout .main_section .container .content .total p strong {
+      font-size: 24px;
+      color: #610b52; }
+
+@media (min-width: 992px) and (max-width: 1200px) {
+  .checkout .main_section .container .content .accommodation,
+  .checkout .main_section .container .content .flight,
+  .checkout .main_section .container .content .guests,
+  .checkout .main_section .container .content .contact,
+  .checkout .main_section .container .content .provider {
+    flex-wrap: wrap;
+    justify-content: flex-start; }
+    .checkout .main_section .container .content .accommodation h4,
+    .checkout .main_section .container .content .flight h4,
+    .checkout .main_section .container .content .guests h4,
+    .checkout .main_section .container .content .contact h4,
+    .checkout .main_section .container .content .provider h4 {
+      justify-self: flex-start; } }
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .checkout .main_section .container .content .accommodation,
+  .checkout .main_section .container .content .flight,
+  .checkout .main_section .container .content .guests,
+  .checkout .main_section .container .content .contact,
+  .checkout .main_section .container .content .provider {
+    flex-wrap: wrap;
+    justify-content: flex-start; }
+    .checkout .main_section .container .content .accommodation h4,
+    .checkout .main_section .container .content .flight h4,
+    .checkout .main_section .container .content .guests h4,
+    .checkout .main_section .container .content .contact h4,
+    .checkout .main_section .container .content .provider h4 {
+      justify-self: flex-start; } }
+
+@media (min-width: 540px) and (max-width: 768px) {
+  .checkout .main_section .container .content .accommodation,
+  .checkout .main_section .container .content .flight,
+  .checkout .main_section .container .content .guests,
+  .checkout .main_section .container .content .contact,
+  .checkout .main_section .container .content .provider,
+  .checkout .main_section .container .content .insurance {
+    flex-wrap: wrap;
+    justify-content: flex-start; }
+    .checkout .main_section .container .content .accommodation h4,
+    .checkout .main_section .container .content .flight h4,
+    .checkout .main_section .container .content .guests h4,
+    .checkout .main_section .container .content .contact h4,
+    .checkout .main_section .container .content .provider h4,
+    .checkout .main_section .container .content .insurance h4 {
+      justify-self: flex-start; } }
+
+@media (max-width: 540px) {
+  .checkout .main_section .container .content .accommodation,
+  .checkout .main_section .container .content .flight,
+  .checkout .main_section .container .content .guests,
+  .checkout .main_section .container .content .contact,
+  .checkout .main_section .container .content .provider,
+  .checkout .main_section .container .content .insurance,
+  .checkout .main_section .container .content .price {
+    flex-wrap: wrap;
+    justify-content: flex-start; }
+    .checkout .main_section .container .content .accommodation h4,
+    .checkout .main_section .container .content .flight h4,
+    .checkout .main_section .container .content .guests h4,
+    .checkout .main_section .container .content .contact h4,
+    .checkout .main_section .container .content .provider h4,
+    .checkout .main_section .container .content .insurance h4,
+    .checkout .main_section .container .content .price h4 {
+      justify-self: flex-start; } }
+
 #header_site {
   transition: .8s;
   width: 100%;

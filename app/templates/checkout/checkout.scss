@@ -1,0 +1,181 @@
+.checkout {
+  .main_section {
+    .container {
+      .nav {
+        width: fit-content;
+        padding: 30px;
+        p {
+          font-weight: bold;
+          color: $basic_purple;
+          font-size: 20px;
+          i {
+            margin-right: 10px;
+          }
+        }
+      }
+      .content {
+        .accommodation,
+        .flight,
+        .insurance,
+        .guests,
+        .contact,
+        .provider,
+        .price {
+          box-sizing: border-box;
+          width: 100%;
+          margin: 20px;
+          display: flex;
+          border-bottom: 1px solid $basic_purple;
+          margin-bottom: 40px;
+          justify-content: space-between;
+
+          h4 {
+            font-size: 22px;
+            font-weight: 600;
+            text-transform: uppercase;
+            color: $basic_purple;
+            margin: 10px 0;
+            width: 260px;
+          }
+          input {
+            border: none;
+            background: transparent;
+            font-size: 18px;
+            color: $basic_purple;
+            min-width: 100px;
+            min-height: 50px;
+          }
+          input::placeholder {
+            font-size: 18px;
+          }
+          p {
+            font-size: 18px;
+            color: $basic_purple;
+          }
+        }
+
+        .total {
+          display: flex;
+          justify-content: flex-end;
+          p {
+            font: {
+              size: 22px;
+              weight: bold;
+            }
+            strong {
+              font-size: 24px;
+              color: $basic_purple;
+            }
+          }
+        }
+      }
+    }
+  }
+  //media
+  @media (min-width: 1500px) {
+
+  }
+
+  @media (min-width: 1200px) and (max-width: 1500px) {
+
+  }
+
+  @media (min-width: 992px) and (max-width: 1200px) {
+    .main_section {
+      .container {
+        .content {
+          .accommodation,
+          .flight,
+          .guests,
+          .contact,
+          .provider,
+          {
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            h4 {
+              justify-self: flex-start;
+            }
+          }
+          .insurance,
+          .price {
+
+          }
+        }
+      }
+    }
+  }
+
+  @media (min-width: 768px) and (max-width: 992px) {
+    .main_section {
+      .container {
+        .content {
+          .accommodation,
+          .flight,
+          .guests,
+          .contact,
+          .provider,
+          {
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            h4 {
+              justify-self: flex-start;
+            }
+          }
+          .insurance,
+          .price {
+
+          }
+        }
+      }
+    }
+  }
+
+  @media (min-width: 540px) and (max-width: 768px) {
+    .main_section {
+      .container {
+        .content {
+          .accommodation,
+          .flight,
+          .guests,
+          .contact,
+          .provider,
+          .insurance{
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            h4 {
+              justify-self: flex-start;
+            }
+          }
+          .insurance,
+          .price {
+
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: 540px) {
+    .main_section {
+      .container {
+        .content {
+          .accommodation,
+          .flight,
+          .guests,
+          .contact,
+          .provider,
+          .insurance,
+          .price {
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            h4 {
+              justify-self: flex-start;
+            }
+          }
+
+        }
+      }
+    }
+  }
+
+}

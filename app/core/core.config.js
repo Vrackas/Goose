@@ -57,6 +57,12 @@
                 controller: 'HotelInfoController',
                 controllerAs: 'vm'
             })
+            .state('checkout', {
+                url: '/checkout',
+                templateUrl: 'templates/checkout/checkout.html',
+                controller: 'CheckoutController',
+                controllerAs: 'vm'
+            })
 
 
         // $locationProvider.html5Mode(true);
