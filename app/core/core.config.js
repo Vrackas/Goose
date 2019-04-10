@@ -18,7 +18,14 @@
                 url: '/',
                 templateUrl: 'templates/homepage/homepage.html',
                 controller: 'HomepageController',
-                controllerAs: 'vm'
+                controllerAs: 'vm',
+                resolve: {
+                    airports: function (flightService) {
+                        return flightService.getAirport().then(function (result) {
+                            return result;
+                        });
+                    }
+                }
             })
             .state('flights', {
                 url: '/flights',

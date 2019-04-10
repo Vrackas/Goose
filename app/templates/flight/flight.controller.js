@@ -8,6 +8,7 @@
 
     function FlightController(flightService, flights) {
         // console.log(flights);
+        debugger
         let vm = this;
         vm.flights = flights.flights;
         vm.filterByStops = filterByStops;

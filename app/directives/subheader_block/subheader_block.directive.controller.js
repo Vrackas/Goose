@@ -10,7 +10,7 @@
 
     function SubheaderBlockController($state, $timeout, $translate, flightService) {
         let vm = this;
-        // vm.tour = flightService.getFlightObject();
+        vm.tour = flightService.getFlightObject();
         // console.log(vm.tour);
 
     }

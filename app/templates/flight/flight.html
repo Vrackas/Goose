@@ -61,10 +61,10 @@
 
                 </div>
                 <div class="content_content">
-                    <div class="tags">
-                        <div>Bali (any)</div>
-                        <div>04.05.2019 - 12.05.2019</div>
-                    </div>
+                    <!--<div class="tags">-->
+                        <!--<div>Bali (any)</div>-->
+                        <!--<div>04.05.2019 - 12.05.2019</div>-->
+                    <!--</div>-->
                     <div class="proposals">
                         <h3>123 Proposals</h3>
                     </div>
@@ -178,7 +178,9 @@
                                         m</p>
                                 </div>
                                 <div class="info">
-                                    <div class="info_day">Sun, 04 May</div>
+                                    <div class="info_day">
+                                        {{vm.transformDay(vm.flights[$index+1].legs[0].localDepartureDate)}}
+                                    </div>
                                     <div class="info_time">{{vm.flights[$index+1].legs[0].carrierName}}
                                         <p>{{vm.transformDate(vm.flights[$index+1].legs[0].localDepartureDate)}} -
                                             {{vm.transformDate(vm.flights[$index+1].legs[0].localArrivalDate)}}</p>

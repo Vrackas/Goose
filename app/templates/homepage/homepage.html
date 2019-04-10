@@ -10,53 +10,51 @@
                     <div>
                         <button ng-click="vm.personMath(false)">-</button>
                         <i class="fas fa-users"></i>
-                        <p ng-model="vm.persons">{{vm.persons}}</p>
+                        <p ng-model="vm.flight.adult">{{vm.flight.adult}}</p>
                         <button ng-click="vm.personMath(true)">+</button>
                     </div>
                 </div>
                 <div class="some">
                     <div class="input_container">
                         <!--<input type="text" ng-model="vm.searchModel.from" placeholder="From:"-->
-                               <!--ng-change="vm.changeInput(vm.searchModel.from,'from')">-->
+                        <!--ng-change="vm.changeInput(vm.searchModel.from,'from')">-->
                         <md-content>
-                            <form ng-submit="$event.preventDefault()">
-                                <md-autocomplete
-                                        md-search-text="vm.searchModel.from"
-                                        md-selected-item="vm.selectedItem"
-                                        md-items="item in vm.test"
-                                        md-item-text="item.display"
-                                        md-min-length="0" ng-model="vm.searchModel.from" placeholder="From:"
-                                        ng-change="vm.changeInput(vm.searchModel.from,'from')">
+                            <md-autocomplete
+                                    md-search-text="vm.searchModel.from"
+                                    md-selected-item="vm.flight.fromAirport"
+                                    md-items="item in vm.from"
+                                    md-item-text='item.cityName + " " + item.name + " (" + item.code + "), " + item.countryCode'
+                                    md-min-length="0" ng-model="vm.searchModel.from" placeholder="From:"
+                                    md-search-text-change="vm.changeInput(vm.searchModel.from,'from')">
 
-                                    <md-item-template>
+                                <md-item-template>
                                         <span md-highlight-text="vm.searchModel.from">
-                                            {{item}}
+                                            {{item.cityName + " " + item.name + " (" + item.code + "), " + item.countryCode}}
                                         </span>
-                                    </md-item-template>
-                                    <md-not-found>
-                                        No states matching "{{vm.searchModel.from}}" were found.
-                                    </md-not-found>
-                                </md-autocomplete>
-                            </form>
+                                </md-item-template>
+                                <md-not-found>
+                                    No states matching "{{vm.searchModel.from}}" were found.
+                                </md-not-found>
+                            </md-autocomplete>
                         </md-content>
                     </div>
                     <div class="input_container">
                         <!--<input type="text" ng-model="vm.searchModel.to" placeholder="To:"-->
                         <!--ng-change="vm.changeInput(vm.searchModel.to,'to')">-->
                         <md-content>
-                            <form ng-submit="$event.preventDefault()">
+                            <form>
                                 <md-autocomplete
                                         md-search-text="vm.searchModel.to"
-                                        md-selected-item="vm.selectedItem"
-                                        md-items="item in vm.test"
-                                        md-item-text="item.display"
+                                        md-selected-item="vm.flight.toAirport"
+                                        md-items="item in vm.to"
+                                        md-item-text='item.cityName + " " + item.name + " (" + item.code + "), " + item.countryCode'
                                         md-min-length="0" ng-model="vm.searchModel.to" placeholder="To:"
-                                        ng-change="vm.changeInput(vm.searchModel.to,'to')">
+                                        md-search-text-change="vm.changeInput(vm.searchModel.to,'to')">
 
                                     <md-item-template>
                                                     <span md-highlight-text="vm.searchModel.to">
-                                                        {{item}}
-                                                    </span>
+                                            {{item.cityName + " " + item.name + " (" + item.code + "), " + item.countryCode}}
+                                        </span>
                                     </md-item-template>
                                     <md-not-found>
                                         No states matching "{{vm.searchModel.to}}" were found.
@@ -66,8 +64,8 @@
                         </md-content>
                     </div>
                     <div class="input_container">
-                        <md-datepicker ng-model="vm.dateFrom"></md-datepicker>
-                        <md-datepicker ng-model="vm.dateTo"></md-datepicker>
+                        <md-datepicker ng-model="vm.flight.fromDate"></md-datepicker>
+                        <md-datepicker ng-model="vm.flight.returnDate"></md-datepicker>
                     </div>
                 </div>
 
