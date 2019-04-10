@@ -1,89 +1,3365 @@
 {
-  "result": {
-    "searchId": "S:2ed85a67-b40e-4feb-ab5b-8a18692b501f",
-    "flights": [
-      {
-        "id": "m:5:kg9:iz55i96w:IT:066030ahXzLn2hdA:2wm7u",
-        "providerKey": "THY",
-        "pricingType": "FREE_FORM",
-        "packageId": 0,
-        "legs": [
-          {
-            "flightNo": "TK2934",
-            "aircraft": "78G",
-            "carrierCode": "TK",
-            "carrierName": "Turkish Airlines",
-            "operatorCode": "TK",
-            "operatorName": "Turkish Airlines",
-            "validatingCarrierCode": "TK",
-            "departureAirport": "SAW",
-            "departureTime": "2017-11-23T00:10:00.000+0300",
-            "departureAirportName": "Sabiha Gokcen Arpt",
-            "departureCityName": "Istanbul",
-            "localDepartureDate": "2017-11-23 00:10:00",
-            "arrivalAirport": "AYT",
-            "arrivalTime": "2017-11-23T01:25:00.000+0300",
-            "arrivalAirportName": "Antalya Airport",
-            "arrivalCityName": "Antalya",
-            "localArrivalDate": "2017-11-23 01:25:00",
-            "legDurationMinute": 75,
-            "waitTimeBeforeNextLeg": 0
-          }
-        ],
-        "fares": [
-          {
-            "totalSingleAdultFare": 67.51,
-            "currency": "EUR",
-            "type": "PROMO",
-            "baggageAllowances": [
-              {
-                "amount": 20,
-                "type": "KILO",
-                "alternativeType": "K",
-                "flightNumber": "TK2934",
-                "departureAirport": "SAW",
-                "arrivalAirport": "AYT",
-                "carrier": "TK",
-                "classCode": "S"
-              }
-            ],
-            "personFares": [
-              {
-                "total": 62.5,
-                "baseFare": 45.28,
-                "tax": 11.11,
-                "serviceFee": 0.55,
-                "supplement": 0,
-                "agencyCommission": 5.55,
-                "passangerType": "CHILD"
-              },
-              {
-              }
-            ],
-            "segmentNames": [
-              "W"
-            ],
-            "freeSeatCount": 9,
-            "detail": {
-              "price": 11.48,
-              "serviceFee": 1.91,
-              "tax": 10.2,
-              "suplement": 0
-            }
-          }
-        ],
-        "segmentCount": 0,
-        "baggage": -1,
-        "flightTimeHour": 1,
-        "flightTimeMinute": 15,
-        "layoverTime": 0,
-        "hasCip": false,
-        "dayCross": false,
-        "returnFlight": false,
-        "testInfo": {
-          "suitableForTest": true
+  "searchId": "S:e2b4ba11-e595-4ec8-8abf-d53559d68786",
+  "flights": [
+    {
+      "id": "m:20b2:6kug:jubkn9tk:IT:021061WqRvMeP7tm:976r",
+      "providerKey": "Amadeus ALFA",
+      "pricingType": "PACKAGED",
+      "packageId": 1,
+      "legs": [
+        {
+          "flightNo": "QR298",
+          "aircraft": "320",
+          "carrierCode": "QR",
+          "carrierName": "Qatar Airways",
+          "operatorCode": "QR",
+          "operatorName": "Qatar Airways",
+          "validatingCarrierCode": "QR",
+          "departureAirport": "KBP",
+          "localDepartureDate": "2019-04-23 23:40:00",
+          "departureTime": "2019-04-23T23:40:00.000+0300",
+          "departureAirportName": "Borispol Arpt",
+          "departureCityName": "Kiev",
+          "arrivalAirport": "DOH",
+          "localArrivalDate": "2019-04-24 05:05:00",
+          "arrivalTime": "2019-04-24T05:05:00.000+0300",
+          "arrivalAirportName": "Doha International Arpt",
+          "arrivalCityName": "Doha",
+          "numStops": "0",
+          "legDurationMinute": 325,
+          "waitTimeBeforeNextLeg": 205
+        },
+        {
+          "flightNo": "QR960",
+          "aircraft": "77W",
+          "carrierCode": "QR",
+          "carrierName": "Qatar Airways",
+          "operatorCode": "QR",
+          "operatorName": "Qatar Airways",
+          "validatingCarrierCode": "QR",
+          "departureAirport": "DOH",
+          "localDepartureDate": "2019-04-24 08:30:00",
+          "departureTime": "2019-04-24T08:30:00.000+0300",
+          "departureAirportName": "Doha International Arpt",
+          "departureCityName": "Doha",
+          "arrivalAirport": "DPS",
+          "localArrivalDate": "2019-04-24 23:10:00",
+          "arrivalTime": "2019-04-24T23:10:00.000+0300",
+          "arrivalAirportName": "Ngurah Rai Arpt",
+          "arrivalCityName": "Denpasar Bali",
+          "arrivalTerminal": "I",
+          "numStops": "0",
+          "legDurationMinute": 580,
+          "waitTimeBeforeNextLeg": 0
         }
+      ],
+      "fares": [
+        {
+          "totalSingleAdultFare": 701.25,
+          "currency": "EUR",
+          "type": "ECONOMY",
+          "baggageAllowances": [
+            {
+              "amount": 30,
+              "type": "KILO",
+              "alternativeType": "K",
+              "flightNumber": "QR298",
+              "departureAirport": "KBP",
+              "arrivalAirport": "DOH",
+              "carrier": "QR",
+              "classCode": "N"
+            },
+            {
+              "amount": 30,
+              "type": "KILO",
+              "alternativeType": "K",
+              "flightNumber": "QR960",
+              "departureAirport": "DOH",
+              "arrivalAirport": "DPS",
+              "carrier": "QR",
+              "classCode": "N"
+            }
+          ],
+          "personFares": [
+            {
+              "total": 701.25,
+              "baseFare": 375.72,
+              "tax": 301.13,
+              "serviceFee": 6.59,
+              "supplement": 0,
+              "agencyCommission": 17.79,
+              "passangerType": "ADULT",
+              "baggageAllowances": [
+                {
+                  "amount": 30,
+                  "type": "KILO",
+                  "alternativeType": "K",
+                  "flightNumber": "QR298",
+                  "departureAirport": "KBP",
+                  "arrivalAirport": "DOH",
+                  "carrier": "QR",
+                  "classCode": "N"
+                },
+                {
+                  "amount": 30,
+                  "type": "KILO",
+                  "alternativeType": "K",
+                  "flightNumber": "QR960",
+                  "departureAirport": "DOH",
+                  "arrivalAirport": "DPS",
+                  "carrier": "QR",
+                  "classCode": "N"
+                }
+              ]
+            },
+            {
+              "total": 609.4,
+              "baseFare": 283.87,
+              "tax": 301.13,
+              "serviceFee": 6.59,
+              "supplement": 0,
+              "agencyCommission": 17.79,
+              "passangerType": "CHILD",
+              "baggageAllowances": [
+                {
+                  "amount": 30,
+                  "type": "KILO",
+                  "alternativeType": "K",
+                  "flightNumber": "QR298",
+                  "departureAirport": "KBP",
+                  "arrivalAirport": "DOH",
+                  "carrier": "QR",
+                  "classCode": "N"
+                },
+                {
+                  "amount": 30,
+                  "type": "KILO",
+                  "alternativeType": "K",
+                  "flightNumber": "QR960",
+                  "departureAirport": "DOH",
+                  "arrivalAirport": "DPS",
+                  "carrier": "QR",
+                  "classCode": "N"
+                }
+              ]
+            }
+          ],
+          "segmentNames": [
+            "N",
+            "N"
+          ],
+          "freeSeatCount": 9,
+          "detail": {
+            "price": 375.72,
+            "serviceFee": 24.39,
+            "tax": 301.13,
+            "suplement": 0
+          }
+        }
+      ],
+      "segmentCount": 2,
+      "baggage": -1,
+      "flightTimeHour": 15,
+      "flightTimeMinute": 5,
+      "layoverTime": 205,
+      "hasCip": false,
+      "dayCross": true,
+      "returnFlight": false,
+      "testInfo": {
+        "suitableForTest": false
       }
-    ]
-  }
+    },
+    {
+      "id": "m:20b2:6kug:jubkn9tk:IT:021061gbVQ8e6EIm:976s",
+      "providerKey": "Amadeus ALFA",
+      "pricingType": "PACKAGED",
+      "packageId": 1,
+      "legs": [
+        {
+          "flightNo": "QR961",
+          "aircraft": "77W",
+          "carrierCode": "QR",
+          "carrierName": "Qatar Airways",
+          "operatorCode": "QR",
+          "operatorName": "Qatar Airways",
+          "validatingCarrierCode": "QR",
+          "departureAirport": "DPS",
+          "localDepartureDate": "2019-05-01 00:35:00",
+          "departureTime": "2019-05-01T00:35:00.000+0300",
+          "departureAirportName": "Ngurah Rai Arpt",
+          "departureCityName": "Denpasar Bali",
+          "departureTerminal": "I",
+          "arrivalAirport": "DOH",
+          "localArrivalDate": "2019-05-01 05:35:00",
+          "arrivalTime": "2019-05-01T05:35:00.000+0300",
+          "arrivalAirportName": "Doha International Arpt",
+          "arrivalCityName": "Doha",
+          "numStops": "0",
+          "legDurationMinute": 600,
+          "waitTimeBeforeNextLeg": 65
+        },
+        {
+          "flightNo": "QR295",
+          "aircraft": "320",
+          "carrierCode": "QR",
+          "carrierName": "Qatar Airways",
+          "operatorCode": "QR",
+          "operatorName": "Qatar Airways",
+          "validatingCarrierCode": "QR",
+          "departureAirport": "DOH",
+          "localDepartureDate": "2019-05-01 06:40:00",
+          "departureTime": "2019-05-01T06:40:00.000+0300",
+          "departureAirportName": "Doha International Arpt",
+          "departureCityName": "Doha",
+          "arrivalAirport": "KBP",
+          "localArrivalDate": "2019-05-01 12:20:00",
+          "arrivalTime": "2019-05-01T12:20:00.000+0300",
+          "arrivalAirportName": "Borispol Arpt",
+          "arrivalCityName": "Kiev",
+          "numStops": "0",
+          "legDurationMinute": 340,
+          "waitTimeBeforeNextLeg": 0
+        }
+      ],
+      "fares": [
+        {
+          "totalSingleAdultFare": 701.25,
+          "currency": "EUR",
+          "type": "ECONOMY",
+          "baggageAllowances": [
+            {
+              "amount": 30,
+              "type": "KILO",
+              "alternativeType": "K",
+              "flightNumber": "QR961",
+              "departureAirport": "DPS",
+              "arrivalAirport": "DOH",
+              "carrier": "QR",
+              "classCode": "N"
+            },
+            {
+              "amount": 30,
+              "type": "KILO",
+              "alternativeType": "K",
+              "flightNumber": "QR295",
+              "departureAirport": "DOH",
+              "arrivalAirport": "KBP",
+              "carrier": "QR",
+              "classCode": "N"
+            }
+          ],
+          "personFares": [
+            {
+              "total": 701.25,
+              "baseFare": 375.72,
+              "tax": 301.13,
+              "serviceFee": 6.59,
+              "supplement": 0,
+              "agencyCommission": 17.79,
+              "passangerType": "ADULT",
+              "baggageAllowances": [
+                {
+                  "amount": 30,
+                  "type": "KILO",
+                  "alternativeType": "K",
+                  "flightNumber": "QR961",
+                  "departureAirport": "DPS",
+                  "arrivalAirport": "DOH",
+                  "carrier": "QR",
+                  "classCode": "N"
+                },
+                {
+                  "amount": 30,
+                  "type": "KILO",
+                  "alternativeType": "K",
+                  "flightNumber": "QR295",
+                  "departureAirport": "DOH",
+                  "arrivalAirport": "KBP",
+                  "carrier": "QR",
+                  "classCode": "N"
+                }
+              ]
+            },
+            {
+              "total": 609.4,
+              "baseFare": 283.87,
+              "tax": 301.13,
+              "serviceFee": 6.59,
+              "supplement": 0,
+              "agencyCommission": 17.79,
+              "passangerType": "CHILD",
+              "baggageAllowances": [
+                {
+                  "amount": 30,
+                  "type": "KILO",
+                  "alternativeType": "K",
+                  "flightNumber": "QR961",
+                  "departureAirport": "DPS",
+                  "arrivalAirport": "DOH",
+                  "carrier": "QR",
+                  "classCode": "N"
+                },
+                {
+                  "amount": 30,
+                  "type": "KILO",
+                  "alternativeType": "K",
+                  "flightNumber": "QR295",
+                  "departureAirport": "DOH",
+                  "arrivalAirport": "KBP",
+                  "carrier": "QR",
+                  "classCode": "N"
+                }
+              ]
+            }
+          ],
+          "segmentNames": [
+            "N",
+            "N"
+          ],
+          "freeSeatCount": 9,
+          "detail": {
+            "price": 375.72,
+            "serviceFee": 24.39,
+            "tax": 301.13,
+            "suplement": 0
+          }
+        }
+      ],
+      "segmentCount": 2,
+      "baggage": -1,
+      "flightTimeHour": 15,
+      "flightTimeMinute": 40,
+      "layoverTime": 65,
+      "hasCip": false,
+      "dayCross": false,
+      "returnFlight": true,
+      "testInfo": {
+        "suitableForTest": false
+      }
+    },
+    {
+      "id": "m:20b2:6kug:jubkn9tk:IT:021061WqRvMeP7tm:976t",
+      "providerKey": "Amadeus ALFA",
+      "pricingType": "PACKAGED",
+      "packageId": 1,
+      "legs": [
+        {
+          "flightNo": "QR298",
+          "aircraft": "320",
+          "carrierCode": "QR",
+          "carrierName": "Qatar Airways",
+          "operatorCode": "QR",
+          "operatorName": "Qatar Airways",
+          "validatingCarrierCode": "QR",
+          "departureAirport": "KBP",
+          "localDepartureDate": "2019-04-23 23:40:00",
+          "departureTime": "2019-04-23T23:40:00.000+0300",
+          "departureAirportName": "Borispol Arpt",
+          "departureCityName": "Kiev",
+          "arrivalAirport": "DOH",
+          "localArrivalDate": "2019-04-24 05:05:00",
+          "arrivalTime": "2019-04-24T05:05:00.000+0300",
+          "arrivalAirportName": "Doha International Arpt",
+          "arrivalCityName": "Doha",
+          "numStops": "0",
+          "legDurationMinute": 325,
+          "waitTimeBeforeNextLeg": 205
+        },
+        {
+          "flightNo": "QR960",
+          "aircraft": "77W",
+          "carrierCode": "QR",
+          "carrierName": "Qatar Airways",
+          "operatorCode": "QR",
+          "operatorName": "Qatar Airways",
+          "validatingCarrierCode": "QR",
+          "departureAirport": "DOH",
+          "localDepartureDate": "2019-04-24 08:30:00",
+          "departureTime": "2019-04-24T08:30:00.000+0300",
+          "departureAirportName": "Doha International Arpt",
+          "departureCityName": "Doha",
+          "arrivalAirport": "DPS",
+          "localArrivalDate": "2019-04-24 23:10:00",
+          "arrivalTime": "2019-04-24T23:10:00.000+0300",
+          "arrivalAirportName": "Ngurah Rai Arpt",
+          "arrivalCityName": "Denpasar Bali",
+          "arrivalTerminal": "I",
+          "numStops": "0",
+          "legDurationMinute": 580,
+          "waitTimeBeforeNextLeg": 0
+        }
+      ],
+      "fares": [
+        {
+          "totalSingleAdultFare": 701.25,
+          "currency": "EUR",
+          "type": "ECONOMY",
+          "baggageAllowances": [
+            {
+              "amount": 30,
+              "type": "KILO",
+              "alternativeType": "K",
+              "flightNumber": "QR298",
+              "departureAirport": "KBP",
+              "arrivalAirport": "DOH",
+              "carrier": "QR",
+              "classCode": "N"
+            },
+            {
+              "amount": 30,
+              "type": "KILO",
+              "alternativeType": "K",
+              "flightNumber": "QR960",
+              "departureAirport": "DOH",
+              "arrivalAirport": "DPS",
+              "carrier": "QR",
+              "classCode": "N"
+            }
+          ],
+          "personFares": [
+            {
+              "total": 701.25,
+              "baseFare": 375.72,
+              "tax": 301.13,
+              "serviceFee": 6.59,
+              "supplement": 0,
+              "agencyCommission": 17.79,
+              "passangerType": "ADULT",
+              "baggageAllowances": [
+                {
+                  "amount": 30,
+                  "type": "KILO",
+                  "alternativeType": "K",
+                  "flightNumber": "QR298",
+                  "departureAirport": "KBP",
+                  "arrivalAirport": "DOH",
+                  "carrier": "QR",
+                  "classCode": "N"
+                },
+                {
+                  "amount": 30,
+                  "type": "KILO",
+                  "alternativeType": "K",
+                  "flightNumber": "QR960",
+                  "departureAirport": "DOH",
+                  "arrivalAirport": "DPS",
+                  "carrier": "QR",
+                  "classCode": "N"
+                }
+              ]
+            },
+            {
+              "total": 609.4,
+              "baseFare": 283.87,
+              "tax": 301.13,
+              "serviceFee": 6.59,
+              "supplement": 0,
+              "agencyCommission": 17.79,
+              "passangerType": "CHILD",
+              "baggageAllowances": [
+                {
+                  "amount": 30,
+                  "type": "KILO",
+                  "alternativeType": "K",
+                  "flightNumber": "QR298",
+                  "departureAirport": "KBP",
+                  "arrivalAirport": "DOH",
+                  "carrier": "QR",
+                  "classCode": "N"
+                },
+                {
+                  "amount": 30,
+                  "type": "KILO",
+                  "alternativeType": "K",
+                  "flightNumber": "QR960",
+                  "departureAirport": "DOH",
+                  "arrivalAirport": "DPS",
+                  "carrier": "QR",
+                  "classCode": "N"
+                }
+              ]
+            }
+          ],
+          "segmentNames": [
+            "N",
+            "N"
+          ],
+          "freeSeatCount": 9,
+          "detail": {
+            "price": 375.72,
+            "serviceFee": 24.39,
+            "tax": 301.13,
+            "suplement": 0
+          }
+        }
+      ],
+      "segmentCount": 2,
+      "baggage": -1,
+      "flightTimeHour": 15,
+      "flightTimeMinute": 5,
+      "layoverTime": 205,
+      "hasCip": false,
+      "dayCross": true,
+      "returnFlight": false,
+      "testInfo": {
+        "suitableForTest": false
+      }
+    },
+    {
+      "id": "m:20b2:6kug:jubkn9tk:IT:021061ziVfdfoeM5:976u",
+      "providerKey": "Amadeus ALFA",
+      "pricingType": "PACKAGED",
+      "packageId": 1,
+      "legs": [
+        {
+          "flightNo": "QR965",
+          "aircraft": "788",
+          "carrierCode": "QR",
+          "carrierName": "Qatar Airways",
+          "operatorCode": "QR",
+          "operatorName": "Qatar Airways",
+          "validatingCarrierCode": "QR",
+          "departureAirport": "DPS",
+          "localDepartureDate": "2019-05-01 09:25:00",
+          "departureTime": "2019-05-01T09:25:00.000+0300",
+          "departureAirportName": "Ngurah Rai Arpt",
+          "departureCityName": "Denpasar Bali",
+          "departureTerminal": "I",
+          "arrivalAirport": "DOH",
+          "localArrivalDate": "2019-05-01 14:00:00",
+          "arrivalTime": "2019-05-01T14:00:00.000+0300",
+          "arrivalAirportName": "Doha International Arpt",
+          "arrivalCityName": "Doha",
+          "numStops": "0",
+          "legDurationMinute": 575,
+          "waitTimeBeforeNextLeg": 100
+        },
+        {
+          "flightNo": "QR297",
+          "aircraft": "320",
+          "carrierCode": "QR",
+          "carrierName": "Qatar Airways",
+          "operatorCode": "QR",
+          "operatorName": "Qatar Airways",
+          "validatingCarrierCode": "QR",
+          "departureAirport": "DOH",
+          "localDepartureDate": "2019-05-01 15:40:00",
+          "departureTime": "2019-05-01T15:40:00.000+0300",
+          "departureAirportName": "Doha International Arpt",
+          "departureCityName": "Doha",
+          "arrivalAirport": "KBP",
+          "localArrivalDate": "2019-05-01 21:10:00",
+          "arrivalTime": "2019-05-01T21:10:00.000+0300",
+          "arrivalAirportName": "Borispol Arpt",
+          "arrivalCityName": "Kiev",
+          "numStops": "0",
+          "legDurationMinute": 330,
+          "waitTimeBeforeNextLeg": 0
+        }
+      ],
+      "fares": [
+        {
+          "totalSingleAdultFare": 701.25,
+          "currency": "EUR",
+          "type": "ECONOMY",
+          "baggageAllowances": [
+            {
+              "amount": 30,
+              "type": "KILO",
+              "alternativeType": "K",
+              "flightNumber": "QR965",
+              "departureAirport": "DPS",
+              "arrivalAirport": "DOH",
+              "carrier": "QR",
+              "classCode": "N"
+            },
+            {
+              "amount": 30,
+              "type": "KILO",
+              "alternativeType": "K",
+              "flightNumber": "QR297",
+              "departureAirport": "DOH",
+              "arrivalAirport": "KBP",
+              "carrier": "QR",
+              "classCode": "N"
+            }
+          ],
+          "personFares": [
+            {
+              "total": 701.25,
+              "baseFare": 375.72,
+              "tax": 301.13,
+              "serviceFee": 6.59,
+              "supplement": 0,
+              "agencyCommission": 17.79,
+              "passangerType": "ADULT",
+              "baggageAllowances": [
+                {
+                  "amount": 30,
+                  "type": "KILO",
+                  "alternativeType": "K",
+                  "flightNumber": "QR965",
+                  "departureAirport": "DPS",
+                  "arrivalAirport": "DOH",
+                  "carrier": "QR",
+                  "classCode": "N"
+                },
+                {
+                  "amount": 30,
+                  "type": "KILO",
+                  "alternativeType": "K",
+                  "flightNumber": "QR297",
+                  "departureAirport": "DOH",
+                  "arrivalAirport": "KBP",
+                  "carrier": "QR",
+                  "classCode": "N"
+                }
+              ]
+            },
+            {
+              "total": 609.4,
+              "baseFare": 283.87,
+              "tax": 301.13,
+              "serviceFee": 6.59,
+              "supplement": 0,
+              "agencyCommission": 17.79,
+              "passangerType": "CHILD",
+              "baggageAllowances": [
+                {
+                  "amount": 30,
+                  "type": "KILO",
+                  "alternativeType": "K",
+                  "flightNumber": "QR965",
+                  "departureAirport": "DPS",
+                  "arrivalAirport": "DOH",
+                  "carrier": "QR",
+                  "classCode": "N"
+                },
+                {
+                  "amount": 30,
+                  "type": "KILO",
+                  "alternativeType": "K",
+                  "flightNumber": "QR297",
+                  "departureAirport": "DOH",
+                  "arrivalAirport": "KBP",
+                  "carrier": "QR",
+                  "classCode": "N"
+                }
+              ]
+            }
+          ],
+          "segmentNames": [
+            "N",
+            "N"
+          ],
+          "freeSeatCount": 9,
+          "detail": {
+            "price": 375.72,
+            "serviceFee": 24.39,
+            "tax": 301.13,
+            "suplement": 0
+          }
+        }
+      ],
+      "segmentCount": 2,
+      "baggage": -1,
+      "flightTimeHour": 15,
+      "flightTimeMinute": 5,
+      "layoverTime": 100,
+      "hasCip": false,
+      "dayCross": false,
+      "returnFlight": true,
+      "testInfo": {
+        "suitableForTest": false
+      }
+    },
+    {
+      "id": "m:20b2:6kug:jubkn9tk:IT:021061mFY6YOGvxR:976v",
+      "providerKey": "Amadeus ALFA",
+      "pricingType": "PACKAGED",
+      "packageId": 1,
+      "legs": [
+        {
+          "flightNo": "QR296",
+          "aircraft": "332",
+          "carrierCode": "QR",
+          "carrierName": "Qatar Airways",
+          "operatorCode": "QR",
+          "operatorName": "Qatar Airways",
+          "validatingCarrierCode": "QR",
+          "departureAirport": "KBP",
+          "localDepartureDate": "2019-04-23 13:25:00",
+          "departureTime": "2019-04-23T13:25:00.000+0300",
+          "departureAirportName": "Borispol Arpt",
+          "departureCityName": "Kiev",
+          "arrivalAirport": "DOH",
+          "localArrivalDate": "2019-04-23 18:50:00",
+          "arrivalTime": "2019-04-23T18:50:00.000+0300",
+          "arrivalAirportName": "Doha International Arpt",
+          "arrivalCityName": "Doha",
+          "numStops": "0",
+          "legDurationMinute": 325,
+          "waitTimeBeforeNextLeg": 480
+        },
+        {
+          "flightNo": "QR962",
+          "aircraft": "77W",
+          "carrierCode": "QR",
+          "carrierName": "Qatar Airways",
+          "operatorCode": "QR",
+          "operatorName": "Qatar Airways",
+          "validatingCarrierCode": "QR",
+          "departureAirport": "DOH",
+          "localDepartureDate": "2019-04-24 02:50:00",
+          "departureTime": "2019-04-24T02:50:00.000+0300",
+          "departureAirportName": "Doha International Arpt",
+          "departureCityName": "Doha",
+          "arrivalAirport": "DPS",
+          "localArrivalDate": "2019-04-24 17:30:00",
+          "arrivalTime": "2019-04-24T17:30:00.000+0300",
+          "arrivalAirportName": "Ngurah Rai Arpt",
+          "arrivalCityName": "Denpasar Bali",
+          "arrivalTerminal": "I",
+          "numStops": "0",
+          "legDurationMinute": 580,
+          "waitTimeBeforeNextLeg": 0
+        }
+      ],
+      "fares": [
+        {
+          "totalSingleAdultFare": 701.25,
+          "currency": "EUR",
+          "type": "ECONOMY",
+          "baggageAllowances": [
+            {
+              "amount": 30,
+              "type": "KILO",
+              "alternativeType": "K",
+              "flightNumber": "QR296",
+              "departureAirport": "KBP",
+              "arrivalAirport": "DOH",
+              "carrier": "QR",
+              "classCode": "N"
+            },
+            {
+              "amount": 30,
+              "type": "KILO",
+              "alternativeType": "K",
+              "flightNumber": "QR962",
+              "departureAirport": "DOH",
+              "arrivalAirport": "DPS",
+              "carrier": "QR",
+              "classCode": "N"
+            }
+          ],
+          "personFares": [
+            {
+              "total": 701.25,
+              "baseFare": 375.72,
+              "tax": 301.13,
+              "serviceFee": 6.59,
+              "supplement": 0,
+              "agencyCommission": 17.79,
+              "passangerType": "ADULT",
+              "baggageAllowances": [
+                {
+                  "amount": 30,
+                  "type": "KILO",
+                  "alternativeType": "K",
+                  "flightNumber": "QR296",
+                  "departureAirport": "KBP",
+                  "arrivalAirport": "DOH",
+                  "carrier": "QR",
+                  "classCode": "N"
+                },
+                {
+                  "amount": 30,
+                  "type": "KILO",
+                  "alternativeType": "K",
+                  "flightNumber": "QR962",
+                  "departureAirport": "DOH",
+                  "arrivalAirport": "DPS",
+                  "carrier": "QR",
+                  "classCode": "N"
+                }
+              ]
+            },
+            {
+              "total": 609.4,
+              "baseFare": 283.87,
+              "tax": 301.13,
+              "serviceFee": 6.59,
+              "supplement": 0,
+              "agencyCommission": 17.79,
+              "passangerType": "CHILD",
+              "baggageAllowances": [
+                {
+                  "amount": 30,
+                  "type": "KILO",
+                  "alternativeType": "K",
+                  "flightNumber": "QR296",
+                  "departureAirport": "KBP",
+                  "arrivalAirport": "DOH",
+                  "carrier": "QR",
+                  "classCode": "N"
+                },
+                {
+                  "amount": 30,
+                  "type": "KILO",
+                  "alternativeType": "K",
+                  "flightNumber": "QR962",
+                  "departureAirport": "DOH",
+                  "arrivalAirport": "DPS",
+                  "carrier": "QR",
+                  "classCode": "N"
+                }
+              ]
+            }
+          ],
+          "segmentNames": [
+            "N",
+            "N"
+          ],
+          "freeSeatCount": 9,
+          "detail": {
+            "price": 375.72,
+            "serviceFee": 24.39,
+            "tax": 301.13,
+            "suplement": 0
+          }
+        }
+      ],
+      "segmentCount": 2,
+      "baggage": -1,
+      "flightTimeHour": 15,
+      "flightTimeMinute": 5,
+      "layoverTime": 480,
+      "hasCip": false,
+      "dayCross": true,
+      "returnFlight": false,
+      "testInfo": {
+        "suitableForTest": false
+      }
+    },
+    {
+      "id": "m:20b2:6kug:jubkn9tk:IT:021061gbVQ8e6EIm:976w",
+      "providerKey": "Amadeus ALFA",
+      "pricingType": "PACKAGED",
+      "packageId": 1,
+      "legs": [
+        {
+          "flightNo": "QR961",
+          "aircraft": "77W",
+          "carrierCode": "QR",
+          "carrierName": "Qatar Airways",
+          "operatorCode": "QR",
+          "operatorName": "Qatar Airways",
+          "validatingCarrierCode": "QR",
+          "departureAirport": "DPS",
+          "localDepartureDate": "2019-05-01 00:35:00",
+          "departureTime": "2019-05-01T00:35:00.000+0300",
+          "departureAirportName": "Ngurah Rai Arpt",
+          "departureCityName": "Denpasar Bali",
+          "departureTerminal": "I",
+          "arrivalAirport": "DOH",
+          "localArrivalDate": "2019-05-01 05:35:00",
+          "arrivalTime": "2019-05-01T05:35:00.000+0300",
+          "arrivalAirportName": "Doha International Arpt",
+          "arrivalCityName": "Doha",
+          "numStops": "0",
+          "legDurationMinute": 600,
+          "waitTimeBeforeNextLeg": 65
+        },
+        {
+          "flightNo": "QR295",
+          "aircraft": "320",
+          "carrierCode": "QR",
+          "carrierName": "Qatar Airways",
+          "operatorCode": "QR",
+          "operatorName": "Qatar Airways",
+          "validatingCarrierCode": "QR",
+          "departureAirport": "DOH",
+          "localDepartureDate": "2019-05-01 06:40:00",
+          "departureTime": "2019-05-01T06:40:00.000+0300",
+          "departureAirportName": "Doha International Arpt",
+          "departureCityName": "Doha",
+          "arrivalAirport": "KBP",
+          "localArrivalDate": "2019-05-01 12:20:00",
+          "arrivalTime": "2019-05-01T12:20:00.000+0300",
+          "arrivalAirportName": "Borispol Arpt",
+          "arrivalCityName": "Kiev",
+          "numStops": "0",
+          "legDurationMinute": 340,
+          "waitTimeBeforeNextLeg": 0
+        }
+      ],
+      "fares": [
+        {
+          "totalSingleAdultFare": 701.25,
+          "currency": "EUR",
+          "type": "ECONOMY",
+          "baggageAllowances": [
+            {
+              "amount": 30,
+              "type": "KILO",
+              "alternativeType": "K",
+              "flightNumber": "QR961",
+              "departureAirport": "DPS",
+              "arrivalAirport": "DOH",
+              "carrier": "QR",
+              "classCode": "N"
+            },
+            {
+              "amount": 30,
+              "type": "KILO",
+              "alternativeType": "K",
+              "flightNumber": "QR295",
+              "departureAirport": "DOH",
+              "arrivalAirport": "KBP",
+              "carrier": "QR",
+              "classCode": "N"
+            }
+          ],
+          "personFares": [
+            {
+              "total": 701.25,
+              "baseFare": 375.72,
+              "tax": 301.13,
+              "serviceFee": 6.59,
+              "supplement": 0,
+              "agencyCommission": 17.79,
+              "passangerType": "ADULT",
+              "baggageAllowances": [
+                {
+                  "amount": 30,
+                  "type": "KILO",
+                  "alternativeType": "K",
+                  "flightNumber": "QR961",
+                  "departureAirport": "DPS",
+                  "arrivalAirport": "DOH",
+                  "carrier": "QR",
+                  "classCode": "N"
+                },
+                {
+                  "amount": 30,
+                  "type": "KILO",
+                  "alternativeType": "K",
+                  "flightNumber": "QR295",
+                  "departureAirport": "DOH",
+                  "arrivalAirport": "KBP",
+                  "carrier": "QR",
+                  "classCode": "N"
+                }
+              ]
+            },
+            {
+              "total": 609.4,
+              "baseFare": 283.87,
+              "tax": 301.13,
+              "serviceFee": 6.59,
+              "supplement": 0,
+              "agencyCommission": 17.79,
+              "passangerType": "CHILD",
+              "baggageAllowances": [
+                {
+                  "amount": 30,
+                  "type": "KILO",
+                  "alternativeType": "K",
+                  "flightNumber": "QR961",
+                  "departureAirport": "DPS",
+                  "arrivalAirport": "DOH",
+                  "carrier": "QR",
+                  "classCode": "N"
+                },
+                {
+                  "amount": 30,
+                  "type": "KILO",
+                  "alternativeType": "K",
+                  "flightNumber": "QR295",
+                  "departureAirport": "DOH",
+                  "arrivalAirport": "KBP",
+                  "carrier": "QR",
+                  "classCode": "N"
+                }
+              ]
+            }
+          ],
+          "segmentNames": [
+            "N",
+            "N"
+          ],
+          "freeSeatCount": 9,
+          "detail": {
+            "price": 375.72,
+            "serviceFee": 24.39,
+            "tax": 301.13,
+            "suplement": 0
+          }
+        }
+      ],
+      "segmentCount": 2,
+      "baggage": -1,
+      "flightTimeHour": 15,
+      "flightTimeMinute": 40,
+      "layoverTime": 65,
+      "hasCip": false,
+      "dayCross": false,
+      "returnFlight": true,
+      "testInfo": {
+        "suitableForTest": false
+      }
+    },
+    {
+      "id": "m:20b2:6kug:jubkn9tk:IT:021061mFY6YOGvxR:976x",
+      "providerKey": "Amadeus ALFA",
+      "pricingType": "PACKAGED",
+      "packageId": 1,
+      "legs": [
+        {
+          "flightNo": "QR296",
+          "aircraft": "332",
+          "carrierCode": "QR",
+          "carrierName": "Qatar Airways",
+          "operatorCode": "QR",
+          "operatorName": "Qatar Airways",
+          "validatingCarrierCode": "QR",
+          "departureAirport": "KBP",
+          "localDepartureDate": "2019-04-23 13:25:00",
+          "departureTime": "2019-04-23T13:25:00.000+0300",
+          "departureAirportName": "Borispol Arpt",
+          "departureCityName": "Kiev",
+          "arrivalAirport": "DOH",
+          "localArrivalDate": "2019-04-23 18:50:00",
+          "arrivalTime": "2019-04-23T18:50:00.000+0300",
+          "arrivalAirportName": "Doha International Arpt",
+          "arrivalCityName": "Doha",
+          "numStops": "0",
+          "legDurationMinute": 325,
+          "waitTimeBeforeNextLeg": 480
+        },
+        {
+          "flightNo": "QR962",
+          "aircraft": "77W",
+          "carrierCode": "QR",
+          "carrierName": "Qatar Airways",
+          "operatorCode": "QR",
+          "operatorName": "Qatar Airways",
+          "validatingCarrierCode": "QR",
+          "departureAirport": "DOH",
+          "localDepartureDate": "2019-04-24 02:50:00",
+          "departureTime": "2019-04-24T02:50:00.000+0300",
+          "departureAirportName": "Doha International Arpt",
+          "departureCityName": "Doha",
+          "arrivalAirport": "DPS",
+          "localArrivalDate": "2019-04-24 17:30:00",
+          "arrivalTime": "2019-04-24T17:30:00.000+0300",
+          "arrivalAirportName": "Ngurah Rai Arpt",
+          "arrivalCityName": "Denpasar Bali",
+          "arrivalTerminal": "I",
+          "numStops": "0",
+          "legDurationMinute": 580,
+          "waitTimeBeforeNextLeg": 0
+        }
+      ],
+      "fares": [
+        {
+          "totalSingleAdultFare": 701.25,
+          "currency": "EUR",
+          "type": "ECONOMY",
+          "baggageAllowances": [
+            {
+              "amount": 30,
+              "type": "KILO",
+              "alternativeType": "K",
+              "flightNumber": "QR296",
+              "departureAirport": "KBP",
+              "arrivalAirport": "DOH",
+              "carrier": "QR",
+              "classCode": "N"
+            },
+            {
+              "amount": 30,
+              "type": "KILO",
+              "alternativeType": "K",
+              "flightNumber": "QR962",
+              "departureAirport": "DOH",
+              "arrivalAirport": "DPS",
+              "carrier": "QR",
+              "classCode": "N"
+            }
+          ],
+          "personFares": [
+            {
+              "total": 701.25,
+              "baseFare": 375.72,
+              "tax": 301.13,
+              "serviceFee": 6.59,
+              "supplement": 0,
+              "agencyCommission": 17.79,
+              "passangerType": "ADULT",
+              "baggageAllowances": [
+                {
+                  "amount": 30,
+                  "type": "KILO",
+                  "alternativeType": "K",
+                  "flightNumber": "QR296",
+                  "departureAirport": "KBP",
+                  "arrivalAirport": "DOH",
+                  "carrier": "QR",
+                  "classCode": "N"
+                },
+                {
+                  "amount": 30,
+                  "type": "KILO",
+                  "alternativeType": "K",
+                  "flightNumber": "QR962",
+                  "departureAirport": "DOH",
+                  "arrivalAirport": "DPS",
+                  "carrier": "QR",
+                  "classCode": "N"
+                }
+              ]
+            },
+            {
+              "total": 609.4,
+              "baseFare": 283.87,
+              "tax": 301.13,
+              "serviceFee": 6.59,
+              "supplement": 0,
+              "agencyCommission": 17.79,
+              "passangerType": "CHILD",
+              "baggageAllowances": [
+                {
+                  "amount": 30,
+                  "type": "KILO",
+                  "alternativeType": "K",
+                  "flightNumber": "QR296",
+                  "departureAirport": "KBP",
+                  "arrivalAirport": "DOH",
+                  "carrier": "QR",
+                  "classCode": "N"
+                },
+                {
+                  "amount": 30,
+                  "type": "KILO",
+                  "alternativeType": "K",
+                  "flightNumber": "QR962",
+                  "departureAirport": "DOH",
+                  "arrivalAirport": "DPS",
+                  "carrier": "QR",
+                  "classCode": "N"
+                }
+              ]
+            }
+          ],
+          "segmentNames": [
+            "N",
+            "N"
+          ],
+          "freeSeatCount": 9,
+          "detail": {
+            "price": 375.72,
+            "serviceFee": 24.39,
+            "tax": 301.13,
+            "suplement": 0
+          }
+        }
+      ],
+      "segmentCount": 2,
+      "baggage": -1,
+      "flightTimeHour": 15,
+      "flightTimeMinute": 5,
+      "layoverTime": 480,
+      "hasCip": false,
+      "dayCross": true,
+      "returnFlight": false,
+      "testInfo": {
+        "suitableForTest": false
+      }
+    },
+    {
+      "id": "m:20b2:6kug:jubkn9tk:IT:021061ziVfdfoeM5:976y",
+      "providerKey": "Amadeus ALFA",
+      "pricingType": "PACKAGED",
+      "packageId": 1,
+      "legs": [
+        {
+          "flightNo": "QR965",
+          "aircraft": "788",
+          "carrierCode": "QR",
+          "carrierName": "Qatar Airways",
+          "operatorCode": "QR",
+          "operatorName": "Qatar Airways",
+          "validatingCarrierCode": "QR",
+          "departureAirport": "DPS",
+          "localDepartureDate": "2019-05-01 09:25:00",
+          "departureTime": "2019-05-01T09:25:00.000+0300",
+          "departureAirportName": "Ngurah Rai Arpt",
+          "departureCityName": "Denpasar Bali",
+          "departureTerminal": "I",
+          "arrivalAirport": "DOH",
+          "localArrivalDate": "2019-05-01 14:00:00",
+          "arrivalTime": "2019-05-01T14:00:00.000+0300",
+          "arrivalAirportName": "Doha International Arpt",
+          "arrivalCityName": "Doha",
+          "numStops": "0",
+          "legDurationMinute": 575,
+          "waitTimeBeforeNextLeg": 100
+        },
+        {
+          "flightNo": "QR297",
+          "aircraft": "320",
+          "carrierCode": "QR",
+          "carrierName": "Qatar Airways",
+          "operatorCode": "QR",
+          "operatorName": "Qatar Airways",
+          "validatingCarrierCode": "QR",
+          "departureAirport": "DOH",
+          "localDepartureDate": "2019-05-01 15:40:00",
+          "departureTime": "2019-05-01T15:40:00.000+0300",
+          "departureAirportName": "Doha International Arpt",
+          "departureCityName": "Doha",
+          "arrivalAirport": "KBP",
+          "localArrivalDate": "2019-05-01 21:10:00",
+          "arrivalTime": "2019-05-01T21:10:00.000+0300",
+          "arrivalAirportName": "Borispol Arpt",
+          "arrivalCityName": "Kiev",
+          "numStops": "0",
+          "legDurationMinute": 330,
+          "waitTimeBeforeNextLeg": 0
+        }
+      ],
+      "fares": [
+        {
+          "totalSingleAdultFare": 701.25,
+          "currency": "EUR",
+          "type": "ECONOMY",
+          "baggageAllowances": [
+            {
+              "amount": 30,
+              "type": "KILO",
+              "alternativeType": "K",
+              "flightNumber": "QR965",
+              "departureAirport": "DPS",
+              "arrivalAirport": "DOH",
+              "carrier": "QR",
+              "classCode": "N"
+            },
+            {
+              "amount": 30,
+              "type": "KILO",
+              "alternativeType": "K",
+              "flightNumber": "QR297",
+              "departureAirport": "DOH",
+              "arrivalAirport": "KBP",
+              "carrier": "QR",
+              "classCode": "N"
+            }
+          ],
+          "personFares": [
+            {
+              "total": 701.25,
+              "baseFare": 375.72,
+              "tax": 301.13,
+              "serviceFee": 6.59,
+              "supplement": 0,
+              "agencyCommission": 17.79,
+              "passangerType": "ADULT",
+              "baggageAllowances": [
+                {
+                  "amount": 30,
+                  "type": "KILO",
+                  "alternativeType": "K",
+                  "flightNumber": "QR965",
+                  "departureAirport": "DPS",
+                  "arrivalAirport": "DOH",
+                  "carrier": "QR",
+                  "classCode": "N"
+                },
+                {
+                  "amount": 30,
+                  "type": "KILO",
+                  "alternativeType": "K",
+                  "flightNumber": "QR297",
+                  "departureAirport": "DOH",
+                  "arrivalAirport": "KBP",
+                  "carrier": "QR",
+                  "classCode": "N"
+                }
+              ]
+            },
+            {
+              "total": 609.4,
+              "baseFare": 283.87,
+              "tax": 301.13,
+              "serviceFee": 6.59,
+              "supplement": 0,
+              "agencyCommission": 17.79,
+              "passangerType": "CHILD",
+              "baggageAllowances": [
+                {
+                  "amount": 30,
+                  "type": "KILO",
+                  "alternativeType": "K",
+                  "flightNumber": "QR965",
+                  "departureAirport": "DPS",
+                  "arrivalAirport": "DOH",
+                  "carrier": "QR",
+                  "classCode": "N"
+                },
+                {
+                  "amount": 30,
+                  "type": "KILO",
+                  "alternativeType": "K",
+                  "flightNumber": "QR297",
+                  "departureAirport": "DOH",
+                  "arrivalAirport": "KBP",
+                  "carrier": "QR",
+                  "classCode": "N"
+                }
+              ]
+            }
+          ],
+          "segmentNames": [
+            "N",
+            "N"
+          ],
+          "freeSeatCount": 9,
+          "detail": {
+            "price": 375.72,
+            "serviceFee": 24.39,
+            "tax": 301.13,
+            "suplement": 0
+          }
+        }
+      ],
+      "segmentCount": 2,
+      "baggage": -1,
+      "flightTimeHour": 15,
+      "flightTimeMinute": 5,
+      "layoverTime": 100,
+      "hasCip": false,
+      "dayCross": false,
+      "returnFlight": true,
+      "testInfo": {
+        "suitableForTest": false
+      }
+    },
+    {
+      "id": "m:20b2:6kug:jubkn9tl:IT:021061WqRvMeP7tm:976z",
+      "providerKey": "Amadeus ALFA",
+      "pricingType": "PACKAGED",
+      "packageId": 1,
+      "legs": [
+        {
+          "flightNo": "QR298",
+          "aircraft": "320",
+          "carrierCode": "QR",
+          "carrierName": "Qatar Airways",
+          "operatorCode": "QR",
+          "operatorName": "Qatar Airways",
+          "validatingCarrierCode": "QR",
+          "departureAirport": "KBP",
+          "localDepartureDate": "2019-04-23 23:40:00",
+          "departureTime": "2019-04-23T23:40:00.000+0300",
+          "departureAirportName": "Borispol Arpt",
+          "departureCityName": "Kiev",
+          "arrivalAirport": "DOH",
+          "localArrivalDate": "2019-04-24 05:05:00",
+          "arrivalTime": "2019-04-24T05:05:00.000+0300",
+          "arrivalAirportName": "Doha International Arpt",
+          "arrivalCityName": "Doha",
+          "numStops": "0",
+          "legDurationMinute": 325,
+          "waitTimeBeforeNextLeg": 205
+        },
+        {
+          "flightNo": "QR960",
+          "aircraft": "77W",
+          "carrierCode": "QR",
+          "carrierName": "Qatar Airways",
+          "operatorCode": "QR",
+          "operatorName": "Qatar Airways",
+          "validatingCarrierCode": "QR",
+          "departureAirport": "DOH",
+          "localDepartureDate": "2019-04-24 08:30:00",
+          "departureTime": "2019-04-24T08:30:00.000+0300",
+          "departureAirportName": "Doha International Arpt",
+          "departureCityName": "Doha",
+          "arrivalAirport": "DPS",
+          "localArrivalDate": "2019-04-24 23:10:00",
+          "arrivalTime": "2019-04-24T23:10:00.000+0300",
+          "arrivalAirportName": "Ngurah Rai Arpt",
+          "arrivalCityName": "Denpasar Bali",
+          "arrivalTerminal": "I",
+          "numStops": "0",
+          "legDurationMinute": 580,
+          "waitTimeBeforeNextLeg": 0
+        }
+      ],
+      "fares": [
+        {
+          "totalSingleAdultFare": 701.25,
+          "currency": "EUR",
+          "type": "ECONOMY",
+          "baggageAllowances": [
+            {
+              "amount": 30,
+              "type": "KILO",
+              "alternativeType": "K",
+              "flightNumber": "QR298",
+              "departureAirport": "KBP",
+              "arrivalAirport": "DOH",
+              "carrier": "QR",
+              "classCode": "N"
+            },
+            {
+              "amount": 30,
+              "type": "KILO",
+              "alternativeType": "K",
+              "flightNumber": "QR960",
+              "departureAirport": "DOH",
+              "arrivalAirport": "DPS",
+              "carrier": "QR",
+              "classCode": "N"
+            }
+          ],
+          "personFares": [
+            {
+              "total": 701.25,
+              "baseFare": 375.72,
+              "tax": 301.13,
+              "serviceFee": 6.59,
+              "supplement": 0,
+              "agencyCommission": 17.79,
+              "passangerType": "ADULT",
+              "baggageAllowances": [
+                {
+                  "amount": 30,
+                  "type": "KILO",
+                  "alternativeType": "K",
+                  "flightNumber": "QR298",
+                  "departureAirport": "KBP",
+                  "arrivalAirport": "DOH",
+                  "carrier": "QR",
+                  "classCode": "N"
+                },
+                {
+                  "amount": 30,
+                  "type": "KILO",
+                  "alternativeType": "K",
+                  "flightNumber": "QR960",
+                  "departureAirport": "DOH",
+                  "arrivalAirport": "DPS",
+                  "carrier": "QR",
+                  "classCode": "N"
+                }
+              ]
+            },
+            {
+              "total": 609.4,
+              "baseFare": 283.87,
+              "tax": 301.13,
+              "serviceFee": 6.59,
+              "supplement": 0,
+              "agencyCommission": 17.79,
+              "passangerType": "CHILD",
+              "baggageAllowances": [
+                {
+                  "amount": 30,
+                  "type": "KILO",
+                  "alternativeType": "K",
+                  "flightNumber": "QR298",
+                  "departureAirport": "KBP",
+                  "arrivalAirport": "DOH",
+                  "carrier": "QR",
+                  "classCode": "N"
+                },
+                {
+                  "amount": 30,
+                  "type": "KILO",
+                  "alternativeType": "K",
+                  "flightNumber": "QR960",
+                  "departureAirport": "DOH",
+                  "arrivalAirport": "DPS",
+                  "carrier": "QR",
+                  "classCode": "N"
+                }
+              ]
+            }
+          ],
+          "segmentNames": [
+            "N",
+            "N"
+          ],
+          "freeSeatCount": 9,
+          "detail": {
+            "price": 375.72,
+            "serviceFee": 24.39,
+            "tax": 301.13,
+            "suplement": 0
+          }
+        }
+      ],
+      "segmentCount": 2,
+      "baggage": -1,
+      "flightTimeHour": 15,
+      "flightTimeMinute": 5,
+      "layoverTime": 205,
+      "hasCip": false,
+      "dayCross": true,
+      "returnFlight": false,
+      "testInfo": {
+        "suitableForTest": false
+      }
+    },
+    {
+      "id": "m:20b2:6kug:jubkn9tl:IT:021061kVnshzpJB8:9770",
+      "providerKey": "Amadeus ALFA",
+      "pricingType": "PACKAGED",
+      "packageId": 1,
+      "legs": [
+        {
+          "flightNo": "QR963",
+          "aircraft": "77W",
+          "carrierCode": "QR",
+          "carrierName": "Qatar Airways",
+          "operatorCode": "QR",
+          "operatorName": "Qatar Airways",
+          "validatingCarrierCode": "QR",
+          "departureAirport": "DPS",
+          "localDepartureDate": "2019-05-01 18:45:00",
+          "departureTime": "2019-05-01T18:45:00.000+0300",
+          "departureAirportName": "Ngurah Rai Arpt",
+          "departureCityName": "Denpasar Bali",
+          "departureTerminal": "I",
+          "arrivalAirport": "DOH",
+          "localArrivalDate": "2019-05-01 23:45:00",
+          "arrivalTime": "2019-05-01T23:45:00.000+0300",
+          "arrivalAirportName": "Doha International Arpt",
+          "arrivalCityName": "Doha",
+          "numStops": "0",
+          "legDurationMinute": 600,
+          "waitTimeBeforeNextLeg": 425
+        },
+        {
+          "flightNo": "QR295",
+          "aircraft": "333",
+          "carrierCode": "QR",
+          "carrierName": "Qatar Airways",
+          "operatorCode": "QR",
+          "operatorName": "Qatar Airways",
+          "validatingCarrierCode": "QR",
+          "departureAirport": "DOH",
+          "localDepartureDate": "2019-05-02 06:50:00",
+          "departureTime": "2019-05-02T06:50:00.000+0300",
+          "departureAirportName": "Doha International Arpt",
+          "departureCityName": "Doha",
+          "arrivalAirport": "KBP",
+          "localArrivalDate": "2019-05-02 12:20:00",
+          "arrivalTime": "2019-05-02T12:20:00.000+0300",
+          "arrivalAirportName": "Borispol Arpt",
+          "arrivalCityName": "Kiev",
+          "numStops": "0",
+          "legDurationMinute": 330,
+          "waitTimeBeforeNextLeg": 0
+        }
+      ],
+      "fares": [
+        {
+          "totalSingleAdultFare": 701.25,
+          "currency": "EUR",
+          "type": "ECONOMY",
+          "baggageAllowances": [
+            {
+              "amount": 30,
+              "type": "KILO",
+              "alternativeType": "K",
+              "flightNumber": "QR963",
+              "departureAirport": "DPS",
+              "arrivalAirport": "DOH",
+              "carrier": "QR",
+              "classCode": "N"
+            },
+            {
+              "amount": 30,
+              "type": "KILO",
+              "alternativeType": "K",
+              "flightNumber": "QR295",
+              "departureAirport": "DOH",
+              "arrivalAirport": "KBP",
+              "carrier": "QR",
+              "classCode": "N"
+            }
+          ],
+          "personFares": [
+            {
+              "total": 701.25,
+              "baseFare": 375.72,
+              "tax": 301.13,
+              "serviceFee": 6.59,
+              "supplement": 0,
+              "agencyCommission": 17.79,
+              "passangerType": "ADULT",
+              "baggageAllowances": [
+                {
+                  "amount": 30,
+                  "type": "KILO",
+                  "alternativeType": "K",
+                  "flightNumber": "QR963",
+                  "departureAirport": "DPS",
+                  "arrivalAirport": "DOH",
+                  "carrier": "QR",
+                  "classCode": "N"
+                },
+                {
+                  "amount": 30,
+                  "type": "KILO",
+                  "alternativeType": "K",
+                  "flightNumber": "QR295",
+                  "departureAirport": "DOH",
+                  "arrivalAirport": "KBP",
+                  "carrier": "QR",
+                  "classCode": "N"
+                }
+              ]
+            },
+            {
+              "total": 609.4,
+              "baseFare": 283.87,
+              "tax": 301.13,
+              "serviceFee": 6.59,
+              "supplement": 0,
+              "agencyCommission": 17.79,
+              "passangerType": "CHILD",
+              "baggageAllowances": [
+                {
+                  "amount": 30,
+                  "type": "KILO",
+                  "alternativeType": "K",
+                  "flightNumber": "QR963",
+                  "departureAirport": "DPS",
+                  "arrivalAirport": "DOH",
+                  "carrier": "QR",
+                  "classCode": "N"
+                },
+                {
+                  "amount": 30,
+                  "type": "KILO",
+                  "alternativeType": "K",
+                  "flightNumber": "QR295",
+                  "departureAirport": "DOH",
+                  "arrivalAirport": "KBP",
+                  "carrier": "QR",
+                  "classCode": "N"
+                }
+              ]
+            }
+          ],
+          "segmentNames": [
+            "N",
+            "N"
+          ],
+          "freeSeatCount": 9,
+          "detail": {
+            "price": 375.72,
+            "serviceFee": 24.39,
+            "tax": 301.13,
+            "suplement": 0
+          }
+        }
+      ],
+      "segmentCount": 2,
+      "baggage": -1,
+      "flightTimeHour": 15,
+      "flightTimeMinute": 30,
+      "layoverTime": 425,
+      "hasCip": false,
+      "dayCross": true,
+      "returnFlight": true,
+      "testInfo": {
+        "suitableForTest": false
+      }
+    },
+    {
+      "id": "m:20b2:6kug:jubkn9tl:IT:021061mFY6YOGvxR:9771",
+      "providerKey": "Amadeus ALFA",
+      "pricingType": "PACKAGED",
+      "packageId": 1,
+      "legs": [
+        {
+          "flightNo": "QR296",
+          "aircraft": "332",
+          "carrierCode": "QR",
+          "carrierName": "Qatar Airways",
+          "operatorCode": "QR",
+          "operatorName": "Qatar Airways",
+          "validatingCarrierCode": "QR",
+          "departureAirport": "KBP",
+          "localDepartureDate": "2019-04-23 13:25:00",
+          "departureTime": "2019-04-23T13:25:00.000+0300",
+          "departureAirportName": "Borispol Arpt",
+          "departureCityName": "Kiev",
+          "arrivalAirport": "DOH",
+          "localArrivalDate": "2019-04-23 18:50:00",
+          "arrivalTime": "2019-04-23T18:50:00.000+0300",
+          "arrivalAirportName": "Doha International Arpt",
+          "arrivalCityName": "Doha",
+          "numStops": "0",
+          "legDurationMinute": 325,
+          "waitTimeBeforeNextLeg": 480
+        },
+        {
+          "flightNo": "QR962",
+          "aircraft": "77W",
+          "carrierCode": "QR",
+          "carrierName": "Qatar Airways",
+          "operatorCode": "QR",
+          "operatorName": "Qatar Airways",
+          "validatingCarrierCode": "QR",
+          "departureAirport": "DOH",
+          "localDepartureDate": "2019-04-24 02:50:00",
+          "departureTime": "2019-04-24T02:50:00.000+0300",
+          "departureAirportName": "Doha International Arpt",
+          "departureCityName": "Doha",
+          "arrivalAirport": "DPS",
+          "localArrivalDate": "2019-04-24 17:30:00",
+          "arrivalTime": "2019-04-24T17:30:00.000+0300",
+          "arrivalAirportName": "Ngurah Rai Arpt",
+          "arrivalCityName": "Denpasar Bali",
+          "arrivalTerminal": "I",
+          "numStops": "0",
+          "legDurationMinute": 580,
+          "waitTimeBeforeNextLeg": 0
+        }
+      ],
+      "fares": [
+        {
+          "totalSingleAdultFare": 701.25,
+          "currency": "EUR",
+          "type": "ECONOMY",
+          "baggageAllowances": [
+            {
+              "amount": 30,
+              "type": "KILO",
+              "alternativeType": "K",
+              "flightNumber": "QR296",
+              "departureAirport": "KBP",
+              "arrivalAirport": "DOH",
+              "carrier": "QR",
+              "classCode": "N"
+            },
+            {
+              "amount": 30,
+              "type": "KILO",
+              "alternativeType": "K",
+              "flightNumber": "QR962",
+              "departureAirport": "DOH",
+              "arrivalAirport": "DPS",
+              "carrier": "QR",
+              "classCode": "N"
+            }
+          ],
+          "personFares": [
+            {
+              "total": 701.25,
+              "baseFare": 375.72,
+              "tax": 301.13,
+              "serviceFee": 6.59,
+              "supplement": 0,
+              "agencyCommission": 17.79,
+              "passangerType": "ADULT",
+              "baggageAllowances": [
+                {
+                  "amount": 30,
+                  "type": "KILO",
+                  "alternativeType": "K",
+                  "flightNumber": "QR296",
+                  "departureAirport": "KBP",
+                  "arrivalAirport": "DOH",
+                  "carrier": "QR",
+                  "classCode": "N"
+                },
+                {
+                  "amount": 30,
+                  "type": "KILO",
+                  "alternativeType": "K",
+                  "flightNumber": "QR962",
+                  "departureAirport": "DOH",
+                  "arrivalAirport": "DPS",
+                  "carrier": "QR",
+                  "classCode": "N"
+                }
+              ]
+            },
+            {
+              "total": 609.4,
+              "baseFare": 283.87,
+              "tax": 301.13,
+              "serviceFee": 6.59,
+              "supplement": 0,
+              "agencyCommission": 17.79,
+              "passangerType": "CHILD",
+              "baggageAllowances": [
+                {
+                  "amount": 30,
+                  "type": "KILO",
+                  "alternativeType": "K",
+                  "flightNumber": "QR296",
+                  "departureAirport": "KBP",
+                  "arrivalAirport": "DOH",
+                  "carrier": "QR",
+                  "classCode": "N"
+                },
+                {
+                  "amount": 30,
+                  "type": "KILO",
+                  "alternativeType": "K",
+                  "flightNumber": "QR962",
+                  "departureAirport": "DOH",
+                  "arrivalAirport": "DPS",
+                  "carrier": "QR",
+                  "classCode": "N"
+                }
+              ]
+            }
+          ],
+          "segmentNames": [
+            "N",
+            "N"
+          ],
+          "freeSeatCount": 9,
+          "detail": {
+            "price": 375.72,
+            "serviceFee": 24.39,
+            "tax": 301.13,
+            "suplement": 0
+          }
+        }
+      ],
+      "segmentCount": 2,
+      "baggage": -1,
+      "flightTimeHour": 15,
+      "flightTimeMinute": 5,
+      "layoverTime": 480,
+      "hasCip": false,
+      "dayCross": true,
+      "returnFlight": false,
+      "testInfo": {
+        "suitableForTest": false
+      }
+    },
+    {
+      "id": "m:20b2:6kug:jubkn9tl:IT:021061kVnshzpJB8:9772",
+      "providerKey": "Amadeus ALFA",
+      "pricingType": "PACKAGED",
+      "packageId": 1,
+      "legs": [
+        {
+          "flightNo": "QR963",
+          "aircraft": "77W",
+          "carrierCode": "QR",
+          "carrierName": "Qatar Airways",
+          "operatorCode": "QR",
+          "operatorName": "Qatar Airways",
+          "validatingCarrierCode": "QR",
+          "departureAirport": "DPS",
+          "localDepartureDate": "2019-05-01 18:45:00",
+          "departureTime": "2019-05-01T18:45:00.000+0300",
+          "departureAirportName": "Ngurah Rai Arpt",
+          "departureCityName": "Denpasar Bali",
+          "departureTerminal": "I",
+          "arrivalAirport": "DOH",
+          "localArrivalDate": "2019-05-01 23:45:00",
+          "arrivalTime": "2019-05-01T23:45:00.000+0300",
+          "arrivalAirportName": "Doha International Arpt",
+          "arrivalCityName": "Doha",
+          "numStops": "0",
+          "legDurationMinute": 600,
+          "waitTimeBeforeNextLeg": 425
+        },
+        {
+          "flightNo": "QR295",
+          "aircraft": "333",
+          "carrierCode": "QR",
+          "carrierName": "Qatar Airways",
+          "operatorCode": "QR",
+          "operatorName": "Qatar Airways",
+          "validatingCarrierCode": "QR",
+          "departureAirport": "DOH",
+          "localDepartureDate": "2019-05-02 06:50:00",
+          "departureTime": "2019-05-02T06:50:00.000+0300",
+          "departureAirportName": "Doha International Arpt",
+          "departureCityName": "Doha",
+          "arrivalAirport": "KBP",
+          "localArrivalDate": "2019-05-02 12:20:00",
+          "arrivalTime": "2019-05-02T12:20:00.000+0300",
+          "arrivalAirportName": "Borispol Arpt",
+          "arrivalCityName": "Kiev",
+          "numStops": "0",
+          "legDurationMinute": 330,
+          "waitTimeBeforeNextLeg": 0
+        }
+      ],
+      "fares": [
+        {
+          "totalSingleAdultFare": 701.25,
+          "currency": "EUR",
+          "type": "ECONOMY",
+          "baggageAllowances": [
+            {
+              "amount": 30,
+              "type": "KILO",
+              "alternativeType": "K",
+              "flightNumber": "QR963",
+              "departureAirport": "DPS",
+              "arrivalAirport": "DOH",
+              "carrier": "QR",
+              "classCode": "N"
+            },
+            {
+              "amount": 30,
+              "type": "KILO",
+              "alternativeType": "K",
+              "flightNumber": "QR295",
+              "departureAirport": "DOH",
+              "arrivalAirport": "KBP",
+              "carrier": "QR",
+              "classCode": "N"
+            }
+          ],
+          "personFares": [
+            {
+              "total": 701.25,
+              "baseFare": 375.72,
+              "tax": 301.13,
+              "serviceFee": 6.59,
+              "supplement": 0,
+              "agencyCommission": 17.79,
+              "passangerType": "ADULT",
+              "baggageAllowances": [
+                {
+                  "amount": 30,
+                  "type": "KILO",
+                  "alternativeType": "K",
+                  "flightNumber": "QR963",
+                  "departureAirport": "DPS",
+                  "arrivalAirport": "DOH",
+                  "carrier": "QR",
+                  "classCode": "N"
+                },
+                {
+                  "amount": 30,
+                  "type": "KILO",
+                  "alternativeType": "K",
+                  "flightNumber": "QR295",
+                  "departureAirport": "DOH",
+                  "arrivalAirport": "KBP",
+                  "carrier": "QR",
+                  "classCode": "N"
+                }
+              ]
+            },
+            {
+              "total": 609.4,
+              "baseFare": 283.87,
+              "tax": 301.13,
+              "serviceFee": 6.59,
+              "supplement": 0,
+              "agencyCommission": 17.79,
+              "passangerType": "CHILD",
+              "baggageAllowances": [
+                {
+                  "amount": 30,
+                  "type": "KILO",
+                  "alternativeType": "K",
+                  "flightNumber": "QR963",
+                  "departureAirport": "DPS",
+                  "arrivalAirport": "DOH",
+                  "carrier": "QR",
+                  "classCode": "N"
+                },
+                {
+                  "amount": 30,
+                  "type": "KILO",
+                  "alternativeType": "K",
+                  "flightNumber": "QR295",
+                  "departureAirport": "DOH",
+                  "arrivalAirport": "KBP",
+                  "carrier": "QR",
+                  "classCode": "N"
+                }
+              ]
+            }
+          ],
+          "segmentNames": [
+            "N",
+            "N"
+          ],
+          "freeSeatCount": 9,
+          "detail": {
+            "price": 375.72,
+            "serviceFee": 24.39,
+            "tax": 301.13,
+            "suplement": 0
+          }
+        }
+      ],
+      "segmentCount": 2,
+      "baggage": -1,
+      "flightTimeHour": 15,
+      "flightTimeMinute": 30,
+      "layoverTime": 425,
+      "hasCip": false,
+      "dayCross": true,
+      "returnFlight": true,
+      "testInfo": {
+        "suitableForTest": false
+      }
+    },
+    {
+      "id": "m:20b2:6kug:jubkn9tl:IT:021061cbbsIs3Mxp:9773",
+      "providerKey": "Amadeus ALFA",
+      "pricingType": "PACKAGED",
+      "packageId": 2,
+      "legs": [
+        {
+          "flightNo": "QR298",
+          "aircraft": "320",
+          "carrierCode": "QR",
+          "carrierName": "Qatar Airways",
+          "operatorCode": "QR",
+          "operatorName": "Qatar Airways",
+          "validatingCarrierCode": "QR",
+          "departureAirport": "KBP",
+          "localDepartureDate": "2019-04-23 23:40:00",
+          "departureTime": "2019-04-23T23:40:00.000+0300",
+          "departureAirportName": "Borispol Arpt",
+          "departureCityName": "Kiev",
+          "arrivalAirport": "DOH",
+          "localArrivalDate": "2019-04-24 05:05:00",
+          "arrivalTime": "2019-04-24T05:05:00.000+0300",
+          "arrivalAirportName": "Doha International Arpt",
+          "arrivalCityName": "Doha",
+          "numStops": "0",
+          "legDurationMinute": 325,
+          "waitTimeBeforeNextLeg": 745
+        },
+        {
+          "flightNo": "QR964",
+          "aircraft": "77W",
+          "carrierCode": "QR",
+          "carrierName": "Qatar Airways",
+          "operatorCode": "QR",
+          "operatorName": "Qatar Airways",
+          "validatingCarrierCode": "QR",
+          "departureAirport": "DOH",
+          "localDepartureDate": "2019-04-24 17:30:00",
+          "departureTime": "2019-04-24T17:30:00.000+0300",
+          "departureAirportName": "Doha International Arpt",
+          "departureCityName": "Doha",
+          "arrivalAirport": "DPS",
+          "localArrivalDate": "2019-04-25 08:10:00",
+          "arrivalTime": "2019-04-25T08:10:00.000+0300",
+          "arrivalAirportName": "Ngurah Rai Arpt",
+          "arrivalCityName": "Denpasar Bali",
+          "arrivalTerminal": "I",
+          "numStops": "0",
+          "legDurationMinute": 580,
+          "waitTimeBeforeNextLeg": 0
+        }
+      ],
+      "fares": [
+        {
+          "totalSingleAdultFare": 704.43,
+          "currency": "EUR",
+          "type": "ECONOMY",
+          "baggageAllowances": [
+            {
+              "amount": 30,
+              "type": "KILO",
+              "alternativeType": "K",
+              "flightNumber": "QR298",
+              "departureAirport": "KBP",
+              "arrivalAirport": "DOH",
+              "carrier": "QR",
+              "classCode": "N"
+            },
+            {
+              "amount": 30,
+              "type": "KILO",
+              "alternativeType": "K",
+              "flightNumber": "QR964",
+              "departureAirport": "DOH",
+              "arrivalAirport": "DPS",
+              "carrier": "QR",
+              "classCode": "N"
+            }
+          ],
+          "personFares": [
+            {
+              "total": 704.43,
+              "baseFare": 375.72,
+              "tax": 304.31,
+              "serviceFee": 6.59,
+              "supplement": 0,
+              "agencyCommission": 17.79,
+              "passangerType": "ADULT",
+              "baggageAllowances": [
+                {
+                  "amount": 30,
+                  "type": "KILO",
+                  "alternativeType": "K",
+                  "flightNumber": "QR298",
+                  "departureAirport": "KBP",
+                  "arrivalAirport": "DOH",
+                  "carrier": "QR",
+                  "classCode": "N"
+                },
+                {
+                  "amount": 30,
+                  "type": "KILO",
+                  "alternativeType": "K",
+                  "flightNumber": "QR964",
+                  "departureAirport": "DOH",
+                  "arrivalAirport": "DPS",
+                  "carrier": "QR",
+                  "classCode": "N"
+                }
+              ]
+            },
+            {
+              "total": 612.58,
+              "baseFare": 283.87,
+              "tax": 304.31,
+              "serviceFee": 6.59,
+              "supplement": 0,
+              "agencyCommission": 17.79,
+              "passangerType": "CHILD",
+              "baggageAllowances": [
+                {
+                  "amount": 30,
+                  "type": "KILO",
+                  "alternativeType": "K",
+                  "flightNumber": "QR298",
+                  "departureAirport": "KBP",
+                  "arrivalAirport": "DOH",
+                  "carrier": "QR",
+                  "classCode": "N"
+                },
+                {
+                  "amount": 30,
+                  "type": "KILO",
+                  "alternativeType": "K",
+                  "flightNumber": "QR964",
+                  "departureAirport": "DOH",
+                  "arrivalAirport": "DPS",
+                  "carrier": "QR",
+                  "classCode": "N"
+                }
+              ]
+            }
+          ],
+          "segmentNames": [
+            "N",
+            "N"
+          ],
+          "freeSeatCount": 9,
+          "detail": {
+            "price": 375.72,
+            "serviceFee": 24.39,
+            "tax": 304.31,
+            "suplement": 0
+          }
+        }
+      ],
+      "segmentCount": 2,
+      "baggage": -1,
+      "flightTimeHour": 15,
+      "flightTimeMinute": 5,
+      "layoverTime": 745,
+      "hasCip": false,
+      "dayCross": true,
+      "returnFlight": false,
+      "testInfo": {
+        "suitableForTest": false
+      }
+    },
+    {
+      "id": "m:20b2:6kug:jubkn9tl:IT:021061LCC30P7OHe:9774",
+      "providerKey": "Amadeus ALFA",
+      "pricingType": "PACKAGED",
+      "packageId": 2,
+      "legs": [
+        {
+          "flightNo": "QR961",
+          "aircraft": "77W",
+          "carrierCode": "QR",
+          "carrierName": "Qatar Airways",
+          "operatorCode": "QR",
+          "operatorName": "Qatar Airways",
+          "validatingCarrierCode": "QR",
+          "departureAirport": "DPS",
+          "localDepartureDate": "2019-05-01 00:35:00",
+          "departureTime": "2019-05-01T00:35:00.000+0300",
+          "departureAirportName": "Ngurah Rai Arpt",
+          "departureCityName": "Denpasar Bali",
+          "departureTerminal": "I",
+          "arrivalAirport": "DOH",
+          "localArrivalDate": "2019-05-01 05:35:00",
+          "arrivalTime": "2019-05-01T05:35:00.000+0300",
+          "arrivalAirportName": "Doha International Arpt",
+          "arrivalCityName": "Doha",
+          "numStops": "0",
+          "legDurationMinute": 600,
+          "waitTimeBeforeNextLeg": 65
+        },
+        {
+          "flightNo": "QR295",
+          "aircraft": "320",
+          "carrierCode": "QR",
+          "carrierName": "Qatar Airways",
+          "operatorCode": "QR",
+          "operatorName": "Qatar Airways",
+          "validatingCarrierCode": "QR",
+          "departureAirport": "DOH",
+          "localDepartureDate": "2019-05-01 06:40:00",
+          "departureTime": "2019-05-01T06:40:00.000+0300",
+          "departureAirportName": "Doha International Arpt",
+          "departureCityName": "Doha",
+          "arrivalAirport": "KBP",
+          "localArrivalDate": "2019-05-01 12:20:00",
+          "arrivalTime": "2019-05-01T12:20:00.000+0300",
+          "arrivalAirportName": "Borispol Arpt",
+          "arrivalCityName": "Kiev",
+          "numStops": "0",
+          "legDurationMinute": 340,
+          "waitTimeBeforeNextLeg": 0
+        }
+      ],
+      "fares": [
+        {
+          "totalSingleAdultFare": 704.43,
+          "currency": "EUR",
+          "type": "ECONOMY",
+          "baggageAllowances": [
+            {
+              "amount": 30,
+              "type": "KILO",
+              "alternativeType": "K",
+              "flightNumber": "QR961",
+              "departureAirport": "DPS",
+              "arrivalAirport": "DOH",
+              "carrier": "QR",
+              "classCode": "N"
+            },
+            {
+              "amount": 30,
+              "type": "KILO",
+              "alternativeType": "K",
+              "flightNumber": "QR295",
+              "departureAirport": "DOH",
+              "arrivalAirport": "KBP",
+              "carrier": "QR",
+              "classCode": "N"
+            }
+          ],
+          "personFares": [
+            {
+              "total": 704.43,
+              "baseFare": 375.72,
+              "tax": 304.31,
+              "serviceFee": 6.59,
+              "supplement": 0,
+              "agencyCommission": 17.79,
+              "passangerType": "ADULT",
+              "baggageAllowances": [
+                {
+                  "amount": 30,
+                  "type": "KILO",
+                  "alternativeType": "K",
+                  "flightNumber": "QR961",
+                  "departureAirport": "DPS",
+                  "arrivalAirport": "DOH",
+                  "carrier": "QR",
+                  "classCode": "N"
+                },
+                {
+                  "amount": 30,
+                  "type": "KILO",
+                  "alternativeType": "K",
+                  "flightNumber": "QR295",
+                  "departureAirport": "DOH",
+                  "arrivalAirport": "KBP",
+                  "carrier": "QR",
+                  "classCode": "N"
+                }
+              ]
+            },
+            {
+              "total": 612.58,
+              "baseFare": 283.87,
+              "tax": 304.31,
+              "serviceFee": 6.59,
+              "supplement": 0,
+              "agencyCommission": 17.79,
+              "passangerType": "CHILD",
+              "baggageAllowances": [
+                {
+                  "amount": 30,
+                  "type": "KILO",
+                  "alternativeType": "K",
+                  "flightNumber": "QR961",
+                  "departureAirport": "DPS",
+                  "arrivalAirport": "DOH",
+                  "carrier": "QR",
+                  "classCode": "N"
+                },
+                {
+                  "amount": 30,
+                  "type": "KILO",
+                  "alternativeType": "K",
+                  "flightNumber": "QR295",
+                  "departureAirport": "DOH",
+                  "arrivalAirport": "KBP",
+                  "carrier": "QR",
+                  "classCode": "N"
+                }
+              ]
+            }
+          ],
+          "segmentNames": [
+            "N",
+            "N"
+          ],
+          "freeSeatCount": 9,
+          "detail": {
+            "price": 375.72,
+            "serviceFee": 24.39,
+            "tax": 304.31,
+            "suplement": 0
+          }
+        }
+      ],
+      "segmentCount": 2,
+      "baggage": -1,
+      "flightTimeHour": 15,
+      "flightTimeMinute": 40,
+      "layoverTime": 65,
+      "hasCip": false,
+      "dayCross": false,
+      "returnFlight": true,
+      "testInfo": {
+        "suitableForTest": false
+      }
+    },
+    {
+      "id": "m:20b2:6kug:jubkn9tl:IT:021061cbbsIs3Mxp:9775",
+      "providerKey": "Amadeus ALFA",
+      "pricingType": "PACKAGED",
+      "packageId": 2,
+      "legs": [
+        {
+          "flightNo": "QR298",
+          "aircraft": "320",
+          "carrierCode": "QR",
+          "carrierName": "Qatar Airways",
+          "operatorCode": "QR",
+          "operatorName": "Qatar Airways",
+          "validatingCarrierCode": "QR",
+          "departureAirport": "KBP",
+          "localDepartureDate": "2019-04-23 23:40:00",
+          "departureTime": "2019-04-23T23:40:00.000+0300",
+          "departureAirportName": "Borispol Arpt",
+          "departureCityName": "Kiev",
+          "arrivalAirport": "DOH",
+          "localArrivalDate": "2019-04-24 05:05:00",
+          "arrivalTime": "2019-04-24T05:05:00.000+0300",
+          "arrivalAirportName": "Doha International Arpt",
+          "arrivalCityName": "Doha",
+          "numStops": "0",
+          "legDurationMinute": 325,
+          "waitTimeBeforeNextLeg": 745
+        },
+        {
+          "flightNo": "QR964",
+          "aircraft": "77W",
+          "carrierCode": "QR",
+          "carrierName": "Qatar Airways",
+          "operatorCode": "QR",
+          "operatorName": "Qatar Airways",
+          "validatingCarrierCode": "QR",
+          "departureAirport": "DOH",
+          "localDepartureDate": "2019-04-24 17:30:00",
+          "departureTime": "2019-04-24T17:30:00.000+0300",
+          "departureAirportName": "Doha International Arpt",
+          "departureCityName": "Doha",
+          "arrivalAirport": "DPS",
+          "localArrivalDate": "2019-04-25 08:10:00",
+          "arrivalTime": "2019-04-25T08:10:00.000+0300",
+          "arrivalAirportName": "Ngurah Rai Arpt",
+          "arrivalCityName": "Denpasar Bali",
+          "arrivalTerminal": "I",
+          "numStops": "0",
+          "legDurationMinute": 580,
+          "waitTimeBeforeNextLeg": 0
+        }
+      ],
+      "fares": [
+        {
+          "totalSingleAdultFare": 704.43,
+          "currency": "EUR",
+          "type": "ECONOMY",
+          "baggageAllowances": [
+            {
+              "amount": 30,
+              "type": "KILO",
+              "alternativeType": "K",
+              "flightNumber": "QR298",
+              "departureAirport": "KBP",
+              "arrivalAirport": "DOH",
+              "carrier": "QR",
+              "classCode": "N"
+            },
+            {
+              "amount": 30,
+              "type": "KILO",
+              "alternativeType": "K",
+              "flightNumber": "QR964",
+              "departureAirport": "DOH",
+              "arrivalAirport": "DPS",
+              "carrier": "QR",
+              "classCode": "N"
+            }
+          ],
+          "personFares": [
+            {
+              "total": 704.43,
+              "baseFare": 375.72,
+              "tax": 304.31,
+              "serviceFee": 6.59,
+              "supplement": 0,
+              "agencyCommission": 17.79,
+              "passangerType": "ADULT",
+              "baggageAllowances": [
+                {
+                  "amount": 30,
+                  "type": "KILO",
+                  "alternativeType": "K",
+                  "flightNumber": "QR298",
+                  "departureAirport": "KBP",
+                  "arrivalAirport": "DOH",
+                  "carrier": "QR",
+                  "classCode": "N"
+                },
+                {
+                  "amount": 30,
+                  "type": "KILO",
+                  "alternativeType": "K",
+                  "flightNumber": "QR964",
+                  "departureAirport": "DOH",
+                  "arrivalAirport": "DPS",
+                  "carrier": "QR",
+                  "classCode": "N"
+                }
+              ]
+            },
+            {
+              "total": 612.58,
+              "baseFare": 283.87,
+              "tax": 304.31,
+              "serviceFee": 6.59,
+              "supplement": 0,
+              "agencyCommission": 17.79,
+              "passangerType": "CHILD",
+              "baggageAllowances": [
+                {
+                  "amount": 30,
+                  "type": "KILO",
+                  "alternativeType": "K",
+                  "flightNumber": "QR298",
+                  "departureAirport": "KBP",
+                  "arrivalAirport": "DOH",
+                  "carrier": "QR",
+                  "classCode": "N"
+                },
+                {
+                  "amount": 30,
+                  "type": "KILO",
+                  "alternativeType": "K",
+                  "flightNumber": "QR964",
+                  "departureAirport": "DOH",
+                  "arrivalAirport": "DPS",
+                  "carrier": "QR",
+                  "classCode": "N"
+                }
+              ]
+            }
+          ],
+          "segmentNames": [
+            "N",
+            "N"
+          ],
+          "freeSeatCount": 9,
+          "detail": {
+            "price": 375.72,
+            "serviceFee": 24.39,
+            "tax": 304.31,
+            "suplement": 0
+          }
+        }
+      ],
+      "segmentCount": 2,
+      "baggage": -1,
+      "flightTimeHour": 15,
+      "flightTimeMinute": 5,
+      "layoverTime": 745,
+      "hasCip": false,
+      "dayCross": true,
+      "returnFlight": false,
+      "testInfo": {
+        "suitableForTest": false
+      }
+    },
+    {
+      "id": "m:20b2:6kug:jubkn9tl:IT:021061GLYnnf7bNH:9776",
+      "providerKey": "Amadeus ALFA",
+      "pricingType": "PACKAGED",
+      "packageId": 2,
+      "legs": [
+        {
+          "flightNo": "QR965",
+          "aircraft": "788",
+          "carrierCode": "QR",
+          "carrierName": "Qatar Airways",
+          "operatorCode": "QR",
+          "operatorName": "Qatar Airways",
+          "validatingCarrierCode": "QR",
+          "departureAirport": "DPS",
+          "localDepartureDate": "2019-05-01 09:25:00",
+          "departureTime": "2019-05-01T09:25:00.000+0300",
+          "departureAirportName": "Ngurah Rai Arpt",
+          "departureCityName": "Denpasar Bali",
+          "departureTerminal": "I",
+          "arrivalAirport": "DOH",
+          "localArrivalDate": "2019-05-01 14:00:00",
+          "arrivalTime": "2019-05-01T14:00:00.000+0300",
+          "arrivalAirportName": "Doha International Arpt",
+          "arrivalCityName": "Doha",
+          "numStops": "0",
+          "legDurationMinute": 575,
+          "waitTimeBeforeNextLeg": 100
+        },
+        {
+          "flightNo": "QR297",
+          "aircraft": "320",
+          "carrierCode": "QR",
+          "carrierName": "Qatar Airways",
+          "operatorCode": "QR",
+          "operatorName": "Qatar Airways",
+          "validatingCarrierCode": "QR",
+          "departureAirport": "DOH",
+          "localDepartureDate": "2019-05-01 15:40:00",
+          "departureTime": "2019-05-01T15:40:00.000+0300",
+          "departureAirportName": "Doha International Arpt",
+          "departureCityName": "Doha",
+          "arrivalAirport": "KBP",
+          "localArrivalDate": "2019-05-01 21:10:00",
+          "arrivalTime": "2019-05-01T21:10:00.000+0300",
+          "arrivalAirportName": "Borispol Arpt",
+          "arrivalCityName": "Kiev",
+          "numStops": "0",
+          "legDurationMinute": 330,
+          "waitTimeBeforeNextLeg": 0
+        }
+      ],
+      "fares": [
+        {
+          "totalSingleAdultFare": 704.43,
+          "currency": "EUR",
+          "type": "ECONOMY",
+          "baggageAllowances": [
+            {
+              "amount": 30,
+              "type": "KILO",
+              "alternativeType": "K",
+              "flightNumber": "QR965",
+              "departureAirport": "DPS",
+              "arrivalAirport": "DOH",
+              "carrier": "QR",
+              "classCode": "N"
+            },
+            {
+              "amount": 30,
+              "type": "KILO",
+              "alternativeType": "K",
+              "flightNumber": "QR297",
+              "departureAirport": "DOH",
+              "arrivalAirport": "KBP",
+              "carrier": "QR",
+              "classCode": "N"
+            }
+          ],
+          "personFares": [
+            {
+              "total": 704.43,
+              "baseFare": 375.72,
+              "tax": 304.31,
+              "serviceFee": 6.59,
+              "supplement": 0,
+              "agencyCommission": 17.79,
+              "passangerType": "ADULT",
+              "baggageAllowances": [
+                {
+                  "amount": 30,
+                  "type": "KILO",
+                  "alternativeType": "K",
+                  "flightNumber": "QR965",
+                  "departureAirport": "DPS",
+                  "arrivalAirport": "DOH",
+                  "carrier": "QR",
+                  "classCode": "N"
+                },
+                {
+                  "amount": 30,
+                  "type": "KILO",
+                  "alternativeType": "K",
+                  "flightNumber": "QR297",
+                  "departureAirport": "DOH",
+                  "arrivalAirport": "KBP",
+                  "carrier": "QR",
+                  "classCode": "N"
+                }
+              ]
+            },
+            {
+              "total": 612.58,
+              "baseFare": 283.87,
+              "tax": 304.31,
+              "serviceFee": 6.59,
+              "supplement": 0,
+              "agencyCommission": 17.79,
+              "passangerType": "CHILD",
+              "baggageAllowances": [
+                {
+                  "amount": 30,
+                  "type": "KILO",
+                  "alternativeType": "K",
+                  "flightNumber": "QR965",
+                  "departureAirport": "DPS",
+                  "arrivalAirport": "DOH",
+                  "carrier": "QR",
+                  "classCode": "N"
+                },
+                {
+                  "amount": 30,
+                  "type": "KILO",
+                  "alternativeType": "K",
+                  "flightNumber": "QR297",
+                  "departureAirport": "DOH",
+                  "arrivalAirport": "KBP",
+                  "carrier": "QR",
+                  "classCode": "N"
+                }
+              ]
+            }
+          ],
+          "segmentNames": [
+            "N",
+            "N"
+          ],
+          "freeSeatCount": 9,
+          "detail": {
+            "price": 375.72,
+            "serviceFee": 24.39,
+            "tax": 304.31,
+            "suplement": 0
+          }
+        }
+      ],
+      "segmentCount": 2,
+      "baggage": -1,
+      "flightTimeHour": 15,
+      "flightTimeMinute": 5,
+      "layoverTime": 100,
+      "hasCip": false,
+      "dayCross": false,
+      "returnFlight": true,
+      "testInfo": {
+        "suitableForTest": false
+      }
+    },
+    {
+      "id": "m:20b2:6kug:jubkn9tl:IT:021061m01Kh7DIgY:9777",
+      "providerKey": "Amadeus ALFA",
+      "pricingType": "PACKAGED",
+      "packageId": 2,
+      "legs": [
+        {
+          "flightNo": "QR296",
+          "aircraft": "332",
+          "carrierCode": "QR",
+          "carrierName": "Qatar Airways",
+          "operatorCode": "QR",
+          "operatorName": "Qatar Airways",
+          "validatingCarrierCode": "QR",
+          "departureAirport": "KBP",
+          "localDepartureDate": "2019-04-23 13:25:00",
+          "departureTime": "2019-04-23T13:25:00.000+0300",
+          "departureAirportName": "Borispol Arpt",
+          "departureCityName": "Kiev",
+          "arrivalAirport": "DOH",
+          "localArrivalDate": "2019-04-23 18:50:00",
+          "arrivalTime": "2019-04-23T18:50:00.000+0300",
+          "arrivalAirportName": "Doha International Arpt",
+          "arrivalCityName": "Doha",
+          "numStops": "0",
+          "legDurationMinute": 325,
+          "waitTimeBeforeNextLeg": 820
+        },
+        {
+          "flightNo": "QR960",
+          "aircraft": "77W",
+          "carrierCode": "QR",
+          "carrierName": "Qatar Airways",
+          "operatorCode": "QR",
+          "operatorName": "Qatar Airways",
+          "validatingCarrierCode": "QR",
+          "departureAirport": "DOH",
+          "localDepartureDate": "2019-04-24 08:30:00",
+          "departureTime": "2019-04-24T08:30:00.000+0300",
+          "departureAirportName": "Doha International Arpt",
+          "departureCityName": "Doha",
+          "arrivalAirport": "DPS",
+          "localArrivalDate": "2019-04-24 23:10:00",
+          "arrivalTime": "2019-04-24T23:10:00.000+0300",
+          "arrivalAirportName": "Ngurah Rai Arpt",
+          "arrivalCityName": "Denpasar Bali",
+          "arrivalTerminal": "I",
+          "numStops": "0",
+          "legDurationMinute": 580,
+          "waitTimeBeforeNextLeg": 0
+        }
+      ],
+      "fares": [
+        {
+          "totalSingleAdultFare": 704.43,
+          "currency": "EUR",
+          "type": "ECONOMY",
+          "baggageAllowances": [
+            {
+              "amount": 30,
+              "type": "KILO",
+              "alternativeType": "K",
+              "flightNumber": "QR296",
+              "departureAirport": "KBP",
+              "arrivalAirport": "DOH",
+              "carrier": "QR",
+              "classCode": "N"
+            },
+            {
+              "amount": 30,
+              "type": "KILO",
+              "alternativeType": "K",
+              "flightNumber": "QR960",
+              "departureAirport": "DOH",
+              "arrivalAirport": "DPS",
+              "carrier": "QR",
+              "classCode": "N"
+            }
+          ],
+          "personFares": [
+            {
+              "total": 704.43,
+              "baseFare": 375.72,
+              "tax": 304.31,
+              "serviceFee": 6.59,
+              "supplement": 0,
+              "agencyCommission": 17.79,
+              "passangerType": "ADULT",
+              "baggageAllowances": [
+                {
+                  "amount": 30,
+                  "type": "KILO",
+                  "alternativeType": "K",
+                  "flightNumber": "QR296",
+                  "departureAirport": "KBP",
+                  "arrivalAirport": "DOH",
+                  "carrier": "QR",
+                  "classCode": "N"
+                },
+                {
+                  "amount": 30,
+                  "type": "KILO",
+                  "alternativeType": "K",
+                  "flightNumber": "QR960",
+                  "departureAirport": "DOH",
+                  "arrivalAirport": "DPS",
+                  "carrier": "QR",
+                  "classCode": "N"
+                }
+              ]
+            },
+            {
+              "total": 612.58,
+              "baseFare": 283.87,
+              "tax": 304.31,
+              "serviceFee": 6.59,
+              "supplement": 0,
+              "agencyCommission": 17.79,
+              "passangerType": "CHILD",
+              "baggageAllowances": [
+                {
+                  "amount": 30,
+                  "type": "KILO",
+                  "alternativeType": "K",
+                  "flightNumber": "QR296",
+                  "departureAirport": "KBP",
+                  "arrivalAirport": "DOH",
+                  "carrier": "QR",
+                  "classCode": "N"
+                },
+                {
+                  "amount": 30,
+                  "type": "KILO",
+                  "alternativeType": "K",
+                  "flightNumber": "QR960",
+                  "departureAirport": "DOH",
+                  "arrivalAirport": "DPS",
+                  "carrier": "QR",
+                  "classCode": "N"
+                }
+              ]
+            }
+          ],
+          "segmentNames": [
+            "N",
+            "N"
+          ],
+          "freeSeatCount": 9,
+          "detail": {
+            "price": 375.72,
+            "serviceFee": 24.39,
+            "tax": 304.31,
+            "suplement": 0
+          }
+        }
+      ],
+      "segmentCount": 2,
+      "baggage": -1,
+      "flightTimeHour": 15,
+      "flightTimeMinute": 5,
+      "layoverTime": 820,
+      "hasCip": false,
+      "dayCross": true,
+      "returnFlight": false,
+      "testInfo": {
+        "suitableForTest": false
+      }
+    },
+    {
+      "id": "m:20b2:6kug:jubkn9tl:IT:021061LCC30P7OHe:9778",
+      "providerKey": "Amadeus ALFA",
+      "pricingType": "PACKAGED",
+      "packageId": 2,
+      "legs": [
+        {
+          "flightNo": "QR961",
+          "aircraft": "77W",
+          "carrierCode": "QR",
+          "carrierName": "Qatar Airways",
+          "operatorCode": "QR",
+          "operatorName": "Qatar Airways",
+          "validatingCarrierCode": "QR",
+          "departureAirport": "DPS",
+          "localDepartureDate": "2019-05-01 00:35:00",
+          "departureTime": "2019-05-01T00:35:00.000+0300",
+          "departureAirportName": "Ngurah Rai Arpt",
+          "departureCityName": "Denpasar Bali",
+          "departureTerminal": "I",
+          "arrivalAirport": "DOH",
+          "localArrivalDate": "2019-05-01 05:35:00",
+          "arrivalTime": "2019-05-01T05:35:00.000+0300",
+          "arrivalAirportName": "Doha International Arpt",
+          "arrivalCityName": "Doha",
+          "numStops": "0",
+          "legDurationMinute": 600,
+          "waitTimeBeforeNextLeg": 65
+        },
+        {
+          "flightNo": "QR295",
+          "aircraft": "320",
+          "carrierCode": "QR",
+          "carrierName": "Qatar Airways",
+          "operatorCode": "QR",
+          "operatorName": "Qatar Airways",
+          "validatingCarrierCode": "QR",
+          "departureAirport": "DOH",
+          "localDepartureDate": "2019-05-01 06:40:00",
+          "departureTime": "2019-05-01T06:40:00.000+0300",
+          "departureAirportName": "Doha International Arpt",
+          "departureCityName": "Doha",
+          "arrivalAirport": "KBP",
+          "localArrivalDate": "2019-05-01 12:20:00",
+          "arrivalTime": "2019-05-01T12:20:00.000+0300",
+          "arrivalAirportName": "Borispol Arpt",
+          "arrivalCityName": "Kiev",
+          "numStops": "0",
+          "legDurationMinute": 340,
+          "waitTimeBeforeNextLeg": 0
+        }
+      ],
+      "fares": [
+        {
+          "totalSingleAdultFare": 704.43,
+          "currency": "EUR",
+          "type": "ECONOMY",
+          "baggageAllowances": [
+            {
+              "amount": 30,
+              "type": "KILO",
+              "alternativeType": "K",
+              "flightNumber": "QR961",
+              "departureAirport": "DPS",
+              "arrivalAirport": "DOH",
+              "carrier": "QR",
+              "classCode": "N"
+            },
+            {
+              "amount": 30,
+              "type": "KILO",
+              "alternativeType": "K",
+              "flightNumber": "QR295",
+              "departureAirport": "DOH",
+              "arrivalAirport": "KBP",
+              "carrier": "QR",
+              "classCode": "N"
+            }
+          ],
+          "personFares": [
+            {
+              "total": 704.43,
+              "baseFare": 375.72,
+              "tax": 304.31,
+              "serviceFee": 6.59,
+              "supplement": 0,
+              "agencyCommission": 17.79,
+              "passangerType": "ADULT",
+              "baggageAllowances": [
+                {
+                  "amount": 30,
+                  "type": "KILO",
+                  "alternativeType": "K",
+                  "flightNumber": "QR961",
+                  "departureAirport": "DPS",
+                  "arrivalAirport": "DOH",
+                  "carrier": "QR",
+                  "classCode": "N"
+                },
+                {
+                  "amount": 30,
+                  "type": "KILO",
+                  "alternativeType": "K",
+                  "flightNumber": "QR295",
+                  "departureAirport": "DOH",
+                  "arrivalAirport": "KBP",
+                  "carrier": "QR",
+                  "classCode": "N"
+                }
+              ]
+            },
+            {
+              "total": 612.58,
+              "baseFare": 283.87,
+              "tax": 304.31,
+              "serviceFee": 6.59,
+              "supplement": 0,
+              "agencyCommission": 17.79,
+              "passangerType": "CHILD",
+              "baggageAllowances": [
+                {
+                  "amount": 30,
+                  "type": "KILO",
+                  "alternativeType": "K",
+                  "flightNumber": "QR961",
+                  "departureAirport": "DPS",
+                  "arrivalAirport": "DOH",
+                  "carrier": "QR",
+                  "classCode": "N"
+                },
+                {
+                  "amount": 30,
+                  "type": "KILO",
+                  "alternativeType": "K",
+                  "flightNumber": "QR295",
+                  "departureAirport": "DOH",
+                  "arrivalAirport": "KBP",
+                  "carrier": "QR",
+                  "classCode": "N"
+                }
+              ]
+            }
+          ],
+          "segmentNames": [
+            "N",
+            "N"
+          ],
+          "freeSeatCount": 9,
+          "detail": {
+            "price": 375.72,
+            "serviceFee": 24.39,
+            "tax": 304.31,
+            "suplement": 0
+          }
+        }
+      ],
+      "segmentCount": 2,
+      "baggage": -1,
+      "flightTimeHour": 15,
+      "flightTimeMinute": 40,
+      "layoverTime": 65,
+      "hasCip": false,
+      "dayCross": false,
+      "returnFlight": true,
+      "testInfo": {
+        "suitableForTest": false
+      }
+    },
+    {
+      "id": "m:20b2:6kug:jubkn9tl:IT:021061m01Kh7DIgY:9779",
+      "providerKey": "Amadeus ALFA",
+      "pricingType": "PACKAGED",
+      "packageId": 2,
+      "legs": [
+        {
+          "flightNo": "QR296",
+          "aircraft": "332",
+          "carrierCode": "QR",
+          "carrierName": "Qatar Airways",
+          "operatorCode": "QR",
+          "operatorName": "Qatar Airways",
+          "validatingCarrierCode": "QR",
+          "departureAirport": "KBP",
+          "localDepartureDate": "2019-04-23 13:25:00",
+          "departureTime": "2019-04-23T13:25:00.000+0300",
+          "departureAirportName": "Borispol Arpt",
+          "departureCityName": "Kiev",
+          "arrivalAirport": "DOH",
+          "localArrivalDate": "2019-04-23 18:50:00",
+          "arrivalTime": "2019-04-23T18:50:00.000+0300",
+          "arrivalAirportName": "Doha International Arpt",
+          "arrivalCityName": "Doha",
+          "numStops": "0",
+          "legDurationMinute": 325,
+          "waitTimeBeforeNextLeg": 820
+        },
+        {
+          "flightNo": "QR960",
+          "aircraft": "77W",
+          "carrierCode": "QR",
+          "carrierName": "Qatar Airways",
+          "operatorCode": "QR",
+          "operatorName": "Qatar Airways",
+          "validatingCarrierCode": "QR",
+          "departureAirport": "DOH",
+          "localDepartureDate": "2019-04-24 08:30:00",
+          "departureTime": "2019-04-24T08:30:00.000+0300",
+          "departureAirportName": "Doha International Arpt",
+          "departureCityName": "Doha",
+          "arrivalAirport": "DPS",
+          "localArrivalDate": "2019-04-24 23:10:00",
+          "arrivalTime": "2019-04-24T23:10:00.000+0300",
+          "arrivalAirportName": "Ngurah Rai Arpt",
+          "arrivalCityName": "Denpasar Bali",
+          "arrivalTerminal": "I",
+          "numStops": "0",
+          "legDurationMinute": 580,
+          "waitTimeBeforeNextLeg": 0
+        }
+      ],
+      "fares": [
+        {
+          "totalSingleAdultFare": 704.43,
+          "currency": "EUR",
+          "type": "ECONOMY",
+          "baggageAllowances": [
+            {
+              "amount": 30,
+              "type": "KILO",
+              "alternativeType": "K",
+              "flightNumber": "QR296",
+              "departureAirport": "KBP",
+              "arrivalAirport": "DOH",
+              "carrier": "QR",
+              "classCode": "N"
+            },
+            {
+              "amount": 30,
+              "type": "KILO",
+              "alternativeType": "K",
+              "flightNumber": "QR960",
+              "departureAirport": "DOH",
+              "arrivalAirport": "DPS",
+              "carrier": "QR",
+              "classCode": "N"
+            }
+          ],
+          "personFares": [
+            {
+              "total": 704.43,
+              "baseFare": 375.72,
+              "tax": 304.31,
+              "serviceFee": 6.59,
+              "supplement": 0,
+              "agencyCommission": 17.79,
+              "passangerType": "ADULT",
+              "baggageAllowances": [
+                {
+                  "amount": 30,
+                  "type": "KILO",
+                  "alternativeType": "K",
+                  "flightNumber": "QR296",
+                  "departureAirport": "KBP",
+                  "arrivalAirport": "DOH",
+                  "carrier": "QR",
+                  "classCode": "N"
+                },
+                {
+                  "amount": 30,
+                  "type": "KILO",
+                  "alternativeType": "K",
+                  "flightNumber": "QR960",
+                  "departureAirport": "DOH",
+                  "arrivalAirport": "DPS",
+                  "carrier": "QR",
+                  "classCode": "N"
+                }
+              ]
+            },
+            {
+              "total": 612.58,
+              "baseFare": 283.87,
+              "tax": 304.31,
+              "serviceFee": 6.59,
+              "supplement": 0,
+              "agencyCommission": 17.79,
+              "passangerType": "CHILD",
+              "baggageAllowances": [
+                {
+                  "amount": 30,
+                  "type": "KILO",
+                  "alternativeType": "K",
+                  "flightNumber": "QR296",
+                  "departureAirport": "KBP",
+                  "arrivalAirport": "DOH",
+                  "carrier": "QR",
+                  "classCode": "N"
+                },
+                {
+                  "amount": 30,
+                  "type": "KILO",
+                  "alternativeType": "K",
+                  "flightNumber": "QR960",
+                  "departureAirport": "DOH",
+                  "arrivalAirport": "DPS",
+                  "carrier": "QR",
+                  "classCode": "N"
+                }
+              ]
+            }
+          ],
+          "segmentNames": [
+            "N",
+            "N"
+          ],
+          "freeSeatCount": 9,
+          "detail": {
+            "price": 375.72,
+            "serviceFee": 24.39,
+            "tax": 304.31,
+            "suplement": 0
+          }
+        }
+      ],
+      "segmentCount": 2,
+      "baggage": -1,
+      "flightTimeHour": 15,
+      "flightTimeMinute": 5,
+      "layoverTime": 820,
+      "hasCip": false,
+      "dayCross": true,
+      "returnFlight": false,
+      "testInfo": {
+        "suitableForTest": false
+      }
+    },
+    {
+      "id": "m:20b2:6kug:jubkn9tl:IT:021061GLYnnf7bNH:977a",
+      "providerKey": "Amadeus ALFA",
+      "pricingType": "PACKAGED",
+      "packageId": 2,
+      "legs": [
+        {
+          "flightNo": "QR965",
+          "aircraft": "788",
+          "carrierCode": "QR",
+          "carrierName": "Qatar Airways",
+          "operatorCode": "QR",
+          "operatorName": "Qatar Airways",
+          "validatingCarrierCode": "QR",
+          "departureAirport": "DPS",
+          "localDepartureDate": "2019-05-01 09:25:00",
+          "departureTime": "2019-05-01T09:25:00.000+0300",
+          "departureAirportName": "Ngurah Rai Arpt",
+          "departureCityName": "Denpasar Bali",
+          "departureTerminal": "I",
+          "arrivalAirport": "DOH",
+          "localArrivalDate": "2019-05-01 14:00:00",
+          "arrivalTime": "2019-05-01T14:00:00.000+0300",
+          "arrivalAirportName": "Doha International Arpt",
+          "arrivalCityName": "Doha",
+          "numStops": "0",
+          "legDurationMinute": 575,
+          "waitTimeBeforeNextLeg": 100
+        },
+        {
+          "flightNo": "QR297",
+          "aircraft": "320",
+          "carrierCode": "QR",
+          "carrierName": "Qatar Airways",
+          "operatorCode": "QR",
+          "operatorName": "Qatar Airways",
+          "validatingCarrierCode": "QR",
+          "departureAirport": "DOH",
+          "localDepartureDate": "2019-05-01 15:40:00",
+          "departureTime": "2019-05-01T15:40:00.000+0300",
+          "departureAirportName": "Doha International Arpt",
+          "departureCityName": "Doha",
+          "arrivalAirport": "KBP",
+          "localArrivalDate": "2019-05-01 21:10:00",
+          "arrivalTime": "2019-05-01T21:10:00.000+0300",
+          "arrivalAirportName": "Borispol Arpt",
+          "arrivalCityName": "Kiev",
+          "numStops": "0",
+          "legDurationMinute": 330,
+          "waitTimeBeforeNextLeg": 0
+        }
+      ],
+      "fares": [
+        {
+          "totalSingleAdultFare": 704.43,
+          "currency": "EUR",
+          "type": "ECONOMY",
+          "baggageAllowances": [
+            {
+              "amount": 30,
+              "type": "KILO",
+              "alternativeType": "K",
+              "flightNumber": "QR965",
+              "departureAirport": "DPS",
+              "arrivalAirport": "DOH",
+              "carrier": "QR",
+              "classCode": "N"
+            },
+            {
+              "amount": 30,
+              "type": "KILO",
+              "alternativeType": "K",
+              "flightNumber": "QR297",
+              "departureAirport": "DOH",
+              "arrivalAirport": "KBP",
+              "carrier": "QR",
+              "classCode": "N"
+            }
+          ],
+          "personFares": [
+            {
+              "total": 704.43,
+              "baseFare": 375.72,
+              "tax": 304.31,
+              "serviceFee": 6.59,
+              "supplement": 0,
+              "agencyCommission": 17.79,
+              "passangerType": "ADULT",
+              "baggageAllowances": [
+                {
+                  "amount": 30,
+                  "type": "KILO",
+                  "alternativeType": "K",
+                  "flightNumber": "QR965",
+                  "departureAirport": "DPS",
+                  "arrivalAirport": "DOH",
+                  "carrier": "QR",
+                  "classCode": "N"
+                },
+                {
+                  "amount": 30,
+                  "type": "KILO",
+                  "alternativeType": "K",
+                  "flightNumber": "QR297",
+                  "departureAirport": "DOH",
+                  "arrivalAirport": "KBP",
+                  "carrier": "QR",
+                  "classCode": "N"
+                }
+              ]
+            },
+            {
+              "total": 612.58,
+              "baseFare": 283.87,
+              "tax": 304.31,
+              "serviceFee": 6.59,
+              "supplement": 0,
+              "agencyCommission": 17.79,
+              "passangerType": "CHILD",
+              "baggageAllowances": [
+                {
+                  "amount": 30,
+                  "type": "KILO",
+                  "alternativeType": "K",
+                  "flightNumber": "QR965",
+                  "departureAirport": "DPS",
+                  "arrivalAirport": "DOH",
+                  "carrier": "QR",
+                  "classCode": "N"
+                },
+                {
+                  "amount": 30,
+                  "type": "KILO",
+                  "alternativeType": "K",
+                  "flightNumber": "QR297",
+                  "departureAirport": "DOH",
+                  "arrivalAirport": "KBP",
+                  "carrier": "QR",
+                  "classCode": "N"
+                }
+              ]
+            }
+          ],
+          "segmentNames": [
+            "N",
+            "N"
+          ],
+          "freeSeatCount": 9,
+          "detail": {
+            "price": 375.72,
+            "serviceFee": 24.39,
+            "tax": 304.31,
+            "suplement": 0
+          }
+        }
+      ],
+      "segmentCount": 2,
+      "baggage": -1,
+      "flightTimeHour": 15,
+      "flightTimeMinute": 5,
+      "layoverTime": 100,
+      "hasCip": false,
+      "dayCross": false,
+      "returnFlight": true,
+      "testInfo": {
+        "suitableForTest": false
+      }
+    }
+  ]
 }

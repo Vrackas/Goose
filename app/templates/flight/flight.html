@@ -74,15 +74,15 @@
                         <div><i class="fas fa-chevron-down"></i>
                             <p>Sort by rating</p></div>
                     </div>
-                    <div class="result">
+                    <div class="result" ng-repeat="flight in vm.flights">
                         <div class="result_flight accordion">
                             <div class="info">
                                 <div class="from_to">
                                     <div class="logo"><img src="content/img/logo_fly.png" alt=""></div>
                                     <div class="wave">
-                                        <div>
-                                            <strong>14:10</strong>
-                                            <p>DMV</p>
+                                        <div ng-repeat="leg in flight.legs">
+                                            <strong>{{leg.localDepartureDate}}</strong>
+                                            <p>{{leg.departureAirport}}</p>
                                         </div>
                                         <div>
                                             <div class="line"></div>
@@ -93,7 +93,7 @@
                                             <p>DPS</p>
                                         </div>
                                     </div>
-                                    <div class="time"> <p>4h 34 min</p></div>
+                                    <div class="time"><p>4h 34 min</p></div>
                                 </div>
                                 <div class="to_from">
                                     <div class="logo"><img src="content/img/logo_fly.png" alt=""></div>
@@ -112,7 +112,7 @@
                                             <p>DMV</p>
                                         </div>
                                     </div>
-                                    <div class="time"> <p>4h 34 min</p></div>
+                                    <div class="time"><p>4h 34 min</p></div>
                                 </div>
                             </div>
                             <div class="line"></div>
@@ -122,34 +122,36 @@
                             </div>
                         </div>
                         <div class="panel">
-                           <div class="panel_item">
-                               <div class="top">
-                                   <md-checkbox ng-model="check" aria-label="Depart">
-                                      Depart
-                                   </md-checkbox>
-                                   <p>DMV - DPS</p>
-                                   <p>5h 25m</p>
-                               </div>
-                               <div class="info">
-                                   <div class="info_day">Sun, 04 May</div>
-                                   <div class="info_time"><img src="content/img/logo_fly.png" alt=""><p>14:10 - 21:10</p> </div>
-                                   <div class="info_class">Economy</div>
-                               </div>
-                           </div>
                             <div class="panel_item">
-                               <div class="top">
-                                   <md-checkbox ng-model="check2" aria-label="Depart">
-                                      Return
-                                   </md-checkbox>
-                                   <p>DMV - DPS</p>
-                                   <p>5h 25m</p>
-                               </div>
-                               <div class="info">
-                                   <div class="info_day">Sun, 04 May</div>
-                                   <div class="info_time"><img src="content/img/logo_fly.png" alt=""><p>14:10 - 21:10</p> </div>
-                                   <div class="info_class">Economy</div>
-                               </div>
-                           </div>
+                                <div class="top">
+                                    <md-checkbox ng-model="check" aria-label="Depart">
+                                        Depart
+                                    </md-checkbox>
+                                    <p>DMV - DPS</p>
+                                    <p>5h 25m</p>
+                                </div>
+                                <div class="info">
+                                    <div class="info_day">Sun, 04 May</div>
+                                    <div class="info_time"><img src="content/img/logo_fly.png" alt="">
+                                        <p>14:10 - 21:10</p></div>
+                                    <div class="info_class">Economy</div>
+                                </div>
+                            </div>
+                            <div class="panel_item">
+                                <div class="top">
+                                    <md-checkbox ng-model="check2" aria-label="Depart">
+                                        Return
+                                    </md-checkbox>
+                                    <p>DMV - DPS</p>
+                                    <p>5h 25m</p>
+                                </div>
+                                <div class="info">
+                                    <div class="info_day">Sun, 04 May</div>
+                                    <div class="info_time"><img src="content/img/logo_fly.png" alt="">
+                                        <p>14:10 - 21:10</p></div>
+                                    <div class="info_class">Economy</div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
