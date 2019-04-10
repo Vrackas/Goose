@@ -10,8 +10,5 @@
     function ToursController(http) {
         let vm = this;
 
-
-
-
     }
 })();

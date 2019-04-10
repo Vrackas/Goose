@@ -11,7 +11,8 @@
         return {
             getAirport: getAirport,
             save: save,
-            getFlights: getFlights
+            getFlights: getFlights,
+            getFlightObject: getFlightObject
         };
 
         function getAirport(query) {
@@ -27,8 +28,13 @@
             $localStorage.flight = flightObject;
         }
 
+        function getFlightObject() {
+            return $localStorage.flight;
+        }
+
         function getFlights() {
-            return http.get('fake_db/flights.json').then(function (res) {
+            var data = getFlightObject();
+            return http.post('https://testapi.iati.com/rest/flightSearch/FF2DA8C0E6BEA332F970F6CB56A0C953', data).then(function (res) {
                 // var result = res.result.filter(function (item) {
                 //     return item.code.indexOf(query) !== -1;
                 // });
