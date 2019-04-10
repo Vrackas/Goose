@@ -8,7 +8,7 @@
 
     function FlightController(flightService, flights) {
         // console.log(flights);
-        var vm = this;
+        let vm = this;
         vm.flights = flights.flights;
 
 
@@ -21,8 +21,9 @@
 
             for (i = 0; i < acc.length; i++) {
                 acc[i].addEventListener("click", function () {
+                    console.log('test');
                     this.classList.toggle("active");
-                    var panel = this.nextElementSibling;
+                    let panel = this.nextElementSibling;
                     if (panel.style.maxHeight) {
                         panel.style.maxHeight = null;
                     } else {

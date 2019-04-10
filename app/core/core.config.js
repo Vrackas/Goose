@@ -60,7 +60,8 @@
             .state('checkout', {
                 url: '/checkout',
                 templateUrl: 'templates/checkout/checkout.html',
-                controller: 'CheckoutController',
+                controller: '' +
+                '',
                 controllerAs: 'vm'
             })
 
