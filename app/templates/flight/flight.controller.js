@@ -8,14 +8,22 @@
 
     function FlightController(flightService, flights) {
         // console.log(flights);
-        var vm = this;
+        let vm = this;
         vm.flights = flights.flights;
         vm.filterByStops = filterByStops;
         vm.transformDate = transformDate;
         vm.filterByDuration = filterByDuration;
+        vm.transformDay = transformDay;
 
         function transformDate(date) {
-            return date.substr(11, 5)
+            if (typeof date !== 'undefined')
+                return date.substr(11, 5)
+        }
+
+        function transformDay(date) {
+            var date = new Date(date);
+            return date.toString().substr(0, 10);
+
         }
 
         function filterByStops(count, checked, more) {
@@ -30,6 +38,7 @@
                     return item.legs.length === count;
                 })
             }
+            init();
         }
 
         function filterByDuration(hour_s, hour_f, checked) {
@@ -40,10 +49,17 @@
                     return (item.flightTimeHour >= hour_s && item.flightTimeHour <= hour_f);
                 })
             }
+            init();
 
         }
 
         $(document).ready(function () {
+
+            init();
+        });
+
+        function init() {
+
 
             // accordion effect
             setTimeout(function () {
@@ -61,9 +77,7 @@
                         }
                     });
                 }
-            }, 3000)
-
-
-        });
+            }, 1000);
+        }
     }
 })();

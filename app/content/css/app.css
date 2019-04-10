@@ -138,7 +138,7 @@ input:focus {
           height: fit-content;
           background: white;
           border-radius: 10px;
-          padding: 30px 20px;
+          padding: 18px 20px;
           width: 300px;
           box-sizing: border-box; }
           .homepage .main_section .content .search .some .input_container input {
@@ -146,8 +146,18 @@ input:focus {
             font-size: 20px; }
           .homepage .main_section .content .search .some .input_container .md-errors-spacer {
             display: none; }
+          .homepage .main_section .content .search .some .input_container md-item-template {
+            color: #303030; }
+          .homepage .main_section .content .search .some .input_container md-autocomplete-wrap input {
+            padding: 0; }
         .homepage .main_section .content .search .some .input_container:nth-child(3) {
-          padding: 18px 20px; }
+          padding: 18px 0px;
+          display: flex;
+          min-width: 300px !important; }
+          .homepage .main_section .content .search .some .input_container:nth-child(3) md-datepicker .md-datepicker-input-container {
+            margin: 0; }
+            .homepage .main_section .content .search .some .input_container:nth-child(3) md-datepicker .md-datepicker-input-container input.md-datepicker-input {
+              width: 120px !important; }
           .homepage .main_section .content .search .some .input_container:nth-child(3) md-datepicker button {
             height: 40px;
             width: 40px;
@@ -157,6 +167,19 @@ input:focus {
               font-size: 20px;
               height: 40px;
               width: 40px; }
+          .homepage .main_section .content .search .some .input_container:nth-child(3) md-datepicker:nth-child(2) {
+            margin-top: 4px; }
+            .homepage .main_section .content .search .some .input_container:nth-child(3) md-datepicker:nth-child(2) button.md-icon-button {
+              padding: 0;
+              display: none; }
+              .homepage .main_section .content .search .some .input_container:nth-child(3) md-datepicker:nth-child(2) button.md-icon-button md-icon {
+                display: none; }
+              .homepage .main_section .content .search .some .input_container:nth-child(3) md-datepicker:nth-child(2) button.md-icon-button .md-ripple-container {
+                display: none; }
+            .homepage .main_section .content .search .some .input_container:nth-child(3) md-datepicker:nth-child(2) button.md-datepicker-triangle-button {
+              display: block; }
+            .homepage .main_section .content .search .some .input_container:nth-child(3) md-datepicker:nth-child(2) button:before {
+              display: none; }
       .homepage .main_section .content .search .accept {
         display: flex;
         justify-content: space-around;
@@ -199,18 +222,22 @@ input:focus {
       width: 100%; }
       .homepage .main_section .content .search .some .input_container {
         width: 250px;
-        padding: 25px 15px; } }
+        padding: 18px 15px; } }
 
 @media (min-width: 768px) and (max-width: 992px) {
-  .homepage .main_section .content .search {
-    width: 100%; }
-    .homepage .main_section .content .search .some {
+  .homepage .main_section {
+    padding: 80px 25px; }
+    .homepage .main_section .content .search {
       width: 100%; }
-      .homepage .main_section .content .search .some .input_container {
-        width: 200px;
-        padding: 20px 10px; }
-        .homepage .main_section .content .search .some .input_container input {
-          max-width: 180px; } }
+      .homepage .main_section .content .search .some {
+        width: 100%; }
+        .homepage .main_section .content .search .some .input_container {
+          width: 200px;
+          padding: 12px 5px; }
+          .homepage .main_section .content .search .some .input_container input {
+            max-width: 180px; }
+        .homepage .main_section .content .search .some .input_container:nth-child(3) {
+          padding: 13px 0; } }
 
 @media (min-width: 540px) and (max-width: 768px) {
   .homepage .main_section .content .search {
@@ -928,6 +955,7 @@ input:focus {
         box-sizing: border-box;
         width: 100%;
         height: auto;
+        margin-bottom: 40px;
         background-color: #e0e0e0;
         max-height: 0;
         overflow: hidden;

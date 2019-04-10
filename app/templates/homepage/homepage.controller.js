@@ -29,7 +29,12 @@
         };
         vm.searchTour = searchTour;
         vm.changeInput = changeInput;
-        vm.date = new Date;
+        vm.dateFrom = new Date;
+        vm.dateTo = new Date;
+        vm.persons = 1;
+        vm.personMath = personMath;
+        vm.searchText;
+        vm.test = [ 'Alabama', 'Alaska', 'Arizona', 'Arkansas', 'California', 'Colorado']
 
 
         function changeInput(query, type) {
@@ -56,6 +61,18 @@
             // if (vm.flight.from.code.length === 3 && vm.flight.to.code.length === 3)
                 flightService.save(vm.flight);
             console.log(vm.flight);
+        }
+
+        function personMath(button) {
+            if(button){
+                vm.persons++
+            }
+            else if(!button){
+                if(vm.persons >= 2){
+                    vm.persons--
+                }
+
+            }
         }
     }
 })();

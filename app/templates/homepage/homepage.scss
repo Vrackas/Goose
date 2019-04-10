@@ -17,37 +17,38 @@
       align-items: center;
       padding-top: 130px;
       height: 100%;
-      .top{
+      .top {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        p{
+        p {
           color: $basic_purple;
           font-size: 30px;
           margin: 0;
           font-weight: bold;
-          i{
+          i {
             margin-left: 15px;
             font-size: 34px;
           }
         }
-        div{
+        div {
           display: flex;
           align-items: center;
-          button{
+          button {
             border: none;
             background: white;
             border-radius: 50%;
             font: {
               size: 30px;
-            };
+            }
+          ;
             line-height: 20px;
             width: 30px;
             height: 30px;
             box-shadow: 0 3px 0 rgba(153, 160, 204, 0.3);
             margin: 0 5px;
           }
-          i,p{
+          i, p {
             margin: 0 5px;
             color: white;
             font-size: 26px;
@@ -56,7 +57,6 @@
         }
       }
       .search {
-
         display: flex;
         flex-direction: column;
         max-width: 1000px;
@@ -73,7 +73,7 @@
             height: fit-content;
             background: white;
             border-radius: 10px;
-            padding: 30px 20px;
+            padding: 18px 20px;
             width: 300px;
             box-sizing: border-box;
             input {
@@ -83,10 +83,26 @@
             .md-errors-spacer {
               display: none;
             }
+            md-item-template {
+              color: #303030;
+            }
+            md-autocomplete-wrap {
+              input {
+                padding: 0;
+              }
+            }
           }
           .input_container:nth-child(3) {
-            padding: 18px 20px;
+            padding: 18px 0px;
+            display: flex;
+            min-width: 300px !important;
             md-datepicker {
+              .md-datepicker-input-container {
+                margin: 0;
+                input.md-datepicker-input {
+                  width: 120px !important;
+                }
+              }
               button {
                 height: 40px;
                 width: 40px;
@@ -99,6 +115,27 @@
                 }
               }
             }
+            md-datepicker:nth-child(2) {
+              margin-top: 4px;
+              button.md-icon-button {
+                //height: 0px;
+                //width: 0px;
+                padding: 0;
+                display: none;
+                md-icon {
+                  display: none;
+                }
+                .md-ripple-container {
+                  display: none;
+                }
+              }
+              button.md-datepicker-triangle-button {
+                display: block;
+              }
+              button:before {
+                display: none;
+              }
+            }
           }
         }
 
@@ -107,12 +144,12 @@
           justify-content: space-around;
           align-items: center;
           width: 100%;
-          .paket{
+          .paket {
             display: flex;
             flex-direction: row;
             color: $basic_purple;
             font-size: 30px;
-            p{
+            p {
               margin: 18px 10px;
               font-weight: bold;
             }
@@ -120,21 +157,22 @@
               .md-slider-wrapper {
                 width: 200px;
                 .md-slider-content {
-                  .md-track-container{
+                  .md-track-container {
                     height: 5px;
-                    .md-track{
+                    .md-track {
                       background: white;
                     }
-                    .md-track-fill{
+                    .md-track-fill {
                       background: $basic_purple;
                     }
                   }
                   .md-thumb-container {
-                    .md-thumb{
+                    .md-thumb {
                       top: 10px;
                     }
-                    .md-thumb::after {  width: 30px;
-                      height:  30px;
+                    .md-thumb::after {
+                      width: 30px;
+                      height: 30px;
                       background: white;
                       color: white;
                       border: none;
@@ -184,7 +222,7 @@
             width: 100%;
             .input_container {
               width: 250px;
-              padding: 25px 15px;
+              padding: 18px 15px;
             }
           }
         }
@@ -195,18 +233,22 @@
 
   @media (min-width: 768px) and (max-width: 992px) {
     .main_section {
+      padding: 80px 25px;
       .content {
         .search {
           width: 100%;
           .some {
             width: 100%;
-          .input_container {
-            width: 200px;
-            padding: 20px 10px;
-            input {
-              max-width: 180px;
+            .input_container {
+              width: 200px;
+              padding: 12px 5px;
+              input {
+                max-width: 180px;
+              }
             }
-          }
+            .input_container:nth-child(3) {
+              padding: 13px 0;
+            }
           }
         }
       }
@@ -219,7 +261,7 @@
       .content {
         .search {
           width: 100%;
-          .some , .accept{
+          .some, .accept {
             width: 100%;
             flex-direction: column;
             justify-content: center;
@@ -237,20 +279,20 @@
   @media (max-width: 540px) {
     .main_section {
       .content {
-        .top{
+        .top {
           width: 100%;
           flex-direction: column;
           justify-content: center;
           align-items: center;
-          p{
-            i{
+          p {
+            i {
               margin: 0;
             }
           }
         }
         .search {
           width: 100%;
-          .some , .accept {
+          .some, .accept {
             width: 100%;
             flex-direction: column;
             justify-content: center;

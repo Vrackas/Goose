@@ -25,10 +25,12 @@
                         <md-checkbox ng-model="some3" aria-label="3h to 5h" ng-click="vm.filterByDuration(3,5,some3)">
                             3h to 5h
                         </md-checkbox>
-                        <md-checkbox ng-model="some4" aria-label=" 5h to 10h" ng-click="vm.filterByDuration(5,10,some4)">
+                        <md-checkbox ng-model="some4" aria-label=" 5h to 10h"
+                                     ng-click="vm.filterByDuration(5,10,some4)">
                             5h to 10h
                         </md-checkbox>
-                        <md-checkbox ng-model="some5" aria-label="10h to 15h" ng-click="vm.filterByDuration(10,15,some5)">
+                        <md-checkbox ng-model="some5" aria-label="10h to 15h"
+                                     ng-click="vm.filterByDuration(10,15,some5)">
                             10h to 15h
                         </md-checkbox>
                     </div>
@@ -140,7 +142,7 @@
                             <div class="line"></div>
                             <div class="total">
                                 <h4>
-                                    {{flight.fares[0].totalSingleAdultFare+vm.flights[$index+1].fares[0].totalSingleAdultFare}}</h4>
+                                    {{flight.fares[0].totalSingleAdultFare}}$</h4>
                                 <button class="main_button">Buy now</button>
                             </div>
                         </div>
@@ -156,7 +158,7 @@
                                         m</p>
                                 </div>
                                 <div class="info">
-                                    <div class="info_day">Sun, 04 May</div>
+                                    <div class="info_day">{{vm.transformDay(flight.legs[0].localDepartureDate)}}</div>
                                     <div class="info_time">{{flight.legs[0].carrierName}}
                                         <p>{{vm.transformDate(flight.legs[0].localDepartureDate)}} -
                                             {{vm.transformDate(flight.legs[0].localArrivalDate)}}</p>
@@ -185,7 +187,6 @@
                                 </div>
                             </div>
                         </div>
-                        {{key}}
                     </div>
                 </div>
             </div>

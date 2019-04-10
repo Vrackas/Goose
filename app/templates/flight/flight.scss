@@ -203,7 +203,7 @@
               box-sizing: border-box;
               width: 100%;
               height: auto;
-
+              margin-bottom: 40px;
               background-color: rgb(224, 224, 224);
               max-height: 0;
               overflow: hidden;
@@ -361,11 +361,11 @@
               }
               .panel {
                 .panel_item {
-                  .top{
-                    p:nth-child(3){
+                  .top {
+                    p:nth-child(3) {
                       position: relative !important;
                     }
-                    p{
+                    p {
                       margin-left: 5px;
                     }
                   }
@@ -429,12 +429,12 @@
               }
               .panel {
                 .panel_item {
-                  .top{
+                  .top {
                     font-size: 16px;
-                    p:nth-child(3){
+                    p:nth-child(3) {
                       position: relative !important;
                     }
-                    p{
+                    p {
                       margin-left: 5px;
                     }
                   }
