@@ -9,26 +9,26 @@
                 <div class="content_filter">
                     <div class="content_filter_sort">
                         <h4>Stops</h4>
-                        <md-checkbox ng-model="some1s" aria-label=" nonstops">
+                        <md-checkbox ng-model="some1s" aria-label=" nonstops" ng-click="vm.filterByStops(1,some1s)">
                             nonstops
                         </md-checkbox>
-                        <md-checkbox ng-model="some2s" aria-label="1 stop">
+                        <md-checkbox ng-model="some2s" aria-label="1 stop" ng-click="vm.filterByStops(2,some2s)">
                             1 stop
                         </md-checkbox>
-                        <md-checkbox ng-model="some3s" aria-label="2+ stops">
+                        <md-checkbox ng-model="some3s" aria-label="2+ stops" ng-click="vm.filterByStops(3,some3s,true)">
                             2+ stops
                         </md-checkbox>
 
                     </div>
                     <div class="content_filter_sort">
                         <h4>Duration</h4>
-                        <md-checkbox ng-model="some3" aria-label="3h to 5h">
+                        <md-checkbox ng-model="some3" aria-label="3h to 5h" ng-click="vm.filterByDuration(3,5,some3)">
                             3h to 5h
                         </md-checkbox>
-                        <md-checkbox ng-model="some4" aria-label=" 5h to 10h">
+                        <md-checkbox ng-model="some4" aria-label=" 5h to 10h" ng-click="vm.filterByDuration(5,10,some4)">
                             5h to 10h
                         </md-checkbox>
-                        <md-checkbox ng-model="some5" aria-label="10h to 15h">
+                        <md-checkbox ng-model="some5" aria-label="10h to 15h" ng-click="vm.filterByDuration(10,15,some5)">
                             10h to 15h
                         </md-checkbox>
                     </div>
@@ -74,50 +74,73 @@
                         <div><i class="fas fa-chevron-down"></i>
                             <p>Sort by rating</p></div>
                     </div>
-                    <div class="result" ng-repeat="flight in vm.flights">
-                        <div class="result_flight accordion">
+                    <div class="result" ng-repeat="(key,flight) in vm.flights">
+
+                        <div ng-if="$index%2===0" class="result_flight accordion">
                             <div class="info">
+
                                 <div class="from_to">
-                                    <div class="logo"><img src="content/img/logo_fly.png" alt=""></div>
-                                    <div class="wave">
-                                        <div ng-repeat="leg in flight.legs">
-                                            <strong>{{leg.localDepartureDate}}</strong>
-                                            <p>{{leg.departureAirport}}</p>
-                                        </div>
-                                        <div>
-                                            <div class="line"></div>
-                                            <p>nonstop</p>
-                                        </div>
-                                        <div>
-                                            <strong>21:10</strong>
-                                            <p>DPS</p>
-                                        </div>
-                                    </div>
-                                    <div class="time"><p>4h 34 min</p></div>
-                                </div>
-                                <div class="to_from">
-                                    <div class="logo"><img src="content/img/logo_fly.png" alt=""></div>
+                                    <div class="logo">{{flight.legs[0].carrierName}}</div>
                                     <div class="wave">
                                         <div>
-                                            <strong>9:15</strong>
-                                            <p>DPS</p>
+                                            <strong>{{vm.transformDate(flight.legs[0].localDepartureDate)}}</strong>
+                                            <p>{{flight.legs[0].departureAirport}}</p>
                                         </div>
-                                        <div>
+
+                                        <div ng-if="flight.legs.length==1">
                                             <div class="line"></div>
                                             <p>nonstop</p>
                                         </div>
 
+                                        <div ng-if="flight.legs.length>1">
+                                            <div class="line"></div>
+                                            <p><span ng-repeat="(b_key,break) in flight.legs">
+                                                <span ng-if="b_key!=flight.legs.length-1">{{break.arrivalAirport}}</span>
+                                            </span></p>
+                                        </div>
+
                                         <div>
-                                            <strong>14:10</strong>
-                                            <p>DMV</p>
+                                            <strong>{{vm.transformDate(flight.legs[0].localArrivalDate)}}</strong>
+                                            <p>{{flight.legs[flight.legs.length-1].arrivalAirport}}</p>
                                         </div>
                                     </div>
-                                    <div class="time"><p>4h 34 min</p></div>
+                                    <div class="time"><p>{{flight.flightTimeHour}}h {{flight.flightTimeMinute}}
+                                        min</p></div>
+                                </div>
+
+                                <div class="to_from">
+                                    <div class="logo">{{vm.flights[$index+1].legs[0].carrierName}}</div>
+                                    <div class="wave">
+                                        <div>
+                                            <strong>{{vm.transformDate(vm.flights[$index+1].legs[0].localDepartureDate)}}</strong>
+                                            <p>{{vm.flights[$index+1].legs[0].departureAirport}}</p>
+                                        </div>
+                                        <div ng-if="vm.flights[$index+1].legs.length==1">
+                                            <div class="line"></div>
+                                            <p>nonstop</p>
+                                        </div>
+
+                                        <div ng-if="vm.flights[$index+1].legs.length>1">
+                                            <div class="line"></div>
+                                            <p><span ng-repeat="(b_key,break) in vm.flights[$index+1].legs">
+                                                <span ng-if="b_key!=vm.flights[$index+1].legs.length-1">{{break.arrivalAirport}}</span>
+                                            </span></p>
+                                        </div>
+
+                                        <div>
+                                            <strong>{{vm.transformDate(vm.flights[$index+1].legs[0].localArrivalDate)}}</strong>
+                                            <p>{{vm.flights[$index+1].legs[flight.legs.length-1].arrivalAirport}}</p>
+                                        </div>
+                                    </div>
+                                    <div class="time"><p>{{vm.flights[$index+1].flightTimeHour}}h
+                                        {{vm.flights[$index+1].flightTimeMinute}}
+                                        min</p></div>
                                 </div>
                             </div>
                             <div class="line"></div>
                             <div class="total">
-                                <h4>400$</h4>
+                                <h4>
+                                    {{flight.fares[0].totalSingleAdultFare+vm.flights[$index+1].fares[0].totalSingleAdultFare}}</h4>
                                 <button class="main_button">Buy now</button>
                             </div>
                         </div>
@@ -127,14 +150,18 @@
                                     <md-checkbox ng-model="check" aria-label="Depart">
                                         Depart
                                     </md-checkbox>
-                                    <p>DMV - DPS</p>
-                                    <p>5h 25m</p>
+                                    <p>{{flight.legs[0].departureAirport}} -
+                                        {{flight.legs[flight.legs.length-1].arrivalAirport}}</p>
+                                    <p>{{flight.flightTimeHour}}h {{flight.flightTimeMinute}}
+                                        m</p>
                                 </div>
                                 <div class="info">
                                     <div class="info_day">Sun, 04 May</div>
-                                    <div class="info_time"><img src="content/img/logo_fly.png" alt="">
-                                        <p>14:10 - 21:10</p></div>
-                                    <div class="info_class">Economy</div>
+                                    <div class="info_time">{{flight.legs[0].carrierName}}
+                                        <p>{{vm.transformDate(flight.legs[0].localDepartureDate)}} -
+                                            {{vm.transformDate(flight.legs[0].localArrivalDate)}}</p>
+                                    </div>
+                                    <div class="info_class">{{flight.fares[0].type}}</div>
                                 </div>
                             </div>
                             <div class="panel_item">
@@ -142,17 +169,23 @@
                                     <md-checkbox ng-model="check2" aria-label="Depart">
                                         Return
                                     </md-checkbox>
-                                    <p>DMV - DPS</p>
-                                    <p>5h 25m</p>
+                                    <p>{{vm.flights[$index+1].legs[0].departureAirport}} -
+                                        {{vm.flights[$index+1].legs[flight.legs.length-1].arrivalAirport}}</p>
+                                    <p>{{vm.flights[$index+1].flightTimeHour}}h
+                                        {{vm.flights[$index+1].flightTimeMinute}}
+                                        m</p>
                                 </div>
                                 <div class="info">
                                     <div class="info_day">Sun, 04 May</div>
-                                    <div class="info_time"><img src="content/img/logo_fly.png" alt="">
-                                        <p>14:10 - 21:10</p></div>
-                                    <div class="info_class">Economy</div>
+                                    <div class="info_time">{{vm.flights[$index+1].legs[0].carrierName}}
+                                        <p>{{vm.transformDate(vm.flights[$index+1].legs[0].localDepartureDate)}} -
+                                            {{vm.transformDate(vm.flights[$index+1].legs[0].localArrivalDate)}}</p>
+                                    </div>
+                                    <div class="info_class">{{vm.flights[$index+1].fares[0].type}}</div>
                                 </div>
                             </div>
                         </div>
+                        {{key}}
                     </div>
                 </div>
             </div>
