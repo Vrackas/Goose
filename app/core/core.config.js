@@ -44,7 +44,18 @@
                 url: '/tours',
                 templateUrl: 'templates/tours/tours.html',
                 controller: 'ToursController',
-                controllerAs: 'vm'
+                controllerAs: 'vm',
+                resolve: {
+                    flights: function (flightService, $localStorage) {
+                        return flightService.getFlights().then(function (result) {
+                            $localStorage.searchFlightsResult = result;
+                            return result;
+                        });
+                    },
+                    // priceDetail: function (flightService) {
+                    //     return flightService.priceDetail();
+                    // }
+                }
             })
             .state('transfer_choose', {
                 url: '/transfer_choose',

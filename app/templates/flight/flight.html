@@ -4,7 +4,8 @@
 
     <div class="main_section">
         <div class="container">
-            <div class="nav"><p ui-sref="tours"><i class="fas fa-arrow-left"></i>Back to the tour</p></div>
+            <div class="nav"><p ng-click="vm.backToTheTour()" ui-sref="tours"><i class="fas fa-arrow-left"></i>Back to
+                the tour</p></div>
             <div class="content">
                 <div class="content_filter">
                     <div class="content_filter_sort">
@@ -62,8 +63,8 @@
                 </div>
                 <div class="content_content">
                     <!--<div class="tags">-->
-                        <!--<div>Bali (any)</div>-->
-                        <!--<div>04.05.2019 - 12.05.2019</div>-->
+                    <!--<div>Bali (any)</div>-->
+                    <!--<div>04.05.2019 - 12.05.2019</div>-->
                     <!--</div>-->
                     <div class="proposals">
                         <h3>123 Proposals</h3>
@@ -149,7 +150,8 @@
                         <div class="panel">
                             <div class="panel_item">
                                 <div class="top">
-                                    <md-checkbox ng-model="check" aria-label="Depart">
+                                    <md-checkbox ng-model="check" aria-label="Depart"
+                                                 ng-click="vm.setTicket(flight)">
                                         Depart
                                     </md-checkbox>
                                     <p>{{flight.legs[0].departureAirport}} -
@@ -168,7 +170,8 @@
                             </div>
                             <div class="panel_item">
                                 <div class="top">
-                                    <md-checkbox ng-model="check2" aria-label="Depart">
+                                    <md-checkbox ng-model="check2" aria-label="Return"
+                                                 ng-click="vm.setTicket(vm.flights[$index+1])">
                                         Return
                                     </md-checkbox>
                                     <p>{{vm.flights[$index+1].legs[0].departureAirport}} -

@@ -20,7 +20,7 @@
                 "child": "1",
                 "usePersonFares": true,
                 "getBaggageInfo": true,
-                "currency": "EUR"
+                "currency": "USD"
             };
 
         vm.searchModel = {
