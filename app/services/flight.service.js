@@ -33,9 +33,9 @@
 
         function getFlights() {
             var data = getFlightObject();
-            // return http.post('http://localhost:8888/booking.php?query=flightSearch', data).then(function (res) {
-                return http.get('fake_db/flights.json', data).then(function (res) {
-                // let result = JSON.parse(JSON.parse(res))
+            return http.post('http://localhost:8888/booking.php?query=flightSearch', data).then(function (res) {
+                // return http.get('fake_db/flights.json', data).then(function (res) {
+                let result = JSON.parse(JSON.parse(res));
                 // result.result.flights.length = 20
                 // console.log(result.result);
                 // return result.result;
@@ -43,7 +43,7 @@
                 // var result = res.result.filter(function (item) {
                 //     return item.code.indexOf(query) !== -1;
                 // });
-                return res;
+                return result.result;
             });
         }
 

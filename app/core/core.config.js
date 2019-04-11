@@ -47,14 +47,17 @@
                 controllerAs: 'vm',
                 resolve: {
                     flights: function (flightService, $localStorage) {
-                        return flightService.getFlights().then(function (result) {
-                            $localStorage.searchFlightsResult = result;
-                            return result;
-                        });
+                        if (typeof $localStorage.priceDetailObject === 'undefined')
+                            return flightService.getFlights().then(function (result) {
+                                $localStorage.searchFlightsResult = result;
+                                return result;
+                            });
+
                     },
-                    // priceDetail: function (flightService) {
-                    //     return flightService.priceDetail();
-                    // }
+                    priceDetail: function (flightService, $localStorage) {
+                        if (typeof $localStorage.priceDetailObject !== 'undefined')
+                            return flightService.priceDetail();
+                    }
                 }
             })
             .state('transfer_choose', {

@@ -5,15 +5,17 @@
         .controller('HomepageController', HomepageController);
 
 
-    HomepageController.$inject = ['flightService', 'airports', '$filter'];
+    HomepageController.$inject = ['flightService', 'airports', '$filter', '$state', '$localStorage'];
 
-    function HomepageController(flightService, airports, $filter) {
+    function HomepageController(flightService, airports, $filter, $state, $localStorage) {
+        $localStorage.$reset();
+
         var vm = this;
         vm.flight =
             {
-                "fromAirport": "",
+                // "fromAirport": ,
                 "allinFromCity": true,
-                "toAirport": "",
+                // "toAirport": "",
                 // "fromDate": "2019-04-23",
                 // "returnDate": "2019-05-01",
                 "adult": "1",
@@ -49,13 +51,18 @@
         }
 
         function searchTour() {
-            vm.flight.fromDate = $filter('date')(vm.flight.fromDate, 'yyyy-MM-dd');
-            vm.flight.returnDate = $filter('date')(vm.flight.returnDate, 'yyyy-MM-dd');
-
-            vm.flight.fromAirport = vm.flight.fromAirport.code;
-            vm.flight.toAirport = vm.flight.toAirport.code;
-            // if (vm.flight.from.code.length === 3 && vm.flight.to.code.length === 3)
-            flightService.save(vm.flight);
+            var isValid = flightValidation();
+            if (isValid) {
+                vm.flight.fromDate = $filter('date')(vm.flight.fromDate, 'yyyy-MM-dd');
+                if (typeof vm.flight.returnDate !== 'undefined')
+                    vm.flight.returnDate = $filter('date')(vm.flight.returnDate, 'yyyy-MM-dd');
+                vm.flight.fromAirport = vm.flight.fromAirport.code;
+                vm.flight.toAirport = vm.flight.toAirport.code;
+                flightService.save(vm.flight);
+                $state.go('tours');
+            } else {
+                alert('Не заполнено одно или несколько полей');
+            }
             console.log(vm.flight);
         }
 
@@ -69,6 +76,10 @@
                 }
 
             }
+        }
+
+        function flightValidation() {
+            return typeof vm.flight.fromAirport !== 'undefined' && typeof vm.flight.toAirport !== 'undefined' && typeof vm.flight.fromDate !== 'undefined' || typeof vm.flight.fromDate !== 'undefined';
         }
     }
 })();

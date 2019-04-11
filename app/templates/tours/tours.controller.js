@@ -5,24 +5,26 @@
         .controller('ToursController', ToursController);
 
 
-    ToursController.$inject = ['http', 'flights', 'flightService'];
+    ToursController.$inject = ['http', 'flights', 'flightService', 'priceDetail'];
 
-    function ToursController(http, flights, flightService) {
+    function ToursController(http, flights, flightService, priceDetail) {
         let vm = this;
-        // vm.flightPriceDetails = priceDetail;
-        // debugger
-        // console.log(priceDetail)
-        let priceDetailObject = {
-            searchId: flights.searchId,
-            fareRefereces: [],
-            passengers: [],
-            currency: 'USD',
-            cip: false
-        };
-
-        init();
+        if (typeof priceDetail !== 'undefined') {
+            vm.flightPriceDetails = priceDetail;
+        }
+        if (typeof flights !== 'undefined') {
+            init();
+        }
+        vm.flightDetail=flightService.getFlightObject();
 
         function init() {
+            let priceDetailObject = {
+                searchId: flights.searchId,
+                fareRefereces: [],
+                passengers: [],
+                currency: 'USD',
+                cip: false
+            };
             var _flights = flights.flights;
             var currentOrder = flightService.getFlightObject();
             var obj = {
