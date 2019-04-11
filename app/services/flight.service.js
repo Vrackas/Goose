@@ -40,12 +40,12 @@
                 let result = JSON.parse(JSON.parse(res));
                 // result.result.flights.length = 20
                 // console.log(result.result);
-                // return result.result;
+                return result.result;
                 // return result.result;
                 // var result = res.result.filter(function (item) {
                 //     return item.code.indexOf(query) !== -1;
                 // });
-                return result.result;
+                // return res;
             });
         }
 

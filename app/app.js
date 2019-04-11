@@ -6,7 +6,6 @@
             'blocks.request',
             'blocks.services',
             'blocks.filters',
-
         ])
         .run(runBlock);
 

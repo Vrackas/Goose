@@ -52,34 +52,24 @@
                             <i class="far fa-trash-alt"></i>
                         </div>
                         <div class="content">
-                            <h4>1000$</h4>
-                            <div class="section">
+                            <h4 ng-if="!vm.isFlightsAvailable">Sorry, not any flights between these directions</h4>
+                            <h4 ng-if="vm.isFlightsAvailable">{{vm.flightPriceDetails.totalPrice}}$</h4>
+                            <div class="section" ng-repeat="fligh in vm.selectedFlight">
                                 <div class="section_1">
-                                    <p>04.05.2019</p>
-                                    <strong>10:40</strong>
-                                    <span>jhg</span>
+                                    <p>{{vm.transformDate(fligh[0].localDepartureDate)}}</p>
+                                    <strong>{{vm.transformTime(fligh[0].localDepartureDate)}}</strong>
+                                    <span>{{fligh[0].departureAirport}}</span>
                                 </div>
                                 <div class="section_2"></div>
                                 <div class="section_3">
-                                    <p>04.05.2019</p>
-                                    <strong>10:40</strong>
-                                    <span>jhg</span>
+                                    <p>{{vm.transformDate(fligh[fligh.length-1].localArrivalDate)}}</p>
+                                    <strong>{{vm.transformTime(fligh[fligh.length-1].localArrivalDate)}}</strong>
+                                    <span>{{fligh[fligh.length-1].arrivalAirport}}</span>
                                 </div>
                             </div>
-                            <div class="section">
-                                <div class="section_1">
-                                    <p>04.05.2019</p>
-                                    <strong>10:40</strong>
-                                    <span>jhg</span>
-                                </div>
-                                <div class="section_2"></div>
-                                <div class="section_3">
-                                    <p>04.05.2019</p>
-                                    <strong>10:40</strong>
-                                    <span>jhg</span>
-                                </div>
-                            </div>
+
                         </div>
+
                     </div>
                     <div class="transfer">
                         <div class="_edit">
@@ -94,7 +84,7 @@
                             <div class="price">
                                 <div class="price_rate"></div>
                                 <div class="price_price">
-                                    <p>35 mins <strong>40$</strong></p>
+                                    <p>0 mins <strong>0$</strong></p>
                                 </div>
                             </div>
                         </div>
@@ -118,7 +108,7 @@
                             <h4>AUDI A6 S6</h4>
                             <p></p>
                             <div></div>
-                            <strong>40$</strong>
+                            <strong>0$</strong>
                         </div>
                         <strong>1440$</strong>
                     </div>

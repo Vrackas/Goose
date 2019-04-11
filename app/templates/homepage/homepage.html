@@ -21,7 +21,7 @@
                         <md-content>
                             <md-autocomplete
                                     md-search-text="vm.searchModel.from"
-                                    md-selected-item="vm.flight.fromAirport"
+                                    md-selected-item="vm.searchModel.fromAirport"
                                     md-items="item in vm.from"
                                     md-item-text='item.cityName + " " + item.name + " (" + item.code + "), " + item.countryCode'
                                     md-min-length="0" ng-model="vm.searchModel.from" placeholder="From:"
@@ -45,7 +45,7 @@
                             <form>
                                 <md-autocomplete
                                         md-search-text="vm.searchModel.to"
-                                        md-selected-item="vm.flight.toAirport"
+                                        md-selected-item="vm.searchModel.toAirport"
                                         md-items="item in vm.to"
                                         md-item-text='item.cityName + " " + item.name + " (" + item.code + "), " + item.countryCode'
                                         md-min-length="0" ng-model="vm.searchModel.to" placeholder="To:"
@@ -71,10 +71,10 @@
 
                 <div class="accept">
                     <div class="paket">
-                        <p>0$</p>
+                        <p>{{vm.priceLimit}}$</p>
                         <md-slider-container>
 
-                            <md-slider min="0" max="255" now="150" ng-model="some" aria-label="red">
+                            <md-slider min="0" max="10000" now="150" ng-model="vm.priceLimit" aria-label="red">
                             </md-slider>
 
                         </md-slider-container>
@@ -82,7 +82,7 @@
                     </div>
 
 
-                    <button class="main_button" ng-click="vm.searchTour()" >Search Tours <i
+                    <button class="main_button" ng-click="vm.searchTour()">Search Tours <i
                             class="fas fa-chevron-right"></i></button>
                 </div>
 

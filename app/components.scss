@@ -20,7 +20,7 @@ button {
 select:focus,
 a:focus,
 button:focus,
-input:focus{
+input:focus {
   outline: none;
 }
 
@@ -52,9 +52,7 @@ input:focus{
 
   }
 
-
 }
-
 
 .main_button:hover {
   background-color: $light_green;
@@ -121,3 +119,4 @@ input:focus{
     width: 310px;
   }
 }
+

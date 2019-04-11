@@ -4,13 +4,13 @@
         .module('factory.request', [])
         .factory('http', http);
 
-    http.$inject = ['$http', '$q', '$timeout', 'toastr'];
+    http.$inject = ['$http', '$q', '$timeout', 'toastr','cfpLoadingBar'];
 
     /**
      * Wrapper over the standard http function
      */
 
-    function http($http, $q, $timeout, toastr) {
+    function http($http, $q, $timeout, toastr,cfpLoadingBar) {
         console.log('create request service');
 
         return {
@@ -38,6 +38,7 @@
          */
 
         function request(method, url, data) {
+            cfpLoadingBar.start();
 
 
             let config = {
@@ -46,7 +47,8 @@
                 headers: {
                     'Accept': 'application/json',
                     'Content-Type': 'application/json; charset=UTF-8'
-                }
+                },
+                spinner: 'spinner1'
             };
 
             if (method === 'GET') {
@@ -144,6 +146,8 @@
          */
 
         function requestComplete(response) {
+            cfpLoadingBar.complete();
+
             let promise = $q.defer();
 
             console.info('response complete', response.config.url, response);

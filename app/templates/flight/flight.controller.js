@@ -8,15 +8,18 @@
 
     function FlightController(flightService, flights) {
         // console.log(flights);
-
+        let itemPerPage = 20;
         let vm = this;
-        vm.flights = flights.flights;
+        vm.totalProposals = flights.flights.length;
+        vm.flights = flights.flights.slice(0, itemPerPage);
         vm.filterByStops = filterByStops;
         vm.transformDate = transformDate;
         vm.filterByDuration = filterByDuration;
         vm.transformDay = transformDay;
         vm.setTicket = setTicket;
         vm.backToTheTour = backToTheTour;
+        vm.filterByCabin = filterByCabin;
+        vm.filterByLayover = filterByLayover;
         let priceDetailObject = {
             searchId: flights.searchId,
             fareRefereces: [],
@@ -44,17 +47,19 @@
          * @param more
          */
         function filterByStops(count, checked, more) {
+            vm.currentPage = 1;
             if (checked) {
                 vm.flights = flights.flights;
             }
             else {
-                vm.flights = vm.flights.filter(function (item) {
+                vm.flights = flights.flights.filter(function (item) {
                     if (more) {
-                        return item.legs.length >= count;
+                        return item.legs.length > 2;
                     }
                     return item.legs.length === count;
                 })
             }
+            vm.flights = vm.flights.slice(0, itemPerPage);
             init();
         }
 
@@ -65,15 +70,51 @@
          * @param checked
          */
         function filterByDuration(hour_s, hour_f, checked) {
+            vm.currentPage = 1;
             if (checked) {
                 vm.flights = flights.flights;
             } else {
-                vm.flights = vm.flights.filter(function (item) {
+                vm.flights = flights.flights.filter(function (item) {
                     return (item.flightTimeHour >= hour_s && item.flightTimeHour <= hour_f);
                 })
             }
+            vm.flights = vm.flights.slice(0, itemPerPage);
+
             init();
 
+        }
+
+        function filterByLayover(hour_s, hour_f, checked) {
+            vm.currentPage = 1;
+            if (checked) {
+                vm.flights = flights.flights;
+            } else {
+                vm.flights = flights.flights.filter(function (item) {
+                    return ((item.layoverTime / 60) >= hour_s && (item.layoverTime / 60) <= hour_f);
+                })
+            }
+            vm.flights = vm.flights.slice(0, itemPerPage);
+
+            init();
+
+        }
+
+
+        function filterByCabin(type, checked) {
+            if (checked) {
+                vm.flights = flights.flights;
+            } else {
+                vm.flights = flights.flights.filter(function (item) {
+                    return (item.fares[0].type.toLowerCase() === type.toLowerCase());
+                });
+                if (type === 'mixed') {
+                    vm.flights = flights.flights;
+
+                }
+            }
+            vm.flights = vm.flights.slice(0, itemPerPage);
+
+            init();
         }
 
 
@@ -101,9 +142,8 @@
                 'count': tourInfo.adult
             };
             priceDetailObject.passengers.push(adult);
-            flightService.savePriceDetailObject(priceDetailObject);
-            flightService.saveSelectedFlight(vm.selectedFlight);
-
+            if (priceDetailObject.fareRefereces.length > 0)
+                flightService.savePriceDetailObject(priceDetailObject);
         }
 
         function _checkTicketIfExist(flight) {
@@ -126,7 +166,7 @@
         });
 
         function init() {
-
+            loadPagination();
 
             // accordion effect
             setTimeout(function () {
@@ -134,7 +174,7 @@
                 let i;
 
                 for (i = 0; i < acc.length; i++) {
-                    acc[i].addEventListener("click", function () {
+                    var click = function () {
                         this.classList.toggle("active");
                         var panel = this.nextElementSibling;
                         if (panel.style.maxHeight) {
@@ -142,9 +182,27 @@
                         } else {
                             panel.style.maxHeight = panel.scrollHeight + "px";
                         }
-                    });
+                    }
+                    acc[i].removeEventListener("click", click, true);
+                    acc[i].addEventListener("click", click);
                 }
             }, 1000);
         }
+
+
+        /**
+         * Pagination
+         */
+
+        function loadPagination() {
+            vm.totalPages = vm.flights.length / itemPerPage;
+            vm.currentPage = 1;
+        }
+
+        vm.onPageChange = function () {
+            var start = (vm.currentPage - 1) * itemPerPage;
+            vm.flights = vm.flights.slice(start, itemPerPage * vm.currentPage);
+            console.log(vm.currentPage);
+        };
     }
 })();

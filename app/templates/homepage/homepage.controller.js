@@ -11,6 +11,7 @@
         $localStorage.$reset();
 
         var vm = this;
+        vm.priceLimit = 0;
         vm.flight =
             {
                 // "fromAirport": ,
@@ -56,8 +57,9 @@
                 vm.flight.fromDate = $filter('date')(vm.flight.fromDate, 'yyyy-MM-dd');
                 if (typeof vm.flight.returnDate !== 'undefined')
                     vm.flight.returnDate = $filter('date')(vm.flight.returnDate, 'yyyy-MM-dd');
-                vm.flight.fromAirport = vm.flight.fromAirport.code;
-                vm.flight.toAirport = vm.flight.toAirport.code;
+                vm.flight.fromAirport = vm.searchModel.fromAirport.code;
+                vm.flight.toAirport = vm.searchModel.toAirport.code;
+                $localStorage.priceLimit = vm.priceLimit
                 flightService.save(vm.flight);
                 $state.go('tours');
             } else {
@@ -79,7 +81,7 @@
         }
 
         function flightValidation() {
-            return typeof vm.flight.fromAirport !== 'undefined' && typeof vm.flight.toAirport !== 'undefined' && typeof vm.flight.fromDate !== 'undefined' || typeof vm.flight.fromDate !== 'undefined';
+            return typeof vm.flight.fromAirport !== 'undefined' && typeof vm.flight.toAirport !== 'undefined' && typeof vm.flight.fromDate !== 'undefined' || typeof vm.flight.fromDate !== 'undefined' && typeof vm.flight.returnDate !== 'undefined';
         }
     }
 })();

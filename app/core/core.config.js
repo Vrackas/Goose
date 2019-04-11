@@ -4,13 +4,16 @@
         .config(mainConfig);
 
 
-    mainConfig.$inject = ['$stateProvider', '$urlRouterProvider', '$locationProvider', '$translateProvider', '$mdGestureProvider'];
+    mainConfig.$inject = ['$stateProvider', '$urlRouterProvider', '$locationProvider', '$translateProvider', '$mdGestureProvider', 'cfpLoadingBarProvider'];
 
-    function mainConfig($stateProvider, $urlRouterProvider, $locationProvider, $translateProvider, $mdGestureProvider) {
+    function mainConfig($stateProvider, $urlRouterProvider, $locationProvider, $translateProvider, $mdGestureProvider, cfpLoadingBarProvider) {
+        cfpLoadingBarProvider.includeSpinner = true;
+        // cfpLoadingBarProvider.includeBar = true;
 
+        cfpLoadingBarProvider.parentSelector = '#loading-bar-container';
+        cfpLoadingBarProvider.spinnerTemplate = '<div><span class="fa fa-spinner">We are looking best proposals for you. Please wait...</div>';
         $mdGestureProvider.skipClickHijack();
         $urlRouterProvider.otherwise('/');
-
 
         $stateProvider
 
@@ -57,6 +60,15 @@
                     priceDetail: function (flightService, $localStorage) {
                         if (typeof $localStorage.priceDetailObject !== 'undefined')
                             return flightService.priceDetail();
+                    },
+                    hotels: function (hotelService, $localStorage) {
+                        // return hotelService.getHotelsByAutoComplete().then(function (res) {
+                        //     $localStorage.searchHotelsResult = res;
+                        //     return hotelService.getHotelsByAutoCompleteId(res[0].id).then(function (result) {
+                        //         debugger
+                        //         return result;
+                        //     });
+                        // })
                     }
                 }
             })

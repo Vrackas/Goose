@@ -37,25 +37,27 @@
                     </div>
                     <div class="content_filter_sort">
                         <h4>Layover</h4>
-                        <md-checkbox ng-model="some6" aria-label="3h to 5h">
+                        <md-checkbox ng-model="some6" aria-label="3h to 5h" ng-click="vm.filterByLayover(3,5,some6)">
                             3h to 5h
                         </md-checkbox>
-                        <md-checkbox ng-model="some7" aria-label=" 5h to 10h">
+                        <md-checkbox ng-model="some7" aria-label=" 5h to 10h" ng-click="vm.filterByLayover(3,5,some7)">
                             5h to 10h
                         </md-checkbox>
-                        <md-checkbox ng-model="some8" aria-label="10h to 15h">
+                        <md-checkbox ng-model="some8" aria-label="10h to 15h" ng-click="vm.filterByLayover(3,5,some8)">
                             10h to 15h
                         </md-checkbox>
                     </div>
                     <div class="content_filter_sort">
                         <h4>Cabin</h4>
-                        <md-checkbox ng-model="some9" aria-label="Economy">
+                        <md-checkbox ng-model="some9" aria-label="Economy"
+                                     ng-click=" vm.filterByCabin('Economy',some9)">
                             Economy
                         </md-checkbox>
-                        <md-checkbox ng-model="some10" aria-label="Business">
+                        <md-checkbox ng-model="some10" aria-label="Business"
+                                     ng-click=" vm.filterByCabin('Business',some10)">
                             Business
                         </md-checkbox>
-                        <md-checkbox ng-model="some11" aria-label="Mixed">
+                        <md-checkbox ng-model="some11" aria-label="Mixed" ng-click=" vm.filterByCabin('mixed',some11)">
                             Mixed
                         </md-checkbox>
                     </div>
@@ -67,15 +69,15 @@
                     <!--<div>04.05.2019 - 12.05.2019</div>-->
                     <!--</div>-->
                     <div class="proposals">
-                        <h3>123 Proposals</h3>
+                        <h3>{{vm.totalProposals}} Proposals</h3>
                     </div>
                     <div class="filter">
                         <div><i class="fas fa-chevron-down"></i>
                             <p>Price (lowest first)</p></div>
-                        <div><i class="fas fa-chevron-down"></i>
-                            <p>Stars (highest first)</p></div>
-                        <div><i class="fas fa-chevron-down"></i>
-                            <p>Sort by rating</p></div>
+                        <!--<div><i class="fas fa-chevron-down"></i>-->
+                            <!--<p>Stars (highest first)</p></div>-->
+                        <!--<div><i class="fas fa-chevron-down"></i>-->
+                            <!--<p>Sort by rating</p></div>-->
                     </div>
                     <div class="result" ng-repeat="(key,flight) in vm.flights">
 
@@ -193,6 +195,8 @@
                             </div>
                         </div>
                     </div>
+                    <pager page-count="vm.totalPages" current-page="vm.currentPage"
+                           on-page-change="vm.onPageChange()"></pager>
                 </div>
             </div>
 

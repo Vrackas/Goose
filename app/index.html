@@ -20,16 +20,25 @@
     <link rel="stylesheet" href="content/css/app.css">
     <link href="content/font/ProximaNova/stylesheet.css" rel="stylesheet">
     <link rel="stylesheet" href="bower_components/angular-toastr/dist/angular-toastr.css"/>
+    <link rel="stylesheet" href="bower_components/angular-loading-bar/build/loading-bar.min.css"/>
+    <link rel="stylesheet" href="bower_components/angularjs-pagination/dist/ng-pagination.min.css"/>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Comfortaa:300,400,700&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css"
           integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
-
+    <style>
+        #loading-bar-container{
+            position: absolute;
+        }
+        #loading-bar .bar {
+            position: absolute;
+        }
+    </style>
 </head>
 <body>
 
 <div id="page" class="main-container">
-
+    <div id="loading-bar-container"></div>
     <div ui-view></div>
 
 </div>
@@ -37,6 +46,7 @@
 <script src="bower_components/angular/angular.min.js"></script>
 <script src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
 <script src="bower_components/angular-animate/angular-animate.js"></script>
+<script src="bower_components/angular-touch/angular-touch.js"></script>
 <script src="bower_components/angular-aria/angular-aria.js"></script>
 <script src="bower_components/angular-messages/angular-messages.js"></script>
 <script src="bower_components/angular-material/angular-material.min.js"></script>
@@ -44,6 +54,9 @@
 <script src="bower_components/angular-translate/angular-translate.min.js"></script>
 <script src="bower_components/angular-translate-loader-static-files/angular-translate-loader-static-files.min.js"></script>
 <script src="bower_components/ngstorage/ngStorage.min.js"></script>
+<script src="bower_components/angular-loading-bar/build/loading-bar.min.js"></script>
+<script src="bower_components/angularjs-pagination/dist/ng-pagination.min.js"></script>
+
 
 <script src="app.js"></script>
 <script src="core/core.module.js"></script>
@@ -65,6 +78,7 @@
 <script src="factories/url.js"></script>
 <!--services-->
 <script src="services/flight.service.js"></script>
+<script src="services/hotel.service.js"></script>
 
 <!--filters-->
 
@@ -86,7 +100,6 @@
 <script src="templates/checkout/checkout.controller.js"></script>
 
 
-
 <!--directives controller-->
 <script src="directives/header_block/header_block.directive.controller.js"></script>
 <script src="directives/subheader_block/subheader_block.directive.controller.js"></script>
@@ -94,7 +107,14 @@
 <script src="directives/top_button/top_button.directive.controller.js"></script>
 <script src="directives/effect_scroll/effect_scroll.directive.controller.js"></script>
 
-
-
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
 </body>
 </html>
