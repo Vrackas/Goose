@@ -347,9 +347,43 @@ input:focus {
         .tours .main_section .container .proposal .propose .hotel .content .about div i {
           margin-right: 5px; }
     .tours .main_section .container .proposal .propose .tickets .content {
-      background-image: url("../../content/img/tours/tickets.png");
+      background-color: #610b52;
       background-size: contain;
-      width: 380px; }
+      padding: 0 20px;
+      box-sizing: border-box;
+      width: 380px;
+      display: flex;
+      color: white;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center; }
+      .tours .main_section .container .proposal .propose .tickets .content h4 {
+        align-self: flex-start;
+        font-size: 28px;
+        margin: 5px;
+        margin-top: 25px; }
+      .tours .main_section .container .proposal .propose .tickets .content .section {
+        margin-top: 25px;
+        box-sizing: border-box;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around; }
+        .tours .main_section .container .proposal .propose .tickets .content .section_1, .tours .main_section .container .proposal .propose .tickets .content .section_3 {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-end; }
+          .tours .main_section .container .proposal .propose .tickets .content .section_1 p, .tours .main_section .container .proposal .propose .tickets .content .section_1 span, .tours .main_section .container .proposal .propose .tickets .content .section_3 p, .tours .main_section .container .proposal .propose .tickets .content .section_3 span {
+            color: white;
+            font-size: 12px;
+            margin: 0;
+            font-weight: 100; }
+          .tours .main_section .container .proposal .propose .tickets .content .section_1 strong, .tours .main_section .container .proposal .propose .tickets .content .section_3 strong {
+            font-size: 24px; }
+        .tours .main_section .container .proposal .propose .tickets .content .section_2 {
+          height: 1px;
+          width: 80px;
+          background: white; }
     .tours .main_section .container .proposal .propose .transfer .content {
       background-image: url("../../content/img/tours/car.jpg");
       background-size: cover;
@@ -469,8 +503,6 @@ input:focus {
         background-size: cover; }
     .tours .main_section .container .proposal .propose .hotel .content .price .price_rate i {
       font-size: 15px; }
-    .tours .main_section .container .proposal .propose .tickets .content {
-      height: 200px; }
   .tours .main_section .container .proposal .result {
     align-self: center;
     width: 100%; }
