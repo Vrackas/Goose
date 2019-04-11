@@ -14,7 +14,9 @@
             getFlights: getFlights,
             getFlightObject: getFlightObject,
             savePriceDetailObject: savePriceDetailObject,
-            priceDetail: priceDetail
+            priceDetail: priceDetail,
+            saveSelectedFlight: saveSelectedFlight,
+            getSelectedFlight: getSelectedFlight
         };
 
         function getAirport(query) {
@@ -56,6 +58,17 @@
                 let result = JSON.parse(JSON.parse(res))
                 return result.result;
             });
+        }
+
+        /**
+         * Рейс который выбран со всей инфой для показа в плитке на лучших предложениях
+         */
+        function saveSelectedFlight(flight) {
+            $localStorage.selectedFlight = flight;
+        }
+
+        function getSelectedFlight() {
+            return $localStorage.selectedFlight;
         }
     }
 })();

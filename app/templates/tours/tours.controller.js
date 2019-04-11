@@ -15,7 +15,9 @@
         if (typeof flights !== 'undefined') {
             init();
         }
-        vm.flightDetail=flightService.getFlightObject();
+        vm.flightDetail = flightService.getFlightObject();
+        vm.selectedFlight = flightService.getSelectedFlight();
+        console.log(vm.selectedFlight);
 
         function init() {
             let priceDetailObject = {
@@ -31,6 +33,7 @@
                 itineraryId: _flights[0].id,
                 fareType: _flights[0].fares[0].type
             };
+
             priceDetailObject.fareRefereces.push(obj);
             /**
              * If 2 tickets

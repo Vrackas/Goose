@@ -24,6 +24,7 @@
             currency: 'USD',
             cip: false
         };
+        vm.selectedFlight = [];
 
         function transformDate(date) {
             if (typeof date !== 'undefined')
@@ -77,6 +78,7 @@
 
 
         function setTicket(flight) {
+            vm.selectedFlight.push(flight.legs);
             var obj = {
                 itineraryId: flight.id,
                 fareType: flight.fares[0].type
@@ -95,11 +97,13 @@
         function backToTheTour() {
             var tourInfo = flightService.getFlightObject();
             var adult = {
-                'type':'ADULT',
-                'count':tourInfo.adult
+                'type': 'ADULT',
+                'count': tourInfo.adult
             };
             priceDetailObject.passengers.push(adult);
             flightService.savePriceDetailObject(priceDetailObject);
+            flightService.saveSelectedFlight(vm.selectedFlight);
+
         }
 
         function _checkTicketIfExist(flight) {
