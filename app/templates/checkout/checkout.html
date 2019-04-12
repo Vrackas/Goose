@@ -16,17 +16,30 @@
                 </div>
                 <div class="flight">
                     <h4>Flight info</h4>
-                    <input type="text" placeholder="Airline">
-                    <input type="text" placeholder="Flight No">
-                    <input type="text" placeholder="From">
-                    <input type="text" placeholder="To">
-                    <input type="text" placeholder="Class">
-                    <input type="text" placeholder="Terminal">
-                    <input type="text" placeholder="Baggage Allowance">
+                    <input type="text" placeholder="Airline" disabled>
+                    <input type="text" placeholder="Flight No" disabled>
+                    <input type="text" placeholder="From" disabled>
+                    <input type="text" placeholder="To" disabled>
+                    <input type="text" placeholder="Class" disabled>
+                    <!--<input type="text" placeholder="Terminal">-->
+                    <input type="text" placeholder="Baggage (KG)" disabled>
+                </div>
+                <div ng-repeat="flight in vm.selectedFlight">
+                    <div class="flight" ng-repeat="(key,leg) in flight.legs">
+                        <h4></h4>
+                        <input type="text" placeholder="Airline" ng-value="leg.carrierName" disabled>
+                        <input type="text" placeholder="Flight No" ng-value="leg.flightNo" disabled>
+                        <input type="text" placeholder="From" ng-value="leg.departureCityName" disabled>
+                        <input type="text" placeholder="To" ng-value="leg.arrivalCityName" disabled>
+                        <input type="text" placeholder="Class" ng-value="flight.fares[0].type" disabled>
+                        <!--<input type="text" placeholder="Terminal">-->
+                        <input type="text" placeholder="Baggage Allowance"
+                               ng-value="flight.fares[0].baggageAllowances[key].amount">
+                    </div>
                 </div>
                 <div class="insurance">
                     <h4>insurance info</h4>
-                     <p>Insurance product is included in this package.</p>
+                    <p>Insurance product is included in this package.</p>
                 </div>
                 <div class="guests">
                     <h4>Guest info</h4>
@@ -40,16 +53,25 @@
                     <input type="text" placeholder="*E-Mail">
                     <input type="text" placeholder="*GSM">
                 </div>
-                <div class="provider">
-                    <h4>Provider Warning</h4>
-                    <input type="text">
+                <div class="card">
+                    <h4>Card info</h4>
+                    <input type="text" placeholder="Number">
+                    <input type="text" placeholder="Holder name">
+                    <input type="text" placeholder="Holder rurname">
+                    <input type="text" placeholder="MM/YY">
+                    <input type="text" placeholder="CVV">
                 </div>
-                <div class="price">
-                    <h4>Package price</h4>
-                    <p>Currency: <strong>USD</strong></p>
-                </div>
+                <!--<div class="provider">-->
+                <!--<h4>Provider Warning</h4>-->
+                <!--<input type="text">-->
+                <!--</div>-->
+                <!--<div class="price">-->
+                <!--<h4>Package price</h4>-->
+                <!--<p>Currency: <strong>USD</strong></p>-->
+                <!--</div>-->
                 <div class="total">
-                    <p>Total Price: <strong>0</strong></p>
+                    <p>Total Price: <strong>{{vm.flightPriceDetails.fares[0].total}}</strong></p>
+                    <p><button>Buy</button></p>
                 </div>
             </div>
 

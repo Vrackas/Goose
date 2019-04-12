@@ -11,7 +11,7 @@
         // cfpLoadingBarProvider.includeBar = true;
 
         cfpLoadingBarProvider.parentSelector = '#loading-bar-container';
-        cfpLoadingBarProvider.spinnerTemplate = '<div><span class="fa fa-spinner">We are looking best proposals for you. Please wait...</div>';
+        cfpLoadingBarProvider.spinnerTemplate = '<div style="z-index:999999999;background: rgba(146, 142, 142,0.5);position: absolute;width: 100vw;height: 100vh"><span style="position: relative;top: 30%;left: 40%;" class="fa fa-spinner">We are looking best proposals for you. Please wait...</div>';
         $mdGestureProvider.skipClickHijack();
         $urlRouterProvider.otherwise('/');
 
@@ -93,8 +93,7 @@
             .state('checkout', {
                 url: '/checkout',
                 templateUrl: 'templates/checkout/checkout.html',
-                controller: '' +
-                '',
+                controller: 'CheckoutController',
                 controllerAs: 'vm'
             })
 

@@ -56,6 +56,7 @@
         function priceDetail() {
             return http.post('http://localhost:8888/booking.php?query=priceDetail', $localStorage.priceDetailObject).then(function (res) {
                 let result = JSON.parse(JSON.parse(res))
+                $localStorage.flightPriceDetails = result.result;
                 return result.result;
             });
         }

@@ -43,11 +43,11 @@
         function changeInput(query, type) {
             if (type === 'from')
                 vm.from = airports.filter(function (item) {
-                    return item.code.indexOf(query) !== -1 || item.cityName.indexOf(query) !== -1
+                    return item.code.toLowerCase().indexOf(query) !== -1 || item.cityName.toLowerCase().indexOf(query) !== -1
                 });
             if (type === 'to')
                 vm.to = airports.filter(function (item) {
-                    return item.code.indexOf(query) !== -1 || item.cityName.indexOf(query) !== -1
+                    return item.code.toLowerCase().indexOf(query) !== -1 || item.cityName.toLowerCase().indexOf(query) !== -1
                 });
         }
 

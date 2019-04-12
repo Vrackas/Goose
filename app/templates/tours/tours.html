@@ -32,7 +32,7 @@
                         </div>
                         <div class="content">
                             <div class="about">
-                                <p>Hotel Astra</p>
+                                <p>Hotel is loading...</p>
                                 <div><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
                                         class="fas fa-star"></i></div>
                             </div>
@@ -41,7 +41,7 @@
                                         class="fas fa-heart"></i><i class="far fa-heart"></i><i
                                         class="far fa-heart"></i></div>
                                 <div class="price_price">
-                                    <p>10 nights <strong>400$</strong></p>
+                                    <p>0 nights <strong>0$</strong></p>
                                 </div>
                             </div>
                         </div>
@@ -56,15 +56,15 @@
                             <h4 ng-if="vm.isFlightsAvailable">{{vm.flightPriceDetails.totalPrice}}$</h4>
                             <div class="section" ng-repeat="fligh in vm.selectedFlight">
                                 <div class="section_1">
-                                    <p>{{vm.transformDate(fligh[0].localDepartureDate)}}</p>
-                                    <strong>{{vm.transformTime(fligh[0].localDepartureDate)}}</strong>
-                                    <span>{{fligh[0].departureAirport}}</span>
+                                    <p>{{vm.transformDate(fligh.legs[0].localDepartureDate)}}</p>
+                                    <strong>{{vm.transformTime(fligh.legs[0].localDepartureDate)}}</strong>
+                                    <span>{{fligh.legs[0].departureAirport}}</span>
                                 </div>
                                 <div class="section_2"></div>
                                 <div class="section_3">
-                                    <p>{{vm.transformDate(fligh[fligh.length-1].localArrivalDate)}}</p>
-                                    <strong>{{vm.transformTime(fligh[fligh.length-1].localArrivalDate)}}</strong>
-                                    <span>{{fligh[fligh.length-1].arrivalAirport}}</span>
+                                    <p>{{vm.transformDate(fligh.legs[fligh.legs.length-1].localArrivalDate)}}</p>
+                                    <strong>{{vm.transformTime(fligh.legs[fligh.legs.length-1].localArrivalDate)}}</strong>
+                                    <span>{{fligh.legs[fligh.legs.length-1].arrivalAirport}}</span>
                                 </div>
                             </div>
 
@@ -78,8 +78,8 @@
                         </div>
                         <div class="content">
                             <div class="about">
-                                <p>Audi A6 S6</p>
-                                <div>Business Class</div>
+                                <p>Transfer is loading...</p>
+                                <div></div>
                             </div>
                             <div class="price">
                                 <div class="price_rate"></div>
@@ -93,10 +93,10 @@
                 <div class="result">
                     <div class="content">
                         <div class="result_content">
-                            <h4>Hotel Astra</h4>
-                            <p>4 stars</p>
+                            <h4>Loading...</h4>
+                            <p></p>
                             <div></div>
-                            <strong>400$</strong>
+                            <strong>0$</strong>
                         </div>
                         <div class="result_content">
                             <h4>{{vm.flightDetail.fromAirport}} - {{vm.flightDetail.toAirport}}</h4>
@@ -105,12 +105,12 @@
                             <strong>{{vm.flightPriceDetails.totalPrice}}$</strong>
                         </div>
                         <div class="result_content">
-                            <h4>AUDI A6 S6</h4>
+                            <h4>Loading...</h4>
                             <p></p>
                             <div></div>
                             <strong>0$</strong>
                         </div>
-                        <strong>1440$</strong>
+                        <strong>{{vm.flightPriceDetails.totalPrice}}$</strong>
                     </div>
 
                 </div>

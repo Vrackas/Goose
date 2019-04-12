@@ -119,7 +119,7 @@
 
 
         function setTicket(flight) {
-            vm.selectedFlight.push(flight.legs);
+            vm.selectedFlight.push(flight);
             var obj = {
                 itineraryId: flight.id,
                 fareType: flight.fares[0].type

@@ -5,9 +5,9 @@
         .controller('ToursController', ToursController);
 
 
-    ToursController.$inject = ['http', 'flights', 'flightService', 'priceDetail', 'hotels'];
+    ToursController.$inject = ['http', 'flights', 'flightService', 'priceDetail', 'hotels', '$localStorage'];
 
-    function ToursController(http, flights, flightService, priceDetail, hotels) {
+    function ToursController(http, flights, flightService, priceDetail, hotels, $localStorage) {
         let vm = this;
         vm.transformTime = transformTime;
         vm.transformDate = transformDate;
@@ -41,7 +41,7 @@
                 itineraryId: _flights[0].id,
                 fareType: _flights[0].fares[0].type
             };
-            vm.selectedFlight.push(_flights[0].legs);
+            vm.selectedFlight.push(_flights[0]);
 
 
             priceDetailObject.fareRefereces.push(obj);
@@ -53,7 +53,7 @@
                     itineraryId: _flights[1].id,
                     fareType: _flights[1].fares[0].type
                 };
-                vm.selectedFlight.push(_flights[1].legs);
+                vm.selectedFlight.push(_flights[1]);
 
                 priceDetailObject.fareRefereces.push(obj)
             }
@@ -82,6 +82,7 @@
         function getPriceDetails() {
             flightService.priceDetail().then(function (res) {
                 vm.flightPriceDetails = res;
+                $localStorage.flightPriceDetails = res;
             })
         }
 
